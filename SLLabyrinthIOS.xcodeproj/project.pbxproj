@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		6754B54A2D7A91DD0023C62F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6754B5302D7A91DA0023C62F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6754B5372D7A91DA0023C62F;
+			remoteInfo = SLLabyrinthIOS;
+		};
+		6754B5542D7A91DD0023C62F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6754B5302D7A91DA0023C62F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6754B5372D7A91DA0023C62F;
+			remoteInfo = SLLabyrinthIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6754B5382D7A91DA0023C62F /* SLLabyrinthIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLLabyrinthIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6754B5492D7A91DD0023C62F /* SLLabyrinthIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6754B5532D7A91DD0023C62F /* SLLabyrinthIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SLLabyrinthIOS;
+			sourceTree = "<group>";
+		};
+		6754B54C2D7A91DD0023C62F /* SLLabyrinthIOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SLLabyrinthIOSTests;
+			sourceTree = "<group>";
+		};
+		6754B5562D7A91DD0023C62F /* SLLabyrinthIOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SLLabyrinthIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6754B5352D7A91DA0023C62F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6754B5462D7A91DD0023C62F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6754B5502D7A91DD0023C62F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6754B52F2D7A91DA0023C62F = {
+			isa = PBXGroup;
+			children = (
+				6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */,
+				6754B54C2D7A91DD0023C62F /* SLLabyrinthIOSTests */,
+				6754B5562D7A91DD0023C62F /* SLLabyrinthIOSUITests */,
+				6754B5392D7A91DA0023C62F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6754B5392D7A91DA0023C62F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6754B5382D7A91DA0023C62F /* SLLabyrinthIOS.app */,
+				6754B5492D7A91DD0023C62F /* SLLabyrinthIOSTests.xctest */,
+				6754B5532D7A91DD0023C62F /* SLLabyrinthIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6754B5372D7A91DA0023C62F /* SLLabyrinthIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6754B55D2D7A91DD0023C62F /* Build configuration list for PBXNativeTarget "SLLabyrinthIOS" */;
+			buildPhases = (
+				6754B5342D7A91DA0023C62F /* Sources */,
+				6754B5352D7A91DA0023C62F /* Frameworks */,
+				6754B5362D7A91DA0023C62F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */,
+			);
+			name = SLLabyrinthIOS;
+			packageProductDependencies = (
+			);
+			productName = SLLabyrinthIOS;
+			productReference = 6754B5382D7A91DA0023C62F /* SLLabyrinthIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6754B5482D7A91DD0023C62F /* SLLabyrinthIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6754B5602D7A91DD0023C62F /* Build configuration list for PBXNativeTarget "SLLabyrinthIOSTests" */;
+			buildPhases = (
+				6754B5452D7A91DD0023C62F /* Sources */,
+				6754B5462D7A91DD0023C62F /* Frameworks */,
+				6754B5472D7A91DD0023C62F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6754B54B2D7A91DD0023C62F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6754B54C2D7A91DD0023C62F /* SLLabyrinthIOSTests */,
+			);
+			name = SLLabyrinthIOSTests;
+			packageProductDependencies = (
+			);
+			productName = SLLabyrinthIOSTests;
+			productReference = 6754B5492D7A91DD0023C62F /* SLLabyrinthIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6754B5522D7A91DD0023C62F /* SLLabyrinthIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6754B5632D7A91DD0023C62F /* Build configuration list for PBXNativeTarget "SLLabyrinthIOSUITests" */;
+			buildPhases = (
+				6754B54F2D7A91DD0023C62F /* Sources */,
+				6754B5502D7A91DD0023C62F /* Frameworks */,
+				6754B5512D7A91DD0023C62F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6754B5552D7A91DD0023C62F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6754B5562D7A91DD0023C62F /* SLLabyrinthIOSUITests */,
+			);
+			name = SLLabyrinthIOSUITests;
+			packageProductDependencies = (
+			);
+			productName = SLLabyrinthIOSUITests;
+			productReference = 6754B5532D7A91DD0023C62F /* SLLabyrinthIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6754B5302D7A91DA0023C62F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					6754B5372D7A91DA0023C62F = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					6754B5482D7A91DD0023C62F = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 6754B5372D7A91DA0023C62F;
+					};
+					6754B5522D7A91DD0023C62F = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 6754B5372D7A91DA0023C62F;
+					};
+				};
+			};
+			buildConfigurationList = 6754B5332D7A91DA0023C62F /* Build configuration list for PBXProject "SLLabyrinthIOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6754B52F2D7A91DA0023C62F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6754B5392D7A91DA0023C62F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6754B5372D7A91DA0023C62F /* SLLabyrinthIOS */,
+				6754B5482D7A91DD0023C62F /* SLLabyrinthIOSTests */,
+				6754B5522D7A91DD0023C62F /* SLLabyrinthIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6754B5362D7A91DA0023C62F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6754B5472D7A91DD0023C62F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6754B5512D7A91DD0023C62F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6754B5342D7A91DA0023C62F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6754B5452D7A91DD0023C62F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6754B54F2D7A91DD0023C62F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6754B54B2D7A91DD0023C62F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6754B5372D7A91DA0023C62F /* SLLabyrinthIOS */;
+			targetProxy = 6754B54A2D7A91DD0023C62F /* PBXContainerItemProxy */;
+		};
+		6754B5552D7A91DD0023C62F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6754B5372D7A91DA0023C62F /* SLLabyrinthIOS */;
+			targetProxy = 6754B5542D7A91DD0023C62F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6754B55B2D7A91DD0023C62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6754B55C2D7A91DD0023C62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6754B55E2D7A91DD0023C62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SLLabyrinthIOS/SLLabyrinthIOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SLLabyrinthIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssp.SLLabyrinthIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6754B55F2D7A91DD0023C62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SLLabyrinthIOS/SLLabyrinthIOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SLLabyrinthIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssp.SLLabyrinthIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6754B5612D7A91DD0023C62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssp.SLLabyrinthIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SLLabyrinthIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SLLabyrinthIOS";
+			};
+			name = Debug;
+		};
+		6754B5622D7A91DD0023C62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssp.SLLabyrinthIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SLLabyrinthIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SLLabyrinthIOS";
+			};
+			name = Release;
+		};
+		6754B5642D7A91DD0023C62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssp.SLLabyrinthIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SLLabyrinthIOS;
+			};
+			name = Debug;
+		};
+		6754B5652D7A91DD0023C62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssp.SLLabyrinthIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SLLabyrinthIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6754B5332D7A91DA0023C62F /* Build configuration list for PBXProject "SLLabyrinthIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6754B55B2D7A91DD0023C62F /* Debug */,
+				6754B55C2D7A91DD0023C62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6754B55D2D7A91DD0023C62F /* Build configuration list for PBXNativeTarget "SLLabyrinthIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6754B55E2D7A91DD0023C62F /* Debug */,
+				6754B55F2D7A91DD0023C62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6754B5602D7A91DD0023C62F /* Build configuration list for PBXNativeTarget "SLLabyrinthIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6754B5612D7A91DD0023C62F /* Debug */,
+				6754B5622D7A91DD0023C62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6754B5632D7A91DD0023C62F /* Build configuration list for PBXNativeTarget "SLLabyrinthIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6754B5642D7A91DD0023C62F /* Debug */,
+				6754B5652D7A91DD0023C62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6754B5302D7A91DA0023C62F /* Project object */;
+}
