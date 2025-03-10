@@ -6,15 +6,13 @@
 //
 
 import SwiftUI
+import SLLabyrinthGenerator
 
 struct ContentView: View {
+    let field = LabyrinthGenerator(configuration: GeneratorConfiguration()).generateLabyrinth()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
+        GenerationDebugView(field: field)
         .padding()
     }
 }

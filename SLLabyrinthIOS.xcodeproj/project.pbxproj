@@ -6,6 +6,39 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		672E9B8E2D7DE80C00E039C4 /* SLLabyrinthGenerator in Frameworks */ = {isa = PBXBuildFile; productRef = 672E9B8D2D7DE80C00E039C4 /* SLLabyrinthGenerator */; };
+		672E9BB62D7E241F00E039C4 /* SquareTopology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BA82D7E241F00E039C4 /* SquareTopology.swift */; };
+		672E9BB72D7E241F00E039C4 /* GeneratorConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BB22D7E241F00E039C4 /* GeneratorConfiguration.swift */; };
+		672E9BB82D7E241F00E039C4 /* Topology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BAD2D7E241F00E039C4 /* Topology.swift */; };
+		672E9BB92D7E241F00E039C4 /* LabyrinthElementSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B982D7E241F00E039C4 /* LabyrinthElementSuperposition.swift */; };
+		672E9BBA2D7E241F00E039C4 /* PathsGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B9E2D7E241F00E039C4 /* PathsGraph.swift */; };
+		672E9BBB2D7E241F00E039C4 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B9C2D7E241F00E039C4 /* Dictionary.swift */; };
+		672E9BBC2D7E241F00E039C4 /* EdgeBasedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B962D7E241F00E039C4 /* EdgeBasedElement.swift */; };
+		672E9BBD2D7E241F00E039C4 /* NodeSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BAC2D7E241F00E039C4 /* NodeSuperposition.swift */; };
+		672E9BBE2D7E241F00E039C4 /* PathsGraphVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BA02D7E241F00E039C4 /* PathsGraphVertex.swift */; };
+		672E9BBF2D7E241F00E039C4 /* SuperpositionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BB42D7E241F00E039C4 /* SuperpositionsProvider.swift */; };
+		672E9BC02D7E241F00E039C4 /* NodeRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BA32D7E241F00E039C4 /* NodeRestriction.swift */; };
+		672E9BC12D7E241F00E039C4 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BAA2D7E241F00E039C4 /* Field.swift */; };
+		672E9BC22D7E241F00E039C4 /* SLLabyrinthGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BB32D7E241F00E039C4 /* SLLabyrinthGenerator.swift */; };
+		672E9BC32D7E241F00E039C4 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B9A2D7E241F00E039C4 /* Array.swift */; };
+		672E9BC42D7E241F00E039C4 /* SquareField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BA62D7E241F00E039C4 /* SquareField.swift */; };
+		672E9BC52D7E241F00E039C4 /* Junction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B922D7E241F00E039C4 /* Junction.swift */; };
+		672E9BC62D7E241F00E039C4 /* SquarePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BA72D7E241F00E039C4 /* SquarePoint.swift */; };
+		672E9BC72D7E241F00E039C4 /* Solid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B932D7E241F00E039C4 /* Solid.swift */; };
+		672E9BC82D7E241F00E039C4 /* LabyrinthElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B972D7E241F00E039C4 /* LabyrinthElement.swift */; };
+		672E9BC92D7E241F00E039C4 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B9B2D7E241F00E039C4 /* Collection.swift */; };
+		672E9BCA2D7E241F00E039C4 /* StraightPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B942D7E241F00E039C4 /* StraightPath.swift */; };
+		672E9BCB2D7E241F00E039C4 /* FieldAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BB12D7E241F00E039C4 /* FieldAnalyzer.swift */; };
+		672E9BCC2D7E241F00E039C4 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BAB2D7E241F00E039C4 /* Node.swift */; };
+		672E9BCD2D7E241F00E039C4 /* CornerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B902D7E241F00E039C4 /* CornerPath.swift */; };
+		672E9BCE2D7E241F00E039C4 /* PathsGraphEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B9F2D7E241F00E039C4 /* PathsGraphEdge.swift */; };
+		672E9BCF2D7E241F00E039C4 /* SquareEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BA52D7E241F00E039C4 /* SquareEdge.swift */; };
+		672E9BD02D7E241F00E039C4 /* SquareFieldPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BAF2D7E241F00E039C4 /* SquareFieldPrinter.swift */; };
+		672E9BD12D7E241F00E039C4 /* Deadend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9B912D7E241F00E039C4 /* Deadend.swift */; };
+		672E9BD22D7E241F00E039C4 /* ElementRestirction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E9BA22D7E241F00E039C4 /* ElementRestirction.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6754B54A2D7A91DD0023C62F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +57,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		672E9B902D7E241F00E039C4 /* CornerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerPath.swift; sourceTree = "<group>"; };
+		672E9B912D7E241F00E039C4 /* Deadend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadend.swift; sourceTree = "<group>"; };
+		672E9B922D7E241F00E039C4 /* Junction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Junction.swift; sourceTree = "<group>"; };
+		672E9B932D7E241F00E039C4 /* Solid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solid.swift; sourceTree = "<group>"; };
+		672E9B942D7E241F00E039C4 /* StraightPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraightPath.swift; sourceTree = "<group>"; };
+		672E9B962D7E241F00E039C4 /* EdgeBasedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBasedElement.swift; sourceTree = "<group>"; };
+		672E9B972D7E241F00E039C4 /* LabyrinthElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabyrinthElement.swift; sourceTree = "<group>"; };
+		672E9B982D7E241F00E039C4 /* LabyrinthElementSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabyrinthElementSuperposition.swift; sourceTree = "<group>"; };
+		672E9B9A2D7E241F00E039C4 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		672E9B9B2D7E241F00E039C4 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		672E9B9C2D7E241F00E039C4 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		672E9B9E2D7E241F00E039C4 /* PathsGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraph.swift; sourceTree = "<group>"; };
+		672E9B9F2D7E241F00E039C4 /* PathsGraphEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphEdge.swift; sourceTree = "<group>"; };
+		672E9BA02D7E241F00E039C4 /* PathsGraphVertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphVertex.swift; sourceTree = "<group>"; };
+		672E9BA22D7E241F00E039C4 /* ElementRestirction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementRestirction.swift; sourceTree = "<group>"; };
+		672E9BA32D7E241F00E039C4 /* NodeRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeRestriction.swift; sourceTree = "<group>"; };
+		672E9BA52D7E241F00E039C4 /* SquareEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareEdge.swift; sourceTree = "<group>"; };
+		672E9BA62D7E241F00E039C4 /* SquareField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareField.swift; sourceTree = "<group>"; };
+		672E9BA72D7E241F00E039C4 /* SquarePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquarePoint.swift; sourceTree = "<group>"; };
+		672E9BA82D7E241F00E039C4 /* SquareTopology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTopology.swift; sourceTree = "<group>"; };
+		672E9BAA2D7E241F00E039C4 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		672E9BAB2D7E241F00E039C4 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		672E9BAC2D7E241F00E039C4 /* NodeSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSuperposition.swift; sourceTree = "<group>"; };
+		672E9BAD2D7E241F00E039C4 /* Topology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topology.swift; sourceTree = "<group>"; };
+		672E9BAF2D7E241F00E039C4 /* SquareFieldPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareFieldPrinter.swift; sourceTree = "<group>"; };
+		672E9BB12D7E241F00E039C4 /* FieldAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldAnalyzer.swift; sourceTree = "<group>"; };
+		672E9BB22D7E241F00E039C4 /* GeneratorConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorConfiguration.swift; sourceTree = "<group>"; };
+		672E9BB32D7E241F00E039C4 /* SLLabyrinthGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLLabyrinthGenerator.swift; sourceTree = "<group>"; };
+		672E9BB42D7E241F00E039C4 /* SuperpositionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperpositionsProvider.swift; sourceTree = "<group>"; };
 		6754B5382D7A91DA0023C62F /* SLLabyrinthIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLLabyrinthIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6754B5492D7A91DD0023C62F /* SLLabyrinthIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6754B5532D7A91DD0023C62F /* SLLabyrinthIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672E9B8E2D7DE80C00E039C4 /* SLLabyrinthGenerator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,9 +135,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		672E9B952D7E241F00E039C4 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				672E9B902D7E241F00E039C4 /* CornerPath.swift */,
+				672E9B912D7E241F00E039C4 /* Deadend.swift */,
+				672E9B922D7E241F00E039C4 /* Junction.swift */,
+				672E9B932D7E241F00E039C4 /* Solid.swift */,
+				672E9B942D7E241F00E039C4 /* StraightPath.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		672E9B992D7E241F00E039C4 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				672E9B952D7E241F00E039C4 /* Concrete */,
+				672E9B962D7E241F00E039C4 /* EdgeBasedElement.swift */,
+				672E9B972D7E241F00E039C4 /* LabyrinthElement.swift */,
+				672E9B982D7E241F00E039C4 /* LabyrinthElementSuperposition.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		672E9B9D2D7E241F00E039C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				672E9B9A2D7E241F00E039C4 /* Array.swift */,
+				672E9B9B2D7E241F00E039C4 /* Collection.swift */,
+				672E9B9C2D7E241F00E039C4 /* Dictionary.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		672E9BA12D7E241F00E039C4 /* PathsGraph */ = {
+			isa = PBXGroup;
+			children = (
+				672E9B9E2D7E241F00E039C4 /* PathsGraph.swift */,
+				672E9B9F2D7E241F00E039C4 /* PathsGraphEdge.swift */,
+				672E9BA02D7E241F00E039C4 /* PathsGraphVertex.swift */,
+			);
+			path = PathsGraph;
+			sourceTree = "<group>";
+		};
+		672E9BA42D7E241F00E039C4 /* Restrictions */ = {
+			isa = PBXGroup;
+			children = (
+				672E9BA22D7E241F00E039C4 /* ElementRestirction.swift */,
+				672E9BA32D7E241F00E039C4 /* NodeRestriction.swift */,
+			);
+			path = Restrictions;
+			sourceTree = "<group>";
+		};
+		672E9BA92D7E241F00E039C4 /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				672E9BA52D7E241F00E039C4 /* SquareEdge.swift */,
+				672E9BA62D7E241F00E039C4 /* SquareField.swift */,
+				672E9BA72D7E241F00E039C4 /* SquarePoint.swift */,
+				672E9BA82D7E241F00E039C4 /* SquareTopology.swift */,
+			);
+			path = Square;
+			sourceTree = "<group>";
+		};
+		672E9BAE2D7E241F00E039C4 /* Topology */ = {
+			isa = PBXGroup;
+			children = (
+				672E9BA92D7E241F00E039C4 /* Square */,
+				672E9BAA2D7E241F00E039C4 /* Field.swift */,
+				672E9BAB2D7E241F00E039C4 /* Node.swift */,
+				672E9BAC2D7E241F00E039C4 /* NodeSuperposition.swift */,
+				672E9BAD2D7E241F00E039C4 /* Topology.swift */,
+			);
+			path = Topology;
+			sourceTree = "<group>";
+		};
+		672E9BB02D7E241F00E039C4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				672E9BAF2D7E241F00E039C4 /* SquareFieldPrinter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		672E9BB52D7E241F00E039C4 /* SLLabyrinthGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				672E9B992D7E241F00E039C4 /* Elements */,
+				672E9B9D2D7E241F00E039C4 /* Extensions */,
+				672E9BA12D7E241F00E039C4 /* PathsGraph */,
+				672E9BA42D7E241F00E039C4 /* Restrictions */,
+				672E9BAE2D7E241F00E039C4 /* Topology */,
+				672E9BB02D7E241F00E039C4 /* Utils */,
+				672E9BB12D7E241F00E039C4 /* FieldAnalyzer.swift */,
+				672E9BB22D7E241F00E039C4 /* GeneratorConfiguration.swift */,
+				672E9BB32D7E241F00E039C4 /* SLLabyrinthGenerator.swift */,
+				672E9BB42D7E241F00E039C4 /* SuperpositionsProvider.swift */,
+			);
+			name = SLLabyrinthGenerator;
+			path = ../Generator/Sources/SLLabyrinthGenerator;
+			sourceTree = SOURCE_ROOT;
+		};
 		6754B52F2D7A91DA0023C62F = {
 			isa = PBXGroup;
 			children = (
+				672E9BB52D7E241F00E039C4 /* SLLabyrinthGenerator */,
 				6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */,
 				6754B54C2D7A91DD0023C62F /* SLLabyrinthIOSTests */,
 				6754B5562D7A91DD0023C62F /* SLLabyrinthIOSUITests */,
@@ -112,6 +277,7 @@
 			);
 			name = SLLabyrinthIOS;
 			packageProductDependencies = (
+				672E9B8D2D7DE80C00E039C4 /* SLLabyrinthGenerator */,
 			);
 			productName = SLLabyrinthIOS;
 			productReference = 6754B5382D7A91DA0023C62F /* SLLabyrinthIOS.app */;
@@ -195,6 +361,9 @@
 			);
 			mainGroup = 6754B52F2D7A91DA0023C62F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				672E9B8C2D7DE80C00E039C4 /* XCRemoteSwiftPackageReference "Generator" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6754B5392D7A91DA0023C62F /* Products */;
 			projectDirPath = "";
@@ -236,6 +405,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672E9BB62D7E241F00E039C4 /* SquareTopology.swift in Sources */,
+				672E9BB72D7E241F00E039C4 /* GeneratorConfiguration.swift in Sources */,
+				672E9BB82D7E241F00E039C4 /* Topology.swift in Sources */,
+				672E9BB92D7E241F00E039C4 /* LabyrinthElementSuperposition.swift in Sources */,
+				672E9BBA2D7E241F00E039C4 /* PathsGraph.swift in Sources */,
+				672E9BBB2D7E241F00E039C4 /* Dictionary.swift in Sources */,
+				672E9BBC2D7E241F00E039C4 /* EdgeBasedElement.swift in Sources */,
+				672E9BBD2D7E241F00E039C4 /* NodeSuperposition.swift in Sources */,
+				672E9BBE2D7E241F00E039C4 /* PathsGraphVertex.swift in Sources */,
+				672E9BBF2D7E241F00E039C4 /* SuperpositionsProvider.swift in Sources */,
+				672E9BC02D7E241F00E039C4 /* NodeRestriction.swift in Sources */,
+				672E9BC12D7E241F00E039C4 /* Field.swift in Sources */,
+				672E9BC22D7E241F00E039C4 /* SLLabyrinthGenerator.swift in Sources */,
+				672E9BC32D7E241F00E039C4 /* Array.swift in Sources */,
+				672E9BC42D7E241F00E039C4 /* SquareField.swift in Sources */,
+				672E9BC52D7E241F00E039C4 /* Junction.swift in Sources */,
+				672E9BC62D7E241F00E039C4 /* SquarePoint.swift in Sources */,
+				672E9BC72D7E241F00E039C4 /* Solid.swift in Sources */,
+				672E9BC82D7E241F00E039C4 /* LabyrinthElement.swift in Sources */,
+				672E9BC92D7E241F00E039C4 /* Collection.swift in Sources */,
+				672E9BCA2D7E241F00E039C4 /* StraightPath.swift in Sources */,
+				672E9BCB2D7E241F00E039C4 /* FieldAnalyzer.swift in Sources */,
+				672E9BCC2D7E241F00E039C4 /* Node.swift in Sources */,
+				672E9BCD2D7E241F00E039C4 /* CornerPath.swift in Sources */,
+				672E9BCE2D7E241F00E039C4 /* PathsGraphEdge.swift in Sources */,
+				672E9BCF2D7E241F00E039C4 /* SquareEdge.swift in Sources */,
+				672E9BD02D7E241F00E039C4 /* SquareFieldPrinter.swift in Sources */,
+				672E9BD12D7E241F00E039C4 /* Deadend.swift in Sources */,
+				672E9BD22D7E241F00E039C4 /* ElementRestirction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +739,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		672E9B8C2D7DE80C00E039C4 /* XCRemoteSwiftPackageReference "Generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = /Users/serhii.lomov/Documents/Projects/SLLabyrinth/Generator;
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		672E9B8D2D7DE80C00E039C4 /* SLLabyrinthGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 672E9B8C2D7DE80C00E039C4 /* XCRemoteSwiftPackageReference "Generator" */;
+			productName = SLLabyrinthGenerator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6754B5302D7A91DA0023C62F /* Project object */;
 }
