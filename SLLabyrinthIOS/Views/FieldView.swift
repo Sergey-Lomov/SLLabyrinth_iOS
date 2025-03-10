@@ -13,16 +13,28 @@ struct FieldView<T: Topology>: View {
 
     var body: some View {
         GeometryReader { geometry in
-            let scale = CGFloat(T.visualScale(field: field, geometry: geometry))
+            let scale = scale(geometry: geometry)
             ZStack {
                 ForEach(field.allNodes(), id: \.point) { node in
-                    let cartesianPoint = T.visualPosition(node.point)
-                    let cgPoint = CGPoint(cartesianPoint) * scale
+                    let point = T.visualPosition(node.point)
+                    let offset = offset(point, geometry: geometry, scale: scale)
                     FieldNodeView(node: node)
                         .frame(width: scale, height: scale)
-                        .offset(x: cgPoint.x, y: geometry.size.height - cgPoint.y)
+                        .offset(offset)
                 }
             }
         }
+    }
+
+    private func scale(geometry: GeometryProxy) -> CGFloat {
+        CGFloat(T.visualScale(field: field, geometry: geometry))
+    }
+
+    private func offset(_ point: (Float, Float), geometry: GeometryProxy, scale: CGFloat) -> CGPoint {
+        let scale = CGFloat(T.visualScale(field: field, geometry: geometry))
+        return CGPoint(
+            x: CGFloat(point.0 - 0.5) * scale,
+            y: geometry.size.height - CGFloat(point.1 + 0.5) * scale
+        )
     }
 }

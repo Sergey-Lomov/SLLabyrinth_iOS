@@ -9,7 +9,11 @@ import Foundation
 import SwiftUI
 
 extension View {
-    func offset(_ point: (Float, Float)) -> some View {
-        offset(x: CGFloat(point.0), y: CGFloat(point.1))
+    func offset(_ point: CGPoint) -> some View {
+        offset(x: point.x, y: point.y)
+    }
+
+    func frame(_ size: CGSize) -> some View {
+        frame(width: size.width, height: size.height)
     }
 }

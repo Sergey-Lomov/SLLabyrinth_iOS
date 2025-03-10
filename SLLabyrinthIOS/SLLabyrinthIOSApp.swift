@@ -12,6 +12,7 @@ struct SLLabyrinthIOSApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                //.ignoresSafeArea()
         }
     }
 }

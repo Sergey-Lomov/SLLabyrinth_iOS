@@ -13,6 +13,6 @@ struct GenerationDebugView<T: Topology>: View {
 
     var body: some View {
         FieldView(field: field)
-            .padding()
+            .padding(10)
     }
 }

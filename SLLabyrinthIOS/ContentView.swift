@@ -13,7 +13,6 @@ struct ContentView: View {
 
     var body: some View {
         GenerationDebugView(field: field)
-        .padding()
     }
 }
 

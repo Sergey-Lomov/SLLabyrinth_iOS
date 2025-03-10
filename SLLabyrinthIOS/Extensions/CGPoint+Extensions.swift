@@ -16,3 +16,7 @@ extension CGPoint {
 func * (point: CGPoint, scalar: CGFloat) -> CGPoint {
     CGPoint(x: point.x * scalar, y: point.y * scalar)
 }
+
+func - (point: CGPoint, scalar: CGFloat) -> CGPoint {
+    CGPoint(x: point.x - scalar, y: point.y - scalar)
+}
