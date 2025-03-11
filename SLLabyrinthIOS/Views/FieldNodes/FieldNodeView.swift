@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct FieldNodeView<T: Topology>: View {
-    let element: T.Field.Element
+    let element: T.Field.Element?
 
     var body: some View {
         switch element {

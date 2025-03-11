@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		676408602D8078CB008BBFAC /* DictionaryBasedField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764085F2D8078CB008BBFAC /* DictionaryBasedField.swift */; };
+		676408642D807D31008BBFAC /* UndefinedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676408632D807D31008BBFAC /* UndefinedElement.swift */; };
 		67C507352D7FA81F00CD0B83 /* SuperpositionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507332D7FA81F00CD0B83 /* SuperpositionsProvider.swift */; };
 		67C507362D7FA81F00CD0B83 /* CornerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507102D7FA81F00CD0B83 /* CornerPath.swift */; };
 		67C507372D7FA81F00CD0B83 /* NodeSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507312D7FA81F00CD0B83 /* NodeSuperposition.swift */; };
@@ -58,6 +60,8 @@
 		6754B5382D7A91DA0023C62F /* SLLabyrinthIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLLabyrinthIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6754B5492D7A91DD0023C62F /* SLLabyrinthIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6754B5532D7A91DD0023C62F /* SLLabyrinthIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6764085F2D8078CB008BBFAC /* DictionaryBasedField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryBasedField.swift; sourceTree = "<group>"; };
+		676408632D807D31008BBFAC /* UndefinedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndefinedElement.swift; sourceTree = "<group>"; };
 		67C507102D7FA81F00CD0B83 /* CornerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerPath.swift; sourceTree = "<group>"; };
 		67C507112D7FA81F00CD0B83 /* Deadend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadend.swift; sourceTree = "<group>"; };
 		67C507122D7FA81F00CD0B83 /* Junction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Junction.swift; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 				67C507152D7FA81F00CD0B83 /* Concrete */,
 				67C507162D7FA81F00CD0B83 /* EdgeBasedElement.swift */,
 				67C507172D7FA81F00CD0B83 /* LabyrinthElement.swift */,
+				676408632D807D31008BBFAC /* UndefinedElement.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			children = (
 				67C507282D7FA81F00CD0B83 /* Square */,
 				67C507292D7FA81F00CD0B83 /* Field.swift */,
+				6764085F2D8078CB008BBFAC /* DictionaryBasedField.swift */,
 				67C5072A2D7FA81F00CD0B83 /* Topology.swift */,
 			);
 			path = Topology;
@@ -401,7 +407,9 @@
 				67C507352D7FA81F00CD0B83 /* SuperpositionsProvider.swift in Sources */,
 				67C507362D7FA81F00CD0B83 /* CornerPath.swift in Sources */,
 				67C507372D7FA81F00CD0B83 /* NodeSuperposition.swift in Sources */,
+				676408642D807D31008BBFAC /* UndefinedElement.swift in Sources */,
 				67C507382D7FA81F00CD0B83 /* GeneratorConfiguration.swift in Sources */,
+				676408602D8078CB008BBFAC /* DictionaryBasedField.swift in Sources */,
 				67C507392D7FA81F00CD0B83 /* EdgeBasedElement.swift in Sources */,
 				67C5073A2D7FA81F00CD0B83 /* Solid.swift in Sources */,
 				67C5073B2D7FA81F00CD0B83 /* SquareFieldPrinter.swift in Sources */,

@@ -3,4 +3,23 @@
    uuid = "F45E3580-97E1-424D-86CC-A0DFAC4D4E6F"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "833C863F-5FC0-4B13-92CF-58C2F20AD472"
+            shouldBeEnabled = "No"
+            condition = "(vertex.point.x == 9 &amp;&amp; vertex.point.y == 9) || (vertex.point.x == 9 &amp;&amp; vertex.point.y == 8)"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Generator/Sources/SLLabyrinthGenerator/PathsGraph/PathsGraph.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "compactizePaths()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

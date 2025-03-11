@@ -15,6 +15,8 @@ struct SquareNode: View {
         switch element {
         case let element as EdgeBasedElement<SquareTopology>:
             SquareEdgeBasedNode(element: element)
+        case is UndefinedElement<SquareTopology>:
+            SquareUndefinedNode()
         default: Text("?")
         }
     }

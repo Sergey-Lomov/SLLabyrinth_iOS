@@ -17,11 +17,10 @@ struct FieldView<T: Topology>: View {
             ZStack {
                 ForEach(field.allPoints(), id: \.self) { point in
                     let offset = offset(point, geometry: geometry)
-                    if let element = field.element(at: point) {
-                        FieldNodeView<T>(element: element)
-                            .frame(nodeSize)
-                            .offset(offset)
-                    }
+                    let element = field.element(at: point)
+                    FieldNodeView<T>(element: element)
+                        .frame(nodeSize)
+                        .offset(offset)
                 }
             }
         }

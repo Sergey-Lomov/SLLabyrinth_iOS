@@ -18,6 +18,7 @@ struct ContentView: View {
             GenerationDebugView<SquareTopology>(generator: generator)
         }.onAppear() {
             generator.generateLabyrinth()
+            generator.field.setElement(at: SquarePoint(x: 0, y: 0), element: nil)
         }
     }
 }

@@ -12,14 +12,21 @@ struct GenerationDebugView<T: Topology>: View {
     let generator: LabyrinthGenerator<T>
 
     var body: some View {
-        ZStack {
-            GeometryReader { geometry in
-                let scale = scale(geometry: geometry)
-                FieldView<T>(field: generator.field, nodeSize: scale)
-                PathsGraphView(graph: generator.pathsGraph, nodeSize: scale)
+        VStack {
+            HStack {
+                Button("Update paths") {
+                    generator.recalculateGraph()
+                }
             }
+            ZStack {
+                GeometryReader { geometry in
+                    let scale = scale(geometry: geometry)
+                    FieldView<T>(field: generator.field, nodeSize: scale)
+                    PathsGraphView(graph: generator.pathsGraph, nodeSize: scale)
+                }
+            }
+            .padding(10)
         }
-        .padding(10)
     }
 
     private func scale(geometry: GeometryProxy) -> CGFloat {
