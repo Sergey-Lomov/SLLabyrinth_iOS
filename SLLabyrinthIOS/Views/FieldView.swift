@@ -10,17 +10,16 @@ import SwiftUI
 
 struct FieldView<T: Topology>: View {
     let field: T.Field
+    let nodeSize: CGFloat
 
     var body: some View {
         GeometryReader { geometry in
-            let scale = scale(geometry: geometry)
             ZStack {
                 ForEach(field.allPoints(), id: \.self) { point in
-                    let visualPoint = T.visualPosition(point)
-                    let offset = offset(visualPoint, geometry: geometry, scale: scale)
+                    let offset = offset(point, geometry: geometry)
                     if let element = field.element(at: point) {
                         FieldNodeView<T>(element: element)
-                            .frame(width: scale, height: scale)
+                            .frame(nodeSize)
                             .offset(offset)
                     }
                 }
@@ -28,15 +27,10 @@ struct FieldView<T: Topology>: View {
         }
     }
 
-    private func scale(geometry: GeometryProxy) -> CGFloat {
-        CGFloat(T.visualScale(field: field, geometry: geometry))
-    }
-
-    private func offset(_ point: (Float, Float), geometry: GeometryProxy, scale: CGFloat) -> CGPoint {
-        let scale = CGFloat(T.visualScale(field: field, geometry: geometry))
-        return CGPoint(
-            x: CGFloat(point.0 - 0.5) * scale,
-            y: geometry.size.height - CGFloat(point.1 + 0.5) * scale
-        )
+    private func offset(_ point: T.Point, geometry: GeometryProxy) -> CGPoint {
+        let visualPoint = T.visualPosition(point)
+        let x = CGFloat(visualPoint.0 - 0.5) * nodeSize
+        let y = geometry.size.height - CGFloat(visualPoint.1 + 0.5) * nodeSize
+        return CGPoint(x: x, y: y)
     }
 }

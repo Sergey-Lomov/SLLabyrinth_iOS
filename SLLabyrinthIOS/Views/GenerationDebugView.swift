@@ -9,10 +9,28 @@ import Foundation
 import SwiftUI
 
 struct GenerationDebugView<T: Topology>: View {
-    let field: T.Field
+    let generator: LabyrinthGenerator<T>
 
     var body: some View {
-        FieldView<T>(field: field)
-            .padding(10)
+        ZStack {
+            GeometryReader { geometry in
+                let scale = scale(geometry: geometry)
+                FieldView<T>(field: generator.field, nodeSize: scale)
+                PathsGraphView(graph: generator.pathsGraph, nodeSize: scale)
+            }
+        }
+        .padding(10)
+    }
+
+    private func scale(geometry: GeometryProxy) -> CGFloat {
+        CGFloat(T.visualScale(field: generator.field, geometry: geometry))
+    }
+
+    private func offset(_ point: T.Point, geometry: GeometryProxy, nodeScale: CGFloat) -> CGPoint {
+        let adapted = T.visualPosition(point)
+        return CGPoint(
+            x: CGFloat(adapted.0) * nodeScale,
+            y: geometry.size.height - CGFloat(adapted.1) * nodeScale
+        )
     }
 }

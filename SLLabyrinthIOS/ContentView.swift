@@ -11,11 +11,13 @@ struct ContentView: View {
     static let config = GeneratorConfiguration<SquareTopology>(
         size: (10, 10)
     )
-    let field = LabyrinthGenerator(configuration: ContentView.config).generateLabyrinth()
+    let generator = LabyrinthGenerator(configuration: ContentView.config)
 
     var body: some View {
         HStack {
-            GenerationDebugView<SquareTopology>(field: field)
+            GenerationDebugView<SquareTopology>(generator: generator)
+        }.onAppear() {
+            generator.generateLabyrinth()
         }
     }
 }

@@ -16,4 +16,8 @@ extension View {
     func frame(_ size: CGSize) -> some View {
         frame(width: size.width, height: size.height)
     }
+
+    func frame(_ size: CGFloat) -> some View {
+        frame(width: size, height: size)
+    }
 }

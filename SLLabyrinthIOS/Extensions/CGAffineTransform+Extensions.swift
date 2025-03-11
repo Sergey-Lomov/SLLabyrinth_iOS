@@ -9,6 +9,10 @@ import Foundation
 import SwiftUI
 
 extension CGAffineTransform {
+    init(scale: CGFloat) {
+        self.init(scaleX: scale, y: scale)
+    }
+
     init(scale: CGSize) {
         self.init(scaleX: scale.height, y: scale.width)
     }
