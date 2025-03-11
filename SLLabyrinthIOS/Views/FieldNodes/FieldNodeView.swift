@@ -9,11 +9,12 @@ import Foundation
 import SwiftUI
 
 struct FieldNodeView<T: Topology>: View {
-    let node: Node<T>
+    let element: T.Field.Element
 
     var body: some View {
-        switch node {
-        case let node as Node<SquareTopology>: SquareNode(node: node)
+        switch element {
+        case let element as SquareTopology.Field.Element:
+            SquareNode(element: element)
         default: Text("?")
         }
     }

@@ -9,10 +9,10 @@ import Foundation
 import SwiftUI
 
 struct GenerationDebugView<T: Topology>: View {
-    let field: Field<T>
+    let field: T.Field
 
     var body: some View {
-        FieldView(field: field)
+        FieldView<T>(field: field)
             .padding(10)
     }
 }

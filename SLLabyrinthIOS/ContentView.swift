@@ -6,13 +6,17 @@
 //
 
 import SwiftUI
-import SLLabyrinthGenerator
 
 struct ContentView: View {
-    let field = LabyrinthGenerator(configuration: GeneratorConfiguration()).generateLabyrinth()
+    static let config = GeneratorConfiguration<SquareTopology>(
+        size: (10, 10)
+    )
+    let field = LabyrinthGenerator(configuration: ContentView.config).generateLabyrinth()
 
     var body: some View {
-        GenerationDebugView(field: field)
+        HStack {
+            GenerationDebugView<SquareTopology>(field: field)
+        }
     }
 }
 

@@ -9,10 +9,10 @@ import Foundation
 import SwiftUI
 
 struct SquareNode: View {
-    let node: Node<SquareTopology>
+    let element: SquareTopology.Field.Element
 
     var body: some View {
-        switch node.element {
+        switch element {
         case let element as EdgeBasedElement<SquareTopology>:
             SquareEdgeBasedNode(element: element)
         default: Text("?")

@@ -6,11 +6,10 @@
 //
 
 import Foundation
-import SLLabyrinthGenerator
 import SwiftUI
 
 extension Topology {
-    static func visualScale(field: Field<Self>, geometry: GeometryProxy) -> Float {
+    static func visualScale(field: Field, geometry: GeometryProxy) -> Float {
         visualScale(field: field,
               width: Float(geometry.size.width),
               height: Float(geometry.size.height)

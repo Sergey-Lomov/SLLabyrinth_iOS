@@ -9,18 +9,20 @@ import Foundation
 import SwiftUI
 
 struct FieldView<T: Topology>: View {
-    let field: Field<T>
+    let field: T.Field
 
     var body: some View {
         GeometryReader { geometry in
             let scale = scale(geometry: geometry)
             ZStack {
-                ForEach(field.allNodes(), id: \.point) { node in
-                    let point = T.visualPosition(node.point)
-                    let offset = offset(point, geometry: geometry, scale: scale)
-                    FieldNodeView(node: node)
-                        .frame(width: scale, height: scale)
-                        .offset(offset)
+                ForEach(field.allPoints(), id: \.self) { point in
+                    let visualPoint = T.visualPosition(point)
+                    let offset = offset(visualPoint, geometry: geometry, scale: scale)
+                    if let element = field.element(at: point) {
+                        FieldNodeView<T>(element: element)
+                            .frame(width: scale, height: scale)
+                            .offset(offset)
+                    }
                 }
             }
         }
