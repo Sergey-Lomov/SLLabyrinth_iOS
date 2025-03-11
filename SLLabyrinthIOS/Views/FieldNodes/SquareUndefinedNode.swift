@@ -11,7 +11,7 @@ import SwiftUI
 struct SquareUndefinedNode: View {
     var body: some View {
         GeometryReader { geometry in
-            Color.mint.
+            Color.mint
                 .frame(geometry.size)
         }
     }
