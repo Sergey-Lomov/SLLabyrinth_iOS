@@ -14,13 +14,14 @@ struct GenerationDebugView<T: Topology>: View {
     var body: some View {
         VStack {
             HStack {
-                Button("Update paths") {
-                    generator.recalculateGraph()
+                Button("Recalculate") {
+                    generator.recalculateAreas()
                 }
             }
             ZStack {
                 GeometryReader { geometry in
                     let scale = scale(geometry: geometry)
+                    PathsGraphAreasView(areas: generator.areas, nodeSize: scale)
                     FieldView<T>(field: generator.field, nodeSize: scale)
                     PathsGraphView(graph: generator.pathsGraph, nodeSize: scale)
                 }
