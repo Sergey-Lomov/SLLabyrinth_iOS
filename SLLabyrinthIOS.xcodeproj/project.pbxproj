@@ -10,10 +10,10 @@
 		676408602D8078CB008BBFAC /* DictionaryBasedField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764085F2D8078CB008BBFAC /* DictionaryBasedField.swift */; };
 		676408642D807D31008BBFAC /* UndefinedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676408632D807D31008BBFAC /* UndefinedElement.swift */; };
 		676408682D80CEB5008BBFAC /* PathsGraphArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676408672D80CEB5008BBFAC /* PathsGraphArea.swift */; };
+		676408742D8115D4008BBFAC /* SuperpositionRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676408732D8115D4008BBFAC /* SuperpositionRestriction.swift */; };
 		67C507352D7FA81F00CD0B83 /* SuperpositionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507332D7FA81F00CD0B83 /* SuperpositionsProvider.swift */; };
 		67C507362D7FA81F00CD0B83 /* CornerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507102D7FA81F00CD0B83 /* CornerPath.swift */; };
 		67C507372D7FA81F00CD0B83 /* NodeSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507312D7FA81F00CD0B83 /* NodeSuperposition.swift */; };
-		67C507382D7FA81F00CD0B83 /* GeneratorConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507302D7FA81F00CD0B83 /* GeneratorConfiguration.swift */; };
 		67C507392D7FA81F00CD0B83 /* EdgeBasedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507162D7FA81F00CD0B83 /* EdgeBasedElement.swift */; };
 		67C5073A2D7FA81F00CD0B83 /* Solid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507132D7FA81F00CD0B83 /* Solid.swift */; };
 		67C5073B2D7FA81F00CD0B83 /* SquareFieldPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5072C2D7FA81F00CD0B83 /* SquareFieldPrinter.swift */; };
@@ -64,6 +64,7 @@
 		6764085F2D8078CB008BBFAC /* DictionaryBasedField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryBasedField.swift; sourceTree = "<group>"; };
 		676408632D807D31008BBFAC /* UndefinedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndefinedElement.swift; sourceTree = "<group>"; };
 		676408672D80CEB5008BBFAC /* PathsGraphArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphArea.swift; sourceTree = "<group>"; };
+		676408732D8115D4008BBFAC /* SuperpositionRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperpositionRestriction.swift; sourceTree = "<group>"; };
 		67C507102D7FA81F00CD0B83 /* CornerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerPath.swift; sourceTree = "<group>"; };
 		67C507112D7FA81F00CD0B83 /* Deadend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadend.swift; sourceTree = "<group>"; };
 		67C507122D7FA81F00CD0B83 /* Junction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Junction.swift; sourceTree = "<group>"; };
@@ -88,7 +89,6 @@
 		67C5072C2D7FA81F00CD0B83 /* SquareFieldPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareFieldPrinter.swift; sourceTree = "<group>"; };
 		67C5072E2D7FA81F00CD0B83 /* ElementSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementSuperposition.swift; sourceTree = "<group>"; };
 		67C5072F2D7FA81F00CD0B83 /* FieldAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldAnalyzer.swift; sourceTree = "<group>"; };
-		67C507302D7FA81F00CD0B83 /* GeneratorConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorConfiguration.swift; sourceTree = "<group>"; };
 		67C507312D7FA81F00CD0B83 /* NodeSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSuperposition.swift; sourceTree = "<group>"; };
 		67C507322D7FA81F00CD0B83 /* SLLabyrinthGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLLabyrinthGenerator.swift; sourceTree = "<group>"; };
 		67C507332D7FA81F00CD0B83 /* SuperpositionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperpositionsProvider.swift; sourceTree = "<group>"; };
@@ -108,6 +108,11 @@
 		6754B5562D7A91DD0023C62F /* SLLabyrinthIOSUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SLLabyrinthIOSUITests;
+			sourceTree = "<group>";
+		};
+		6764086D2D8105A6008BBFAC /* Configuration */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -207,6 +212,7 @@
 			children = (
 				67C507212D7FA81F00CD0B83 /* ElementRestirction.swift */,
 				67C507222D7FA81F00CD0B83 /* NodeRestriction.swift */,
+				676408732D8115D4008BBFAC /* SuperpositionRestriction.swift */,
 			);
 			path = Restrictions;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 		67C507342D7FA81F00CD0B83 /* SLLabyrinthGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				6764086D2D8105A6008BBFAC /* Configuration */,
 				67C507182D7FA81F00CD0B83 /* Elements */,
 				67C5071C2D7FA81F00CD0B83 /* Extensions */,
 				67C507202D7FA81F00CD0B83 /* PathsGraph */,
@@ -252,7 +259,6 @@
 				67C5072D2D7FA81F00CD0B83 /* Utils */,
 				67C5072E2D7FA81F00CD0B83 /* ElementSuperposition.swift */,
 				67C5072F2D7FA81F00CD0B83 /* FieldAnalyzer.swift */,
-				67C507302D7FA81F00CD0B83 /* GeneratorConfiguration.swift */,
 				67C507312D7FA81F00CD0B83 /* NodeSuperposition.swift */,
 				67C507322D7FA81F00CD0B83 /* SLLabyrinthGenerator.swift */,
 				67C507332D7FA81F00CD0B83 /* SuperpositionsProvider.swift */,
@@ -278,6 +284,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */,
+				6764086D2D8105A6008BBFAC /* Configuration */,
 			);
 			name = SLLabyrinthIOS;
 			packageProductDependencies = (
@@ -411,10 +418,10 @@
 				67C507362D7FA81F00CD0B83 /* CornerPath.swift in Sources */,
 				67C507372D7FA81F00CD0B83 /* NodeSuperposition.swift in Sources */,
 				676408642D807D31008BBFAC /* UndefinedElement.swift in Sources */,
-				67C507382D7FA81F00CD0B83 /* GeneratorConfiguration.swift in Sources */,
 				676408602D8078CB008BBFAC /* DictionaryBasedField.swift in Sources */,
 				67C507392D7FA81F00CD0B83 /* EdgeBasedElement.swift in Sources */,
 				67C5073A2D7FA81F00CD0B83 /* Solid.swift in Sources */,
+				676408742D8115D4008BBFAC /* SuperpositionRestriction.swift in Sources */,
 				67C5073B2D7FA81F00CD0B83 /* SquareFieldPrinter.swift in Sources */,
 				67C5073C2D7FA81F00CD0B83 /* LabyrinthElement.swift in Sources */,
 				67C5073D2D7FA81F00CD0B83 /* Deadend.swift in Sources */,
