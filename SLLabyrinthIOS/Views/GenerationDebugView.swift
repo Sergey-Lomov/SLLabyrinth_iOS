@@ -15,7 +15,11 @@ struct GenerationDebugView<T: Topology>: View {
         VStack {
             HStack {
                 Button("Recalculate") {
-                    generator.recalculateIsolatedAreas()
+                    let profiler = TimeProfiler()
+                    profiler.execute(times: 5) {
+                        generator.generateLabyrinth()
+                    }
+                    profiler.averageLog.printReport()
                 }
             }
             ZStack {

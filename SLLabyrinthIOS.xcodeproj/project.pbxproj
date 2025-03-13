@@ -7,37 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		676408602D8078CB008BBFAC /* DictionaryBasedField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764085F2D8078CB008BBFAC /* DictionaryBasedField.swift */; };
-		676408642D807D31008BBFAC /* UndefinedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676408632D807D31008BBFAC /* UndefinedElement.swift */; };
-		676408682D80CEB5008BBFAC /* PathsGraphArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676408672D80CEB5008BBFAC /* PathsGraphArea.swift */; };
-		676408742D8115D4008BBFAC /* SuperpositionRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676408732D8115D4008BBFAC /* SuperpositionRestriction.swift */; };
-		67C507352D7FA81F00CD0B83 /* SuperpositionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507332D7FA81F00CD0B83 /* SuperpositionsProvider.swift */; };
-		67C507362D7FA81F00CD0B83 /* CornerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507102D7FA81F00CD0B83 /* CornerPath.swift */; };
-		67C507372D7FA81F00CD0B83 /* NodeSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507312D7FA81F00CD0B83 /* NodeSuperposition.swift */; };
-		67C507392D7FA81F00CD0B83 /* EdgeBasedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507162D7FA81F00CD0B83 /* EdgeBasedElement.swift */; };
-		67C5073A2D7FA81F00CD0B83 /* Solid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507132D7FA81F00CD0B83 /* Solid.swift */; };
-		67C5073B2D7FA81F00CD0B83 /* SquareFieldPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5072C2D7FA81F00CD0B83 /* SquareFieldPrinter.swift */; };
-		67C5073C2D7FA81F00CD0B83 /* LabyrinthElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507172D7FA81F00CD0B83 /* LabyrinthElement.swift */; };
-		67C5073D2D7FA81F00CD0B83 /* Deadend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507112D7FA81F00CD0B83 /* Deadend.swift */; };
-		67C5073E2D7FA81F00CD0B83 /* PathsGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5071D2D7FA81F00CD0B83 /* PathsGraph.swift */; };
-		67C5073F2D7FA81F00CD0B83 /* Topology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5072A2D7FA81F00CD0B83 /* Topology.swift */; };
-		67C507402D7FA81F00CD0B83 /* PathsGraphEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5071E2D7FA81F00CD0B83 /* PathsGraphEdge.swift */; };
-		67C507412D7FA81F00CD0B83 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5071A2D7FA81F00CD0B83 /* Collection+Extensions.swift */; };
-		67C507422D7FA81F00CD0B83 /* NodeRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507222D7FA81F00CD0B83 /* NodeRestriction.swift */; };
-		67C507432D7FA81F00CD0B83 /* SquareTopology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507272D7FA81F00CD0B83 /* SquareTopology.swift */; };
-		67C507442D7FA81F00CD0B83 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507292D7FA81F00CD0B83 /* Field.swift */; };
-		67C507452D7FA81F00CD0B83 /* StraightPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507142D7FA81F00CD0B83 /* StraightPath.swift */; };
-		67C507462D7FA81F00CD0B83 /* SquareEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507242D7FA81F00CD0B83 /* SquareEdge.swift */; };
-		67C507472D7FA81F00CD0B83 /* Junction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507122D7FA81F00CD0B83 /* Junction.swift */; };
-		67C507482D7FA81F00CD0B83 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5071B2D7FA81F00CD0B83 /* Dictionary+Extensions.swift */; };
-		67C507492D7FA81F00CD0B83 /* SLLabyrinthGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507322D7FA81F00CD0B83 /* SLLabyrinthGenerator.swift */; };
-		67C5074A2D7FA81F00CD0B83 /* ElementSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5072E2D7FA81F00CD0B83 /* ElementSuperposition.swift */; };
-		67C5074B2D7FA81F00CD0B83 /* FieldAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5072F2D7FA81F00CD0B83 /* FieldAnalyzer.swift */; };
-		67C5074C2D7FA81F00CD0B83 /* SquarePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507262D7FA81F00CD0B83 /* SquarePoint.swift */; };
-		67C5074D2D7FA81F00CD0B83 /* SquareField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507252D7FA81F00CD0B83 /* SquareField.swift */; };
-		67C5074E2D7FA81F00CD0B83 /* PathsGraphVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5071F2D7FA81F00CD0B83 /* PathsGraphVertex.swift */; };
-		67C5074F2D7FA81F00CD0B83 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507192D7FA81F00CD0B83 /* Array+Extensions.swift */; };
-		67C507502D7FA81F00CD0B83 /* ElementRestirction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C507212D7FA81F00CD0B83 /* ElementRestirction.swift */; };
+		6739D7ED2D82C42E009CAEE4 /* PathsGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7CA2D82C42E009CAEE4 /* PathsGraph.swift */; };
+		6739D7EE2D82C42E009CAEE4 /* IdEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7E52D82C42E009CAEE4 /* IdEquatable.swift */; };
+		6739D7EF2D82C42E009CAEE4 /* NodeRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7D12D82C42E009CAEE4 /* NodeRestriction.swift */; };
+		6739D7F02D82C42E009CAEE4 /* CornerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7BB2D82C42E009CAEE4 /* CornerPath.swift */; };
+		6739D7F12D82C42E009CAEE4 /* Deadend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7BC2D82C42E009CAEE4 /* Deadend.swift */; };
+		6739D7F22D82C42E009CAEE4 /* EdgeBasedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7C12D82C42E009CAEE4 /* EdgeBasedElement.swift */; };
+		6739D7F32D82C42E009CAEE4 /* ElementRestirction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7D02D82C42E009CAEE4 /* ElementRestirction.swift */; };
+		6739D7F42D82C42E009CAEE4 /* PathsGraphPatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7CD2D82C42E009CAEE4 /* PathsGraphPatch.swift */; };
+		6739D7F52D82C42E009CAEE4 /* PathsGraphVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7CE2D82C42E009CAEE4 /* PathsGraphVertex.swift */; };
+		6739D7F62D82C42E009CAEE4 /* FieldAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7E92D82C42E009CAEE4 /* FieldAnalyzer.swift */; };
+		6739D7F72D82C42E009CAEE4 /* TimeProfiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7E22D82C42E009CAEE4 /* TimeProfiler.swift */; };
+		6739D7F82D82C42E009CAEE4 /* PathsGraphEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7CC2D82C42E009CAEE4 /* PathsGraphEdge.swift */; };
+		6739D7F92D82C42E009CAEE4 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7C82D82C42E009CAEE4 /* Int+Extensions.swift */; };
+		6739D7FA2D82C42E009CAEE4 /* StraightPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7BF2D82C42E009CAEE4 /* StraightPath.swift */; };
+		6739D7FB2D82C42E009CAEE4 /* UndefinedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7C32D82C42E009CAEE4 /* UndefinedElement.swift */; };
+		6739D7FC2D82C42E009CAEE4 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7DD2D82C42E009CAEE4 /* Field.swift */; };
+		6739D7FD2D82C42E009CAEE4 /* IsolatedAreasStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7B62D82C42E009CAEE4 /* IsolatedAreasStrategy.swift */; };
+		6739D7FE2D82C42E009CAEE4 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7C52D82C42E009CAEE4 /* Array+Extensions.swift */; };
+		6739D7FF2D82C42E009CAEE4 /* SquareEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7D72D82C42E009CAEE4 /* SquareEdge.swift */; };
+		6739D8002D82C42E009CAEE4 /* SuperpositionRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7D22D82C42E009CAEE4 /* SuperpositionRestriction.swift */; };
+		6739D8012D82C42E009CAEE4 /* NodeSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7D52D82C42E009CAEE4 /* NodeSuperposition.swift */; };
+		6739D8022D82C42E009CAEE4 /* GeneratorConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7B92D82C42E009CAEE4 /* GeneratorConfiguration.swift */; };
+		6739D8032D82C42E009CAEE4 /* SLLabyrinthGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7EA2D82C42E009CAEE4 /* SLLabyrinthGenerator.swift */; };
+		6739D8042D82C42E009CAEE4 /* TimeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7E02D82C42E009CAEE4 /* TimeLog.swift */; };
+		6739D8052D82C42E009CAEE4 /* Solid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7BE2D82C42E009CAEE4 /* Solid.swift */; };
+		6739D8062D82C42E009CAEE4 /* Junction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7BD2D82C42E009CAEE4 /* Junction.swift */; };
+		6739D8072D82C42E009CAEE4 /* LabyrinthElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7C22D82C42E009CAEE4 /* LabyrinthElement.swift */; };
+		6739D8082D82C42E009CAEE4 /* SquareTopology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7DA2D82C42E009CAEE4 /* SquareTopology.swift */; };
+		6739D8092D82C42E009CAEE4 /* ZeroRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7E72D82C42E009CAEE4 /* ZeroRepresentable.swift */; };
+		6739D80A2D82C42E009CAEE4 /* SquareField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7D82D82C42E009CAEE4 /* SquareField.swift */; };
+		6739D80B2D82C42E009CAEE4 /* DictionaryBasedField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7DC2D82C42E009CAEE4 /* DictionaryBasedField.swift */; };
+		6739D80C2D82C42E009CAEE4 /* TimeLogNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7E12D82C42E009CAEE4 /* TimeLogNode.swift */; };
+		6739D80D2D82C42E009CAEE4 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7C62D82C42E009CAEE4 /* Collection+Extensions.swift */; };
+		6739D80E2D82C42E009CAEE4 /* ElementSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7D42D82C42E009CAEE4 /* ElementSuperposition.swift */; };
+		6739D80F2D82C42E009CAEE4 /* Topology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7DE2D82C42E009CAEE4 /* Topology.swift */; };
+		6739D8102D82C42E009CAEE4 /* SquarePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7D92D82C42E009CAEE4 /* SquarePoint.swift */; };
+		6739D8112D82C42E009CAEE4 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7E42D82C42E009CAEE4 /* Cacheable.swift */; };
+		6739D8122D82C42E009CAEE4 /* PathsGraphArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7CB2D82C42E009CAEE4 /* PathsGraphArea.swift */; };
+		6739D8132D82C42E009CAEE4 /* SquareFieldPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7E62D82C42E009CAEE4 /* SquareFieldPrinter.swift */; };
+		6739D8142D82C42E009CAEE4 /* SuperpositionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7EB2D82C42E009CAEE4 /* SuperpositionsProvider.swift */; };
+		6739D8152D82C42E009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7B72D82C42E009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift */; };
+		6739D8162D82C42E009CAEE4 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D7C72D82C42E009CAEE4 /* Dictionary+Extensions.swift */; };
+		6739D8182D82C993009CAEE4 /* Set+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8172D82C993009CAEE4 /* Set+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,40 +70,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6739D7B62D82C42E009CAEE4 /* IsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsolatedAreasStrategy.swift; sourceTree = "<group>"; };
+		6739D7B72D82C42E009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMergeIsolatedAreasStrategy.swift; sourceTree = "<group>"; };
+		6739D7B92D82C42E009CAEE4 /* GeneratorConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorConfiguration.swift; sourceTree = "<group>"; };
+		6739D7BB2D82C42E009CAEE4 /* CornerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerPath.swift; sourceTree = "<group>"; };
+		6739D7BC2D82C42E009CAEE4 /* Deadend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadend.swift; sourceTree = "<group>"; };
+		6739D7BD2D82C42E009CAEE4 /* Junction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Junction.swift; sourceTree = "<group>"; };
+		6739D7BE2D82C42E009CAEE4 /* Solid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solid.swift; sourceTree = "<group>"; };
+		6739D7BF2D82C42E009CAEE4 /* StraightPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraightPath.swift; sourceTree = "<group>"; };
+		6739D7C12D82C42E009CAEE4 /* EdgeBasedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBasedElement.swift; sourceTree = "<group>"; };
+		6739D7C22D82C42E009CAEE4 /* LabyrinthElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabyrinthElement.swift; sourceTree = "<group>"; };
+		6739D7C32D82C42E009CAEE4 /* UndefinedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndefinedElement.swift; sourceTree = "<group>"; };
+		6739D7C52D82C42E009CAEE4 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		6739D7C62D82C42E009CAEE4 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		6739D7C72D82C42E009CAEE4 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		6739D7C82D82C42E009CAEE4 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		6739D7CA2D82C42E009CAEE4 /* PathsGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraph.swift; sourceTree = "<group>"; };
+		6739D7CB2D82C42E009CAEE4 /* PathsGraphArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphArea.swift; sourceTree = "<group>"; };
+		6739D7CC2D82C42E009CAEE4 /* PathsGraphEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphEdge.swift; sourceTree = "<group>"; };
+		6739D7CD2D82C42E009CAEE4 /* PathsGraphPatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphPatch.swift; sourceTree = "<group>"; };
+		6739D7CE2D82C42E009CAEE4 /* PathsGraphVertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphVertex.swift; sourceTree = "<group>"; };
+		6739D7D02D82C42E009CAEE4 /* ElementRestirction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementRestirction.swift; sourceTree = "<group>"; };
+		6739D7D12D82C42E009CAEE4 /* NodeRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeRestriction.swift; sourceTree = "<group>"; };
+		6739D7D22D82C42E009CAEE4 /* SuperpositionRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperpositionRestriction.swift; sourceTree = "<group>"; };
+		6739D7D42D82C42E009CAEE4 /* ElementSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementSuperposition.swift; sourceTree = "<group>"; };
+		6739D7D52D82C42E009CAEE4 /* NodeSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSuperposition.swift; sourceTree = "<group>"; };
+		6739D7D72D82C42E009CAEE4 /* SquareEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareEdge.swift; sourceTree = "<group>"; };
+		6739D7D82D82C42E009CAEE4 /* SquareField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareField.swift; sourceTree = "<group>"; };
+		6739D7D92D82C42E009CAEE4 /* SquarePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquarePoint.swift; sourceTree = "<group>"; };
+		6739D7DA2D82C42E009CAEE4 /* SquareTopology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTopology.swift; sourceTree = "<group>"; };
+		6739D7DC2D82C42E009CAEE4 /* DictionaryBasedField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryBasedField.swift; sourceTree = "<group>"; };
+		6739D7DD2D82C42E009CAEE4 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		6739D7DE2D82C42E009CAEE4 /* Topology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topology.swift; sourceTree = "<group>"; };
+		6739D7E02D82C42E009CAEE4 /* TimeLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLog.swift; sourceTree = "<group>"; };
+		6739D7E12D82C42E009CAEE4 /* TimeLogNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLogNode.swift; sourceTree = "<group>"; };
+		6739D7E22D82C42E009CAEE4 /* TimeProfiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProfiler.swift; sourceTree = "<group>"; };
+		6739D7E42D82C42E009CAEE4 /* Cacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cacheable.swift; sourceTree = "<group>"; };
+		6739D7E52D82C42E009CAEE4 /* IdEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdEquatable.swift; sourceTree = "<group>"; };
+		6739D7E62D82C42E009CAEE4 /* SquareFieldPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareFieldPrinter.swift; sourceTree = "<group>"; };
+		6739D7E72D82C42E009CAEE4 /* ZeroRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroRepresentable.swift; sourceTree = "<group>"; };
+		6739D7E92D82C42E009CAEE4 /* FieldAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldAnalyzer.swift; sourceTree = "<group>"; };
+		6739D7EA2D82C42E009CAEE4 /* SLLabyrinthGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLLabyrinthGenerator.swift; sourceTree = "<group>"; };
+		6739D7EB2D82C42E009CAEE4 /* SuperpositionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperpositionsProvider.swift; sourceTree = "<group>"; };
+		6739D8172D82C993009CAEE4 /* Set+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+Extensions.swift"; sourceTree = "<group>"; };
 		6754B5382D7A91DA0023C62F /* SLLabyrinthIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLLabyrinthIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6754B5492D7A91DD0023C62F /* SLLabyrinthIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6754B5532D7A91DD0023C62F /* SLLabyrinthIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6764085F2D8078CB008BBFAC /* DictionaryBasedField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryBasedField.swift; sourceTree = "<group>"; };
-		676408632D807D31008BBFAC /* UndefinedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndefinedElement.swift; sourceTree = "<group>"; };
-		676408672D80CEB5008BBFAC /* PathsGraphArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphArea.swift; sourceTree = "<group>"; };
-		676408732D8115D4008BBFAC /* SuperpositionRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperpositionRestriction.swift; sourceTree = "<group>"; };
-		67C507102D7FA81F00CD0B83 /* CornerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerPath.swift; sourceTree = "<group>"; };
-		67C507112D7FA81F00CD0B83 /* Deadend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadend.swift; sourceTree = "<group>"; };
-		67C507122D7FA81F00CD0B83 /* Junction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Junction.swift; sourceTree = "<group>"; };
-		67C507132D7FA81F00CD0B83 /* Solid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solid.swift; sourceTree = "<group>"; };
-		67C507142D7FA81F00CD0B83 /* StraightPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraightPath.swift; sourceTree = "<group>"; };
-		67C507162D7FA81F00CD0B83 /* EdgeBasedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBasedElement.swift; sourceTree = "<group>"; };
-		67C507172D7FA81F00CD0B83 /* LabyrinthElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabyrinthElement.swift; sourceTree = "<group>"; };
-		67C507192D7FA81F00CD0B83 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
-		67C5071A2D7FA81F00CD0B83 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
-		67C5071B2D7FA81F00CD0B83 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
-		67C5071D2D7FA81F00CD0B83 /* PathsGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraph.swift; sourceTree = "<group>"; };
-		67C5071E2D7FA81F00CD0B83 /* PathsGraphEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphEdge.swift; sourceTree = "<group>"; };
-		67C5071F2D7FA81F00CD0B83 /* PathsGraphVertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphVertex.swift; sourceTree = "<group>"; };
-		67C507212D7FA81F00CD0B83 /* ElementRestirction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementRestirction.swift; sourceTree = "<group>"; };
-		67C507222D7FA81F00CD0B83 /* NodeRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeRestriction.swift; sourceTree = "<group>"; };
-		67C507242D7FA81F00CD0B83 /* SquareEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareEdge.swift; sourceTree = "<group>"; };
-		67C507252D7FA81F00CD0B83 /* SquareField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareField.swift; sourceTree = "<group>"; };
-		67C507262D7FA81F00CD0B83 /* SquarePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquarePoint.swift; sourceTree = "<group>"; };
-		67C507272D7FA81F00CD0B83 /* SquareTopology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTopology.swift; sourceTree = "<group>"; };
-		67C507292D7FA81F00CD0B83 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
-		67C5072A2D7FA81F00CD0B83 /* Topology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topology.swift; sourceTree = "<group>"; };
-		67C5072C2D7FA81F00CD0B83 /* SquareFieldPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareFieldPrinter.swift; sourceTree = "<group>"; };
-		67C5072E2D7FA81F00CD0B83 /* ElementSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementSuperposition.swift; sourceTree = "<group>"; };
-		67C5072F2D7FA81F00CD0B83 /* FieldAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldAnalyzer.swift; sourceTree = "<group>"; };
-		67C507312D7FA81F00CD0B83 /* NodeSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSuperposition.swift; sourceTree = "<group>"; };
-		67C507322D7FA81F00CD0B83 /* SLLabyrinthGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLLabyrinthGenerator.swift; sourceTree = "<group>"; };
-		67C507332D7FA81F00CD0B83 /* SuperpositionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperpositionsProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -108,11 +132,6 @@
 		6754B5562D7A91DD0023C62F /* SLLabyrinthIOSUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SLLabyrinthIOSUITests;
-			sourceTree = "<group>";
-		};
-		6764086D2D8105A6008BBFAC /* Configuration */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -142,10 +161,157 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6739D7B82D82C42E009CAEE4 /* IsolatedAreasStrategy */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7B62D82C42E009CAEE4 /* IsolatedAreasStrategy.swift */,
+				6739D7B72D82C42E009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift */,
+			);
+			path = IsolatedAreasStrategy;
+			sourceTree = "<group>";
+		};
+		6739D7BA2D82C42E009CAEE4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7B82D82C42E009CAEE4 /* IsolatedAreasStrategy */,
+				6739D7B92D82C42E009CAEE4 /* GeneratorConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		6739D7C02D82C42E009CAEE4 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7BB2D82C42E009CAEE4 /* CornerPath.swift */,
+				6739D7BC2D82C42E009CAEE4 /* Deadend.swift */,
+				6739D7BD2D82C42E009CAEE4 /* Junction.swift */,
+				6739D7BE2D82C42E009CAEE4 /* Solid.swift */,
+				6739D7BF2D82C42E009CAEE4 /* StraightPath.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		6739D7C42D82C42E009CAEE4 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7C02D82C42E009CAEE4 /* Concrete */,
+				6739D7C12D82C42E009CAEE4 /* EdgeBasedElement.swift */,
+				6739D7C22D82C42E009CAEE4 /* LabyrinthElement.swift */,
+				6739D7C32D82C42E009CAEE4 /* UndefinedElement.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		6739D7C92D82C42E009CAEE4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7C52D82C42E009CAEE4 /* Array+Extensions.swift */,
+				6739D7C62D82C42E009CAEE4 /* Collection+Extensions.swift */,
+				6739D7C72D82C42E009CAEE4 /* Dictionary+Extensions.swift */,
+				6739D7C82D82C42E009CAEE4 /* Int+Extensions.swift */,
+				6739D8172D82C993009CAEE4 /* Set+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6739D7CF2D82C42E009CAEE4 /* PathsGraph */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7CA2D82C42E009CAEE4 /* PathsGraph.swift */,
+				6739D7CB2D82C42E009CAEE4 /* PathsGraphArea.swift */,
+				6739D7CC2D82C42E009CAEE4 /* PathsGraphEdge.swift */,
+				6739D7CD2D82C42E009CAEE4 /* PathsGraphPatch.swift */,
+				6739D7CE2D82C42E009CAEE4 /* PathsGraphVertex.swift */,
+			);
+			path = PathsGraph;
+			sourceTree = "<group>";
+		};
+		6739D7D32D82C42E009CAEE4 /* Restrictions */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7D02D82C42E009CAEE4 /* ElementRestirction.swift */,
+				6739D7D12D82C42E009CAEE4 /* NodeRestriction.swift */,
+				6739D7D22D82C42E009CAEE4 /* SuperpositionRestriction.swift */,
+			);
+			path = Restrictions;
+			sourceTree = "<group>";
+		};
+		6739D7D62D82C42E009CAEE4 /* Superpositions */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7D32D82C42E009CAEE4 /* Restrictions */,
+				6739D7D42D82C42E009CAEE4 /* ElementSuperposition.swift */,
+				6739D7D52D82C42E009CAEE4 /* NodeSuperposition.swift */,
+			);
+			path = Superpositions;
+			sourceTree = "<group>";
+		};
+		6739D7DB2D82C42E009CAEE4 /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7D72D82C42E009CAEE4 /* SquareEdge.swift */,
+				6739D7D82D82C42E009CAEE4 /* SquareField.swift */,
+				6739D7D92D82C42E009CAEE4 /* SquarePoint.swift */,
+				6739D7DA2D82C42E009CAEE4 /* SquareTopology.swift */,
+			);
+			path = Square;
+			sourceTree = "<group>";
+		};
+		6739D7DF2D82C42E009CAEE4 /* Topology */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7DB2D82C42E009CAEE4 /* Square */,
+				6739D7DC2D82C42E009CAEE4 /* DictionaryBasedField.swift */,
+				6739D7DD2D82C42E009CAEE4 /* Field.swift */,
+				6739D7DE2D82C42E009CAEE4 /* Topology.swift */,
+			);
+			path = Topology;
+			sourceTree = "<group>";
+		};
+		6739D7E32D82C42E009CAEE4 /* TimeProfiler */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7E02D82C42E009CAEE4 /* TimeLog.swift */,
+				6739D7E12D82C42E009CAEE4 /* TimeLogNode.swift */,
+				6739D7E22D82C42E009CAEE4 /* TimeProfiler.swift */,
+			);
+			path = TimeProfiler;
+			sourceTree = "<group>";
+		};
+		6739D7E82D82C42E009CAEE4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7E32D82C42E009CAEE4 /* TimeProfiler */,
+				6739D7E42D82C42E009CAEE4 /* Cacheable.swift */,
+				6739D7E52D82C42E009CAEE4 /* IdEquatable.swift */,
+				6739D7E62D82C42E009CAEE4 /* SquareFieldPrinter.swift */,
+				6739D7E72D82C42E009CAEE4 /* ZeroRepresentable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6739D7EC2D82C42E009CAEE4 /* SLLabyrinthGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				6739D7BA2D82C42E009CAEE4 /* Configuration */,
+				6739D7C42D82C42E009CAEE4 /* Elements */,
+				6739D7C92D82C42E009CAEE4 /* Extensions */,
+				6739D7CF2D82C42E009CAEE4 /* PathsGraph */,
+				6739D7D62D82C42E009CAEE4 /* Superpositions */,
+				6739D7DF2D82C42E009CAEE4 /* Topology */,
+				6739D7E82D82C42E009CAEE4 /* Utils */,
+				6739D7E92D82C42E009CAEE4 /* FieldAnalyzer.swift */,
+				6739D7EA2D82C42E009CAEE4 /* SLLabyrinthGenerator.swift */,
+				6739D7EB2D82C42E009CAEE4 /* SuperpositionsProvider.swift */,
+			);
+			name = SLLabyrinthGenerator;
+			path = ../Generator/Sources/SLLabyrinthGenerator;
+			sourceTree = SOURCE_ROOT;
+		};
 		6754B52F2D7A91DA0023C62F = {
 			isa = PBXGroup;
 			children = (
-				67C507342D7FA81F00CD0B83 /* SLLabyrinthGenerator */,
+				6739D7EC2D82C42E009CAEE4 /* SLLabyrinthGenerator */,
 				6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */,
 				6754B54C2D7A91DD0023C62F /* SLLabyrinthIOSTests */,
 				6754B5562D7A91DD0023C62F /* SLLabyrinthIOSUITests */,
@@ -162,110 +328,6 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		67C507152D7FA81F00CD0B83 /* Concrete */ = {
-			isa = PBXGroup;
-			children = (
-				67C507102D7FA81F00CD0B83 /* CornerPath.swift */,
-				67C507112D7FA81F00CD0B83 /* Deadend.swift */,
-				67C507122D7FA81F00CD0B83 /* Junction.swift */,
-				67C507132D7FA81F00CD0B83 /* Solid.swift */,
-				67C507142D7FA81F00CD0B83 /* StraightPath.swift */,
-			);
-			path = Concrete;
-			sourceTree = "<group>";
-		};
-		67C507182D7FA81F00CD0B83 /* Elements */ = {
-			isa = PBXGroup;
-			children = (
-				67C507152D7FA81F00CD0B83 /* Concrete */,
-				67C507162D7FA81F00CD0B83 /* EdgeBasedElement.swift */,
-				67C507172D7FA81F00CD0B83 /* LabyrinthElement.swift */,
-				676408632D807D31008BBFAC /* UndefinedElement.swift */,
-			);
-			path = Elements;
-			sourceTree = "<group>";
-		};
-		67C5071C2D7FA81F00CD0B83 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				67C507192D7FA81F00CD0B83 /* Array+Extensions.swift */,
-				67C5071A2D7FA81F00CD0B83 /* Collection+Extensions.swift */,
-				67C5071B2D7FA81F00CD0B83 /* Dictionary+Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		67C507202D7FA81F00CD0B83 /* PathsGraph */ = {
-			isa = PBXGroup;
-			children = (
-				67C5071D2D7FA81F00CD0B83 /* PathsGraph.swift */,
-				676408672D80CEB5008BBFAC /* PathsGraphArea.swift */,
-				67C5071E2D7FA81F00CD0B83 /* PathsGraphEdge.swift */,
-				67C5071F2D7FA81F00CD0B83 /* PathsGraphVertex.swift */,
-			);
-			path = PathsGraph;
-			sourceTree = "<group>";
-		};
-		67C507232D7FA81F00CD0B83 /* Restrictions */ = {
-			isa = PBXGroup;
-			children = (
-				67C507212D7FA81F00CD0B83 /* ElementRestirction.swift */,
-				67C507222D7FA81F00CD0B83 /* NodeRestriction.swift */,
-				676408732D8115D4008BBFAC /* SuperpositionRestriction.swift */,
-			);
-			path = Restrictions;
-			sourceTree = "<group>";
-		};
-		67C507282D7FA81F00CD0B83 /* Square */ = {
-			isa = PBXGroup;
-			children = (
-				67C507242D7FA81F00CD0B83 /* SquareEdge.swift */,
-				67C507252D7FA81F00CD0B83 /* SquareField.swift */,
-				67C507262D7FA81F00CD0B83 /* SquarePoint.swift */,
-				67C507272D7FA81F00CD0B83 /* SquareTopology.swift */,
-			);
-			path = Square;
-			sourceTree = "<group>";
-		};
-		67C5072B2D7FA81F00CD0B83 /* Topology */ = {
-			isa = PBXGroup;
-			children = (
-				67C507282D7FA81F00CD0B83 /* Square */,
-				67C507292D7FA81F00CD0B83 /* Field.swift */,
-				6764085F2D8078CB008BBFAC /* DictionaryBasedField.swift */,
-				67C5072A2D7FA81F00CD0B83 /* Topology.swift */,
-			);
-			path = Topology;
-			sourceTree = "<group>";
-		};
-		67C5072D2D7FA81F00CD0B83 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				67C5072C2D7FA81F00CD0B83 /* SquareFieldPrinter.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		67C507342D7FA81F00CD0B83 /* SLLabyrinthGenerator */ = {
-			isa = PBXGroup;
-			children = (
-				6764086D2D8105A6008BBFAC /* Configuration */,
-				67C507182D7FA81F00CD0B83 /* Elements */,
-				67C5071C2D7FA81F00CD0B83 /* Extensions */,
-				67C507202D7FA81F00CD0B83 /* PathsGraph */,
-				67C507232D7FA81F00CD0B83 /* Restrictions */,
-				67C5072B2D7FA81F00CD0B83 /* Topology */,
-				67C5072D2D7FA81F00CD0B83 /* Utils */,
-				67C5072E2D7FA81F00CD0B83 /* ElementSuperposition.swift */,
-				67C5072F2D7FA81F00CD0B83 /* FieldAnalyzer.swift */,
-				67C507312D7FA81F00CD0B83 /* NodeSuperposition.swift */,
-				67C507322D7FA81F00CD0B83 /* SLLabyrinthGenerator.swift */,
-				67C507332D7FA81F00CD0B83 /* SuperpositionsProvider.swift */,
-			);
-			name = SLLabyrinthGenerator;
-			path = ../Generator/Sources/SLLabyrinthGenerator;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -284,7 +346,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */,
-				6764086D2D8105A6008BBFAC /* Configuration */,
 			);
 			name = SLLabyrinthIOS;
 			packageProductDependencies = (
@@ -414,37 +475,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C507352D7FA81F00CD0B83 /* SuperpositionsProvider.swift in Sources */,
-				67C507362D7FA81F00CD0B83 /* CornerPath.swift in Sources */,
-				67C507372D7FA81F00CD0B83 /* NodeSuperposition.swift in Sources */,
-				676408642D807D31008BBFAC /* UndefinedElement.swift in Sources */,
-				676408602D8078CB008BBFAC /* DictionaryBasedField.swift in Sources */,
-				67C507392D7FA81F00CD0B83 /* EdgeBasedElement.swift in Sources */,
-				67C5073A2D7FA81F00CD0B83 /* Solid.swift in Sources */,
-				676408742D8115D4008BBFAC /* SuperpositionRestriction.swift in Sources */,
-				67C5073B2D7FA81F00CD0B83 /* SquareFieldPrinter.swift in Sources */,
-				67C5073C2D7FA81F00CD0B83 /* LabyrinthElement.swift in Sources */,
-				67C5073D2D7FA81F00CD0B83 /* Deadend.swift in Sources */,
-				67C5073E2D7FA81F00CD0B83 /* PathsGraph.swift in Sources */,
-				67C5073F2D7FA81F00CD0B83 /* Topology.swift in Sources */,
-				67C507402D7FA81F00CD0B83 /* PathsGraphEdge.swift in Sources */,
-				67C507412D7FA81F00CD0B83 /* Collection+Extensions.swift in Sources */,
-				67C507422D7FA81F00CD0B83 /* NodeRestriction.swift in Sources */,
-				67C507432D7FA81F00CD0B83 /* SquareTopology.swift in Sources */,
-				67C507442D7FA81F00CD0B83 /* Field.swift in Sources */,
-				67C507452D7FA81F00CD0B83 /* StraightPath.swift in Sources */,
-				67C507462D7FA81F00CD0B83 /* SquareEdge.swift in Sources */,
-				67C507472D7FA81F00CD0B83 /* Junction.swift in Sources */,
-				67C507482D7FA81F00CD0B83 /* Dictionary+Extensions.swift in Sources */,
-				67C507492D7FA81F00CD0B83 /* SLLabyrinthGenerator.swift in Sources */,
-				67C5074A2D7FA81F00CD0B83 /* ElementSuperposition.swift in Sources */,
-				67C5074B2D7FA81F00CD0B83 /* FieldAnalyzer.swift in Sources */,
-				67C5074C2D7FA81F00CD0B83 /* SquarePoint.swift in Sources */,
-				676408682D80CEB5008BBFAC /* PathsGraphArea.swift in Sources */,
-				67C5074D2D7FA81F00CD0B83 /* SquareField.swift in Sources */,
-				67C5074E2D7FA81F00CD0B83 /* PathsGraphVertex.swift in Sources */,
-				67C5074F2D7FA81F00CD0B83 /* Array+Extensions.swift in Sources */,
-				67C507502D7FA81F00CD0B83 /* ElementRestirction.swift in Sources */,
+				6739D7ED2D82C42E009CAEE4 /* PathsGraph.swift in Sources */,
+				6739D7EE2D82C42E009CAEE4 /* IdEquatable.swift in Sources */,
+				6739D7EF2D82C42E009CAEE4 /* NodeRestriction.swift in Sources */,
+				6739D7F02D82C42E009CAEE4 /* CornerPath.swift in Sources */,
+				6739D7F12D82C42E009CAEE4 /* Deadend.swift in Sources */,
+				6739D7F22D82C42E009CAEE4 /* EdgeBasedElement.swift in Sources */,
+				6739D8182D82C993009CAEE4 /* Set+Extensions.swift in Sources */,
+				6739D7F32D82C42E009CAEE4 /* ElementRestirction.swift in Sources */,
+				6739D7F42D82C42E009CAEE4 /* PathsGraphPatch.swift in Sources */,
+				6739D7F52D82C42E009CAEE4 /* PathsGraphVertex.swift in Sources */,
+				6739D7F62D82C42E009CAEE4 /* FieldAnalyzer.swift in Sources */,
+				6739D7F72D82C42E009CAEE4 /* TimeProfiler.swift in Sources */,
+				6739D7F82D82C42E009CAEE4 /* PathsGraphEdge.swift in Sources */,
+				6739D7F92D82C42E009CAEE4 /* Int+Extensions.swift in Sources */,
+				6739D7FA2D82C42E009CAEE4 /* StraightPath.swift in Sources */,
+				6739D7FB2D82C42E009CAEE4 /* UndefinedElement.swift in Sources */,
+				6739D7FC2D82C42E009CAEE4 /* Field.swift in Sources */,
+				6739D7FD2D82C42E009CAEE4 /* IsolatedAreasStrategy.swift in Sources */,
+				6739D7FE2D82C42E009CAEE4 /* Array+Extensions.swift in Sources */,
+				6739D7FF2D82C42E009CAEE4 /* SquareEdge.swift in Sources */,
+				6739D8002D82C42E009CAEE4 /* SuperpositionRestriction.swift in Sources */,
+				6739D8012D82C42E009CAEE4 /* NodeSuperposition.swift in Sources */,
+				6739D8022D82C42E009CAEE4 /* GeneratorConfiguration.swift in Sources */,
+				6739D8032D82C42E009CAEE4 /* SLLabyrinthGenerator.swift in Sources */,
+				6739D8042D82C42E009CAEE4 /* TimeLog.swift in Sources */,
+				6739D8052D82C42E009CAEE4 /* Solid.swift in Sources */,
+				6739D8062D82C42E009CAEE4 /* Junction.swift in Sources */,
+				6739D8072D82C42E009CAEE4 /* LabyrinthElement.swift in Sources */,
+				6739D8082D82C42E009CAEE4 /* SquareTopology.swift in Sources */,
+				6739D8092D82C42E009CAEE4 /* ZeroRepresentable.swift in Sources */,
+				6739D80A2D82C42E009CAEE4 /* SquareField.swift in Sources */,
+				6739D80B2D82C42E009CAEE4 /* DictionaryBasedField.swift in Sources */,
+				6739D80C2D82C42E009CAEE4 /* TimeLogNode.swift in Sources */,
+				6739D80D2D82C42E009CAEE4 /* Collection+Extensions.swift in Sources */,
+				6739D80E2D82C42E009CAEE4 /* ElementSuperposition.swift in Sources */,
+				6739D80F2D82C42E009CAEE4 /* Topology.swift in Sources */,
+				6739D8102D82C42E009CAEE4 /* SquarePoint.swift in Sources */,
+				6739D8112D82C42E009CAEE4 /* Cacheable.swift in Sources */,
+				6739D8122D82C42E009CAEE4 /* PathsGraphArea.swift in Sources */,
+				6739D8132D82C42E009CAEE4 /* SquareFieldPrinter.swift in Sources */,
+				6739D8142D82C42E009CAEE4 /* SuperpositionsProvider.swift in Sources */,
+				6739D8152D82C42E009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift in Sources */,
+				6739D8162D82C42E009CAEE4 /* Dictionary+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
