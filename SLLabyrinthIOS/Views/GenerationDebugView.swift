@@ -11,26 +11,73 @@ import SwiftUI
 struct GenerationDebugView<T: Topology>: View {
     let generator: LabyrinthGenerator<T>
 
+    @State private var labyrinthId = UUID()
+    @State private var showAreas: Bool = true
+    @State private var showPaths: Bool = false
+    @State private var showFilteredPaths: Bool = false
+    @State private var showCycles: Bool = true
+
     var body: some View {
         VStack {
-            HStack {
-                Button("Recalculate") {
-                    let profiler = TimeProfiler()
-                    profiler.execute(times: 5) {
-                        generator.generateLabyrinth()
-                    }
-                    profiler.averageLog.printReport()
-                }
-            }
+            controlPanel()
+
             ZStack {
                 GeometryReader { geometry in
                     let scale = scale(geometry: geometry)
-                    PathsGraphAreasView(areas: generator.isolatedAreas, nodeSize: scale)
+
+                    if (showAreas) {
+                        PathsGraphAreasView(areas: generator.isolatedAreas, nodeSize: scale)
+                    }
+
+                    if (showCycles) {
+                        PathsGraphAreasView(areas: generator.cyclesAreas, nodeSize: scale)
+                    }
+
                     FieldView<T>(field: generator.field, nodeSize: scale)
-                    PathsGraphView(graph: generator.pathsGraph, nodeSize: scale)
+
+                    if (showPaths) {
+                        PathsGraphView(
+                            graph: generator.pathsGraph,
+                            color: Color.yellow,
+                            nodeSize: scale)
+                    }
+
+                    if (showFilteredPaths) {
+                        PathsGraphView(
+                            graph: generator.filteredGraph,
+                            color: Color.green,
+                            nodeSize: scale)
+                    }
                 }
             }
-            .padding(10)
+        }
+        .padding(10)
+        .id(labyrinthId)
+    }
+
+    private func controlPanel() -> some View {
+        HStack {
+            Button("Time") {
+                let profiler = TimeProfiler()
+                profiler.execute(times: 5) {
+                    generator.generateLabyrinth()
+                }
+                profiler.averageLog.printReport()
+            }
+
+            Button("Regenerate") {
+                let log = generator.generateLabyrinth()
+                log.printReport()
+                labyrinthId = UUID()
+            }
+            Button("Calculate") {
+                generator.calculateCycledAreas()
+            }
+            Spacer()
+            Button("Areas") { showAreas = !showAreas }
+            Button("Paths") { showPaths = !showPaths }
+            Button("Filtered") { showFilteredPaths = !showFilteredPaths }
+            Button("Cycled") { showCycles = !showCycles }
         }
     }
 

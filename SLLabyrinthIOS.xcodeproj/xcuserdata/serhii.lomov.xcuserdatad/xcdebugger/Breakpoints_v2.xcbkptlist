@@ -7,17 +7,50 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7F86B7E3-F887-4386-81E3-E12AC1111EB3"
+            uuid = "09E41D9A-B4AA-4924-AF29-7EDD14F6F323"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../Generator/Sources/SLLabyrinthGenerator/Configuration/IsolatedAreasStrategy/RandomMergeIsolatedAreasStrategy.swift"
+            filePath = "../Generator/Sources/SLLabyrinthGenerator/PathsGraph/GraphPath.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "RandomMergeIsolatedAreasStrategy"
-            landmarkType = "3">
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "subpath(from:to:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BBC34C4-937A-4FD1-88F7-6340D32B4F4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Generator/Sources/SLLabyrinthGenerator/PathsGraph/AreasGraph.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "groupCycled(path:unhandled:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAB6436E-28B7-450C-BF25-FDEF7A009C25"
+            shouldBeEnabled = "No"
+            condition = "path.vertices.contains(where: { a in a.graph.points.contains(where: { $0 == SquarePoint(x:1, y:5) }) })"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Generator/Sources/SLLabyrinthGenerator/PathsGraph/AreasGraph.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "groupCycled(path:unhandled:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

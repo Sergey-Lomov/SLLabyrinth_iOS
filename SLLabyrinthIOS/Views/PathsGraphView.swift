@@ -10,6 +10,7 @@ import SwiftUI
 
 struct PathsGraphView<T: Topology>: View {
     let graph: PathsGraph<T>
+    let color: Color
     let nodeSize: CGFloat
 
     var vertexSize: CGFloat { nodeSize * 0.3 }
@@ -24,7 +25,7 @@ struct PathsGraphView<T: Topology>: View {
                     let path = edgePath(edge).copy(using: &transform)
                     if let path = path {
                         Path(path)
-                            .stroke(Color.green, lineWidth: 4)
+                            .stroke(color, lineWidth: 4)
                             .frame(width: 10, height: 10)
                     }
                 }

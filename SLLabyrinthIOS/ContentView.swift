@@ -17,7 +17,8 @@ struct ContentView: View {
         HStack {
             GenerationDebugView<SquareTopology>(generator: generator)
         }.onAppear() {
-            _ = generator.generateLabyrinth()
+            let log = generator.generateLabyrinth()
+            log.printReport()
         }
     }
 }
