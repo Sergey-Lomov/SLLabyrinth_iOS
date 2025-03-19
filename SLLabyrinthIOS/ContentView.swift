@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    static let config = GeneratorConfiguration<SquareTopology>.basic(
-        size: (40, 40)
-    )
+    static let config = {
+        let config = GeneratorConfiguration<SquareTopology>.basic(size: (40, 40))
+
+        config.setWeigth(StraightPathSuperposition<SquareTopology>.self, weight: 5.0)
+        config.setWeigth(CornerPathSuperposition<SquareTopology>.self, weight: 2.0)
+        config.setWeigth(JunctionSuperposition<SquareTopology>.self, weight: 1.0)
+        config.setWeigth(DeadendSuperposition<SquareTopology>.self, weight: 0.5)
+
+        return config
+    }()
+
     let generator = LabyrinthGenerator(configuration: ContentView.config)
 
     var body: some View {
