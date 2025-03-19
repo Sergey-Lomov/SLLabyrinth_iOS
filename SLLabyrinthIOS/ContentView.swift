@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    static let config = GeneratorConfiguration<SquareTopology>(
+    static let config = GeneratorConfiguration<SquareTopology>.basic(
         size: (40, 40)
     )
     let generator = LabyrinthGenerator(configuration: ContentView.config)

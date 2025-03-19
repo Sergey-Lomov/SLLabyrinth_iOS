@@ -17,7 +17,7 @@ struct PathsGraphAreasView<T: Topology>: View {
             ZStack {
                 ForEach(areas, id: \.id) { area in
                     ForEach(Array(area.graph.points), id: \.self) { point in
-                        area.id.toColor()
+                        UUID(uuidString: area.id)?.toColor()
                             .frame(nodeSize)
                             .offset(offset(point, geometry: geometry))
                     }

@@ -11,7 +11,7 @@ import SwiftUI
 struct GenerationDebugView<T: Topology>: View {
     let generator: LabyrinthGenerator<T>
 
-    @State private var labyrinthId = UUID()
+    @State private var viewId = UUID()
     @State private var showAreas: Bool = true
     @State private var showPaths: Bool = false
     @State private var showFilteredPaths: Bool = false
@@ -52,32 +52,44 @@ struct GenerationDebugView<T: Topology>: View {
             }
         }
         .padding(10)
-        .id(labyrinthId)
+        .id(viewId)
     }
 
     private func controlPanel() -> some View {
-        HStack {
-            Button("Time") {
-                let profiler = TimeProfiler()
-                profiler.execute(times: 5) {
-                    generator.generateLabyrinth()
+        VStack {
+            HStack {
+                Button("Time") {
+                    let profiler = TimeProfiler()
+                    profiler.execute(times: 10) {
+                        generator.generateLabyrinth()
+                    }
+                    profiler.averageLog.printReport()
                 }
-                profiler.averageLog.printReport()
+
+                Button("Restore") {
+                    generator.restoreSaved()
+                    generator.calculateCyclesAreas()
+                    viewId = UUID()
+                }
+
+                Button("Regenerate") {
+                    let log = generator.generateLabyrinth()
+                    log.printReport()
+                    viewId = UUID()
+                }
+
+                Button("Resolve") {
+                    generator.resolveCyclesAreas()
+                    viewId = UUID()
+                }
             }
 
-            Button("Regenerate") {
-                let log = generator.generateLabyrinth()
-                log.printReport()
-                labyrinthId = UUID()
+            HStack {
+                Button("Areas") { showAreas = !showAreas }
+                Button("Paths") { showPaths = !showPaths }
+                Button("Filtered") { showFilteredPaths = !showFilteredPaths }
+                Button("Cycled") { showCycles = !showCycles }
             }
-            Button("Calculate") {
-                generator.calculateCycledAreas()
-            }
-            Spacer()
-            Button("Areas") { showAreas = !showAreas }
-            Button("Paths") { showPaths = !showPaths }
-            Button("Filtered") { showFilteredPaths = !showFilteredPaths }
-            Button("Cycled") { showCycles = !showCycles }
         }
     }
 
