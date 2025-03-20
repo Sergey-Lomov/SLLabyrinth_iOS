@@ -13,9 +13,10 @@ struct SquareNode: View {
 
     var body: some View {
         switch element {
-        case let element as Solid<SquareTopology>:
-            SquareEdgeBasedNode(element: element)
-                .background(Color.black)
+        case is Solid<SquareTopology>:
+            SquareSolidNode()
+        case let element as OneWayHolder<SquareTopology>:
+            OneWayHolderNode(element: element)
         case let element as EdgeBasedElement<SquareTopology>:
             SquareEdgeBasedNode(element: element)
         case is UndefinedElement<SquareTopology>:

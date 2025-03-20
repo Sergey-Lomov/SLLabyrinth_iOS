@@ -62,6 +62,9 @@
 		67E6867C2D8B330F00E30A18 /* ElementsWeightsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6867B2D8B330F00E30A18 /* ElementsWeightsContainer.swift */; };
 		67E6867E2D8B357D00E30A18 /* RandomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6867D2D8B357D00E30A18 /* RandomPicker.swift */; };
 		67E686802D8B456100E30A18 /* WeightableSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6867F2D8B456100E30A18 /* WeightableSuperposition.swift */; };
+		67E686822D8B8A4400E30A18 /* OneWayHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E686812D8B8A4400E30A18 /* OneWayHolder.swift */; };
+		67E686842D8B95F500E30A18 /* BinomialCoefficient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E686832D8B95F500E30A18 /* BinomialCoefficient.swift */; };
+		67E6868A2D8BA75C00E30A18 /* IdHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E686892D8BA75C00E30A18 /* IdHashable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +143,9 @@
 		67E6867B2D8B330F00E30A18 /* ElementsWeightsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsWeightsContainer.swift; sourceTree = "<group>"; };
 		67E6867D2D8B357D00E30A18 /* RandomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPicker.swift; sourceTree = "<group>"; };
 		67E6867F2D8B456100E30A18 /* WeightableSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightableSuperposition.swift; sourceTree = "<group>"; };
+		67E686812D8B8A4400E30A18 /* OneWayHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWayHolder.swift; sourceTree = "<group>"; };
+		67E686832D8B95F500E30A18 /* BinomialCoefficient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinomialCoefficient.swift; sourceTree = "<group>"; };
+		67E686892D8BA75C00E30A18 /* IdHashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdHashable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -213,6 +219,7 @@
 				6739D8542D83A5A4009CAEE4 /* Junction.swift */,
 				6739D8552D83A5A4009CAEE4 /* Solid.swift */,
 				6739D8562D83A5A4009CAEE4 /* StraightPath.swift */,
+				67E686812D8B8A4400E30A18 /* OneWayHolder.swift */,
 			);
 			path = Concrete;
 			sourceTree = "<group>";
@@ -318,9 +325,11 @@
 				6739D87C2D83A5A4009CAEE4 /* TimeProfiler */,
 				6739D87D2D83A5A4009CAEE4 /* Cacheable.swift */,
 				6739D87E2D83A5A4009CAEE4 /* IdEquatable.swift */,
+				67E686892D8BA75C00E30A18 /* IdHashable.swift */,
 				6739D87F2D83A5A4009CAEE4 /* SquareFieldPrinter.swift */,
 				6739D8802D83A5A4009CAEE4 /* ZeroRepresentable.swift */,
 				67E6867D2D8B357D00E30A18 /* RandomPicker.swift */,
+				67E686832D8B95F500E30A18 /* BinomialCoefficient.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -541,9 +550,11 @@
 				6739D8952D83A5A4009CAEE4 /* Dictionary+Extensions.swift in Sources */,
 				67E6867C2D8B330F00E30A18 /* ElementsWeightsContainer.swift in Sources */,
 				6739D8962D83A5A4009CAEE4 /* PathsGraphEdge.swift in Sources */,
+				67E686842D8B95F500E30A18 /* BinomialCoefficient.swift in Sources */,
 				67E6867E2D8B357D00E30A18 /* RandomPicker.swift in Sources */,
 				6739D8972D83A5A4009CAEE4 /* NodeSuperposition.swift in Sources */,
 				6739D8982D83A5A4009CAEE4 /* Deadend.swift in Sources */,
+				67E6868A2D8BA75C00E30A18 /* IdHashable.swift in Sources */,
 				6739D8992D83A5A4009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift in Sources */,
 				6739D89A2D83A5A4009CAEE4 /* SquareFieldPrinter.swift in Sources */,
 				6739D89B2D83A5A4009CAEE4 /* ElementRestirction.swift in Sources */,
@@ -570,6 +581,7 @@
 				6739D8AD2D83A5A4009CAEE4 /* StraightPath.swift in Sources */,
 				6739D8AE2D83A5A4009CAEE4 /* ElementSuperposition.swift in Sources */,
 				6739D8AF2D83A5A4009CAEE4 /* EdgeBasedElement.swift in Sources */,
+				67E686822D8B8A4400E30A18 /* OneWayHolder.swift in Sources */,
 				6739D8B02D83A5A4009CAEE4 /* SLLabyrinthGenerator.swift in Sources */,
 				6739D8B12D83A5A4009CAEE4 /* Cacheable.swift in Sources */,
 				6739D8BE2D88EE2D009CAEE4 /* CycledAreasStrategy.swift in Sources */,

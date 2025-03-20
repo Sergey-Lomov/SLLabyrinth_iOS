@@ -25,40 +25,8 @@ struct SquareEdgeBasedNode: View {
     }
 
     private func elementPath(_ element: Element) -> CGPath {
-        let path = CGMutablePath()
-
-        path.move(to: CGPoint(x: 0, y: 0))
-
-        if (!element.passages.contains(.left)) {
-            path.addLine(to: CGPoint(x: 0, y: 1))
-        } else {
-            path.move(to: CGPoint(x: 0, y: 1))
-        }
-
-        if (!element.passages.contains(.bottom)) {
-            path.addLine(to: CGPoint(x: 1, y: 1))
-        } else {
-            path.move(to: CGPoint(x: 1, y: 1))
-        }
-
-        if (!element.passages.contains(.right)) {
-            path.addLine(to: CGPoint(x: 1, y: 0))
-        } else {
-            path.move(to: CGPoint(x: 1, y: 0))
-        }
-
-        if (!element.passages.contains(.top)) {
-            path.addLine(to: CGPoint(x: 0, y: 0))
-        } else {
-            path.move(to: CGPoint(x: 0, y: 0))
-        }
-
-        // Overlap for unconnected lines fix
-        if (!element.passages.contains(.left)) {
-            path.addLine(to: CGPoint(x: 0, y: 1))
-        }
-
-        return path
+        let edges = SquareEdge.allCases.filter { !element.passages.contains($0) }
+        return CGPath.nodeEdgesPath(edges)
     }
 }
 

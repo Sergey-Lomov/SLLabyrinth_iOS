@@ -14,8 +14,8 @@
             filePath = "../Generator/Sources/SLLabyrinthGenerator/PathsGraph/AreasGraph.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "groupCycled(path:unhandled:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -67,6 +67,22 @@
             startingLineNumber = "47"
             endingLineNumber = "47"
             landmarkName = "handleUnapprovedCycle(_:area:generator:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D0E4A73-CB9C-4AA7-8156-F3E6C4F72A33"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Generator/Sources/SLLabyrinthGenerator/PathsGraph/AreasGraph.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "groupCycled(path:unhandled:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
