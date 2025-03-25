@@ -15,9 +15,6 @@ struct OneWayHolderNode: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                Color.yellow
-                    .frame(geometry.size)
-
                 walls(geometry: geometry)
                 arrows(geometry: geometry)
             }
@@ -27,7 +24,8 @@ struct OneWayHolderNode: View {
     @ViewBuilder
     private func walls(geometry: GeometryProxy) -> some View {
         var transform = CGAffineTransform(scale: geometry)
-        let unscaledPath = CGPath.nodeEdgesPath(element.oneways + element.walls)
+        let notPassages = element.incomes + element.outgoings + element.walls
+        let unscaledPath = CGPath.nodeEdgesPath(notPassages)
         let path = unscaledPath.copy(using: &transform)
 
         if let path = path {
@@ -38,7 +36,7 @@ struct OneWayHolderNode: View {
 
     @ViewBuilder
     private func arrows(geometry: GeometryProxy) -> some View {
-        ForEach(element.oneways, id: \.self) {
+        ForEach(element.outgoings, id: \.self) {
             arrow(geometry: geometry, edge: $0)
         }
     }
@@ -76,7 +74,11 @@ struct OneWayHolderNode_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ZStack(alignment: .center) {
-                let element = OneWayHolder<SquareTopology>(passages: [.top], oneways: [.left, .bottom])
+                let element = OneWayHolder<SquareTopology>(
+                    passages: [.top],
+                    incomes: [],
+                    outgoings: [.left, .bottom]
+                )
                 OneWayHolderNode(element: element)
                     .frame(width: 75, height: 75)
             }

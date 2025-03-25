@@ -10,7 +10,8 @@ import SwiftUI
 
 struct PathsGraphView<T: Topology>: View {
     let graph: PathsGraph<T>
-    let color: Color
+    let biColor: Color
+    let oneColor: Color
     let nodeSize: CGFloat
 
     var vertexSize: CGFloat { nodeSize * 0.3 }
@@ -19,6 +20,7 @@ struct PathsGraphView<T: Topology>: View {
         ZStack {
             GeometryReader { geometry in
                 ForEach(Array(graph.edges), id: \.self) { edge in
+                    let color = graph.isBidirectional(edge) ? biColor : oneColor
                     var transform = CGAffineTransform.identity
                         .translatedBy(x: 0, y: geometry.size.height)
                         .scaledBy(x: nodeSize, y: -nodeSize)

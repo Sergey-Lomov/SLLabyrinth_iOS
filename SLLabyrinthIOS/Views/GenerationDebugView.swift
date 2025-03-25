@@ -26,7 +26,10 @@ struct GenerationDebugView<T: Topology>: View {
                     let scale = scale(geometry: geometry)
 
                     if (showAreas) {
-                        PathsGraphAreasView(areas: generator.isolatedAreas, nodeSize: scale)
+                        PathsGraphAreasView(
+                            areas: generator.isolatedAreas.vertices.toArray(),
+                            nodeSize: scale
+                        )
                     }
 
                     if (showCycles) {
@@ -38,14 +41,16 @@ struct GenerationDebugView<T: Topology>: View {
                     if (showPaths) {
                         PathsGraphView(
                             graph: generator.pathsGraph,
-                            color: Color.yellow,
+                            biColor: Color.yellow,
+                            oneColor: Color.brown,
                             nodeSize: scale)
                     }
 
                     if (showFilteredPaths) {
                         PathsGraphView(
                             graph: generator.filteredGraph,
-                            color: Color.green,
+                            biColor: Color.cyan,
+                            oneColor: Color.mint,
                             nodeSize: scale)
                     }
                 }
@@ -67,8 +72,7 @@ struct GenerationDebugView<T: Topology>: View {
                 }
 
                 Button("Restore") {
-                    generator.restoreSaved()
-                    generator.calculateCyclesAreas()
+                    generator.restoreSavedState()
                     viewId = UUID()
                 }
 
@@ -79,7 +83,7 @@ struct GenerationDebugView<T: Topology>: View {
                 }
 
                 Button("Resolve") {
-                    generator.resolveCyclesAreas()
+                    generator.handleCyclesAreas()
                     viewId = UUID()
                 }
             }
