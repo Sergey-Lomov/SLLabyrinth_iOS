@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E961466F-5DAA-4B98-8B0C-21394CC87849"
-            shouldBeEnabled = "No"
+            uuid = "C7FD44E0-C5F6-4CD7-BBAB-A19EA457DACC"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../Generator/Sources/SLLabyrinthGenerator/Configuration/CycledAreasStrategy/MinLengthCycledAreasStrategy.swift"
+            filePath = "../Generator/Sources/SLLabyrinthGenerator/Superpositions/NodeSuperposition.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "handle(area:generator:)"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "validateRestrictions()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6068B9ED-40D3-45FB-A623-E09D78BC3067"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Generator/Sources/SLLabyrinthGenerator/Superpositions/NodeSuperposition.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "validateRestrictions()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -18,9 +18,7 @@ struct GenerationDebugView<T: Topology>: View {
     @State private var showCycles: Bool = true
 
     var body: some View {
-        VStack {
-            controlPanel()
-
+        HStack {
             ZStack {
                 GeometryReader { geometry in
                     let scale = scale(geometry: geometry)
@@ -58,43 +56,76 @@ struct GenerationDebugView<T: Topology>: View {
         }
         .padding(10)
         .id(viewId)
+
+        controlPanel()
+            .padding(10)
     }
 
     private func controlPanel() -> some View {
         VStack {
-            HStack {
-                Button("Time") {
+            Button("Time") {
+                DispatchQueue.global(qos: .userInitiated).async {
                     let profiler = TimeProfiler()
                     profiler.execute(times: 10) {
                         generator.generateLabyrinth()
                     }
                     profiler.averageLog.printReport()
                 }
-
-                Button("Restore") {
-                    generator.restoreSavedState()
-                    viewId = UUID()
-                }
-
-                Button("Regenerate") {
-                    let log = generator.generateLabyrinth()
-                    log.printReport()
-                    viewId = UUID()
-                }
-
-                Button("Resolve") {
-                    generator.handleCyclesAreas()
-                    viewId = UUID()
-                }
             }
 
-            HStack {
-                Button("Areas") { showAreas = !showAreas }
-                Button("Paths") { showPaths = !showPaths }
-                Button("Filtered") { showFilteredPaths = !showFilteredPaths }
-                Button("Cycled") { showCycles = !showCycles }
+            Button("Regenerate") {
+                let log = generator.generateLabyrinth()
+                log.printReport()
+                viewId = UUID()
             }
+
+            Button("Search issue") {
+                searchIssue()
+            }
+
+            Spacer()
+
+            Button("Areas") { showAreas = !showAreas }
+            Button("Paths") { showPaths = !showPaths }
+            Button("Filtered") { showFilteredPaths = !showFilteredPaths }
+            Button("Cycled") { showCycles = !showCycles }
+
+            Spacer()
+
+            Button("Restore collapse") { restore(.collapse) }
+            Button("Restore paths") { restore(.paths) }
+            Button("Restore isolated") { restore(.isolated) }
+            Button("Restore cycles") { restore(.cycles) }
+
+            Spacer()
+
+            Button("Execute collapse") { execute(.collapse) }
+            Button("Execute paths") { execute(.paths) }
+            Button("Execute isolated") { execute(.isolated) }
+            Button("Execute cycles") { execute(.cycles) }
         }
+    }
+
+    private func execute(_ step: GenerationStep) {
+        generator.executeStep(step)
+        viewId = UUID()
+    }
+
+    private func restore(_ step: GenerationStep) {
+        generator.restoreSavedState(step: step)
+        viewId = UUID()
+    }
+
+    // TODO: Remove testing code
+    private func searchIssue() {
+        var index = 1
+        while generator.isolatedAreas.vertices.count == 1 {
+            generator.generateLabyrinth()
+            print("Generation finished: \(index)")
+            index += 1
+        }
+
+        viewId = UUID()
     }
 
     private func scale(geometry: GeometryProxy) -> CGFloat {
