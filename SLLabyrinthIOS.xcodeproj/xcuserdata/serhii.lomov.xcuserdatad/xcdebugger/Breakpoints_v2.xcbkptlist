@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C7FD44E0-C5F6-4CD7-BBAB-A19EA457DACC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Generator/Sources/SLLabyrinthGenerator/Superpositions/NodeSuperposition.swift"
@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6068B9ED-40D3-45FB-A623-E09D78BC3067"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Generator/Sources/SLLabyrinthGenerator/Superpositions/NodeSuperposition.swift"
@@ -33,6 +33,22 @@
             startingLineNumber = "120"
             endingLineNumber = "120"
             landmarkName = "validateRestrictions()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "58806673-ED6C-493D-8B3D-F6B115C8532C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SLLabyrinthIOS/Views/GenerationDebugView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "controlPanel()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

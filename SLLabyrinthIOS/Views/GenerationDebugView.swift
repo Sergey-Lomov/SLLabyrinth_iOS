@@ -63,15 +63,9 @@ struct GenerationDebugView<T: Topology>: View {
 
     private func controlPanel() -> some View {
         VStack {
-            Button("Time") {
-                DispatchQueue.global(qos: .userInitiated).async {
-                    let profiler = TimeProfiler()
-                    profiler.execute(times: 10) {
-                        generator.generateLabyrinth()
-                    }
-                    profiler.averageLog.printReport()
-                }
-            }
+            Button("Time x10") { profileTime(repeats: 10) }
+
+            Button("Time x50") { profileTime(repeats: 50) }
 
             Button("Regenerate") {
                 let log = generator.generateLabyrinth()
@@ -116,11 +110,36 @@ struct GenerationDebugView<T: Topology>: View {
         viewId = UUID()
     }
 
+    private func profileTime(repeats: Int) {
+        let profiler = TimeProfiler()
+        var current = 1
+        profiler.execute(times: repeats) {
+            let log = generator.generateLabyrinth(saveStates: false)
+            let time = String(format: "%.3f sec", log.time)
+            print("Repeated \(current) / \(repeats). \(time)")
+            current += 1
+            return log
+        }
+
+        if let minLog = profiler.minLog {
+            print("\n---- Minimal log ----")
+            minLog.printReport()
+        }
+
+        if let maxLog = profiler.maxLog {
+            print("\n---- Maximal log ----")
+            maxLog.printReport()
+        }
+
+        print("\n---- Average log ----")
+        profiler.averageLog.printReport()
+    }
+
     // TODO: Remove testing code
     private func searchIssue() {
         var index = 1
         while generator.isolatedAreas.vertices.count == 1 {
-            generator.generateLabyrinth()
+            generator.generateLabyrinth(saveStates: true)
             print("Generation finished: \(index)")
             index += 1
         }

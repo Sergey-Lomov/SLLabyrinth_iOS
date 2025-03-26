@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     static let config = {
-        var config = GeneratorConfiguration<SquareTopology>.basic(size: (30, 30))
+        var config = GeneratorConfiguration<SquareTopology>.basic(size: (40, 40))
 
         config.setWeigth(StraightPathSuperposition<SquareTopology>.self, weight: 5.0)
         config.setWeigth(CornerPathSuperposition<SquareTopology>.self, weight: 2.0)
