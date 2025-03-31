@@ -15,7 +15,7 @@ struct FieldView<T: Topology>: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                ForEach(field.allPoints(), id: \.self) { point in
+                ForEach(field.allPoints().toArray(), id: \.self) { point in
                     let offset = offset(point, geometry: geometry)
                     let element = field.element(at: point)
                     FieldNodeView<T>(element: element)

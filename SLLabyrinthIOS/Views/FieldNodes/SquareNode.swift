@@ -17,11 +17,14 @@ struct SquareNode: View {
             SquareSolidNode()
         case let element as OneWayHolder<SquareTopology>:
             OneWayHolderNode(element: element)
-        case let element as EdgeBasedElement<SquareTopology>:
-            SquareEdgeBasedNode(element: element)
+        case let element as Teleporter<SquareTopology>:
+            TeleporterNode(element: element)
+        case let element as PassagesBasedElement<SquareTopology>:
+            SquarePassagesBasedNode(element: element)
         case is UndefinedElement<SquareTopology>:
             SquareUndefinedNode()
-        default: Text("?")
+        default:
+            Text("?")
         }
     }
 }

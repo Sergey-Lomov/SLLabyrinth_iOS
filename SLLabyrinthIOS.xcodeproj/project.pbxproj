@@ -11,6 +11,19 @@
 		670018AD2D8F4A6F009EEF8E /* OnewaysMergeIsolatedAreasStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018AC2D8F4A6F009EEF8E /* OnewaysMergeIsolatedAreasStrategy.swift */; };
 		670018AF2D8F80A2009EEF8E /* AvailableElementsRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018AE2D8F80A2009EEF8E /* AvailableElementsRestriction.swift */; };
 		670018B32D9086E8009EEF8E /* GlobalMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018B22D9086E8009EEF8E /* GlobalMath.swift */; };
+		670018B92D96412F009EEF8E /* GlobalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018B82D96412F009EEF8E /* GlobalCache.swift */; };
+		670018C32D96FB7E009EEF8E /* Deadend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018BE2D96FB7E009EEF8E /* Deadend.swift */; };
+		670018C42D96FB7E009EEF8E /* CornerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018BD2D96FB7E009EEF8E /* CornerPath.swift */; };
+		670018C52D96FB7E009EEF8E /* StraightPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018C12D96FB7E009EEF8E /* StraightPath.swift */; };
+		670018C62D96FB7E009EEF8E /* Solid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018C02D96FB7E009EEF8E /* Solid.swift */; };
+		670018C72D96FB7E009EEF8E /* Junction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018BF2D96FB7E009EEF8E /* Junction.swift */; };
+		670018CB2D96FB9E009EEF8E /* OneWayHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018C92D96FB9E009EEF8E /* OneWayHolder.swift */; };
+		670018CD2D96FBB1009EEF8E /* OneWayHolderSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018CC2D96FBB1009EEF8E /* OneWayHolderSuperposition.swift */; };
+		670018CF2D96FBDA009EEF8E /* OneWayRestrictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018CE2D96FBD1009EEF8E /* OneWayRestrictions.swift */; };
+		670018DB2D972825009EEF8E /* PassagesBasedSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018DA2D97281A009EEF8E /* PassagesBasedSuperposition.swift */; };
+		670018E22D97827A009EEF8E /* PassagesInstantiableSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018E12D97827A009EEF8E /* PassagesInstantiableSuperposition.swift */; };
+		670018E62D9784A9009EEF8E /* PassagesInstantiableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018E52D9784A9009EEF8E /* PassagesInstantiableElement.swift */; };
+		670018F42D9887E4009EEF8E /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018F32D9887E4009EEF8E /* Float+Extensions.swift */; };
 		6739D8862D83A5A4009CAEE4 /* IdEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D87E2D83A5A4009CAEE4 /* IdEquatable.swift */; };
 		6739D8872D83A5A4009CAEE4 /* TimeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8792D83A5A4009CAEE4 /* TimeLog.swift */; };
 		6739D8882D83A5A4009CAEE4 /* DictionaryBasedField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8752D83A5A4009CAEE4 /* DictionaryBasedField.swift */; };
@@ -26,27 +39,22 @@
 		6739D8942D83A5A4009CAEE4 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D85F2D83A5A4009CAEE4 /* Int+Extensions.swift */; };
 		6739D8952D83A5A4009CAEE4 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D85E2D83A5A4009CAEE4 /* Dictionary+Extensions.swift */; };
 		6739D8972D83A5A4009CAEE4 /* NodeSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D86E2D83A5A4009CAEE4 /* NodeSuperposition.swift */; };
-		6739D8982D83A5A4009CAEE4 /* Deadend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8532D83A5A4009CAEE4 /* Deadend.swift */; };
 		6739D8992D83A5A4009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D84E2D83A5A4009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift */; };
 		6739D89A2D83A5A4009CAEE4 /* SquareFieldPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D87F2D83A5A4009CAEE4 /* SquareFieldPrinter.swift */; };
 		6739D89B2D83A5A4009CAEE4 /* ElementRestirction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8692D83A5A4009CAEE4 /* ElementRestirction.swift */; };
 		6739D89C2D83A5A4009CAEE4 /* FieldAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8822D83A5A4009CAEE4 /* FieldAnalyzer.swift */; };
 		6739D89D2D83A5A4009CAEE4 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D85D2D83A5A4009CAEE4 /* Collection+Extensions.swift */; };
-		6739D89E2D83A5A4009CAEE4 /* Junction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8542D83A5A4009CAEE4 /* Junction.swift */; };
 		6739D89F2D83A5A4009CAEE4 /* LabyrinthElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8592D83A5A4009CAEE4 /* LabyrinthElement.swift */; };
 		6739D8A02D83A5A4009CAEE4 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8762D83A5A4009CAEE4 /* Field.swift */; };
 		6739D8A22D83A5A4009CAEE4 /* ZeroRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8802D83A5A4009CAEE4 /* ZeroRepresentable.swift */; };
 		6739D8A42D83A5A4009CAEE4 /* SquareField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8712D83A5A4009CAEE4 /* SquareField.swift */; };
 		6739D8A52D83A5A4009CAEE4 /* SquareEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8702D83A5A4009CAEE4 /* SquareEdge.swift */; };
-		6739D8A62D83A5A4009CAEE4 /* CornerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8522D83A5A4009CAEE4 /* CornerPath.swift */; };
 		6739D8A72D83A5A4009CAEE4 /* UndefinedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D85A2D83A5A4009CAEE4 /* UndefinedElement.swift */; };
 		6739D8A92D83A5A4009CAEE4 /* Topology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8772D83A5A4009CAEE4 /* Topology.swift */; };
 		6739D8AA2D83A5A4009CAEE4 /* SquarePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8722D83A5A4009CAEE4 /* SquarePoint.swift */; };
 		6739D8AB2D83A5A4009CAEE4 /* GeneratorConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8502D83A5A4009CAEE4 /* GeneratorConfiguration.swift */; };
-		6739D8AC2D83A5A4009CAEE4 /* Solid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8552D83A5A4009CAEE4 /* Solid.swift */; };
-		6739D8AD2D83A5A4009CAEE4 /* StraightPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8562D83A5A4009CAEE4 /* StraightPath.swift */; };
 		6739D8AE2D83A5A4009CAEE4 /* ElementSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D86D2D83A5A4009CAEE4 /* ElementSuperposition.swift */; };
-		6739D8AF2D83A5A4009CAEE4 /* EdgeBasedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8582D83A5A4009CAEE4 /* EdgeBasedElement.swift */; };
+		6739D8AF2D83A5A4009CAEE4 /* PassagesBasedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8582D83A5A4009CAEE4 /* PassagesBasedElement.swift */; };
 		6739D8B02D83A5A4009CAEE4 /* SLLabyrinthGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8832D83A5A4009CAEE4 /* SLLabyrinthGenerator.swift */; };
 		6739D8B12D83A5A4009CAEE4 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D87D2D83A5A4009CAEE4 /* Cacheable.swift */; };
 		6739D8B72D85BA96009CAEE4 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8B62D85BA96009CAEE4 /* Graph.swift */; };
@@ -57,7 +65,6 @@
 		67E6867C2D8B330F00E30A18 /* ElementsWeightsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6867B2D8B330F00E30A18 /* ElementsWeightsContainer.swift */; };
 		67E6867E2D8B357D00E30A18 /* RandomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6867D2D8B357D00E30A18 /* RandomPicker.swift */; };
 		67E686802D8B456100E30A18 /* CategorizedSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6867F2D8B456100E30A18 /* CategorizedSuperposition.swift */; };
-		67E686822D8B8A4400E30A18 /* OneWayHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E686812D8B8A4400E30A18 /* OneWayHolder.swift */; };
 		67E686842D8B95F500E30A18 /* BinomialCoefficient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E686832D8B95F500E30A18 /* BinomialCoefficient.swift */; };
 		67E6868A2D8BA75C00E30A18 /* IdHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E686892D8BA75C00E30A18 /* IdHashable.swift */; };
 /* End PBXBuildFile section */
@@ -84,15 +91,23 @@
 		670018AC2D8F4A6F009EEF8E /* OnewaysMergeIsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnewaysMergeIsolatedAreasStrategy.swift; sourceTree = "<group>"; };
 		670018AE2D8F80A2009EEF8E /* AvailableElementsRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableElementsRestriction.swift; sourceTree = "<group>"; };
 		670018B22D9086E8009EEF8E /* GlobalMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalMath.swift; sourceTree = "<group>"; };
+		670018B82D96412F009EEF8E /* GlobalCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalCache.swift; sourceTree = "<group>"; };
+		670018BD2D96FB7E009EEF8E /* CornerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerPath.swift; sourceTree = "<group>"; };
+		670018BE2D96FB7E009EEF8E /* Deadend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadend.swift; sourceTree = "<group>"; };
+		670018BF2D96FB7E009EEF8E /* Junction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Junction.swift; sourceTree = "<group>"; };
+		670018C02D96FB7E009EEF8E /* Solid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solid.swift; sourceTree = "<group>"; };
+		670018C12D96FB7E009EEF8E /* StraightPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraightPath.swift; sourceTree = "<group>"; };
+		670018C92D96FB9E009EEF8E /* OneWayHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWayHolder.swift; sourceTree = "<group>"; };
+		670018CC2D96FBB1009EEF8E /* OneWayHolderSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWayHolderSuperposition.swift; sourceTree = "<group>"; };
+		670018CE2D96FBD1009EEF8E /* OneWayRestrictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWayRestrictions.swift; sourceTree = "<group>"; };
+		670018DA2D97281A009EEF8E /* PassagesBasedSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagesBasedSuperposition.swift; sourceTree = "<group>"; };
+		670018E12D97827A009EEF8E /* PassagesInstantiableSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagesInstantiableSuperposition.swift; sourceTree = "<group>"; };
+		670018E52D9784A9009EEF8E /* PassagesInstantiableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PassagesInstantiableElement.swift; path = ../Generator/Sources/SLLabyrinthGenerator/Elements/PassagesInstantiableElement.swift; sourceTree = SOURCE_ROOT; };
+		670018F32D9887E4009EEF8E /* Float+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
 		6739D84D2D83A5A4009CAEE4 /* IsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsolatedAreasStrategy.swift; sourceTree = "<group>"; };
 		6739D84E2D83A5A4009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMergeIsolatedAreasStrategy.swift; sourceTree = "<group>"; };
 		6739D8502D83A5A4009CAEE4 /* GeneratorConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorConfiguration.swift; sourceTree = "<group>"; };
-		6739D8522D83A5A4009CAEE4 /* CornerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerPath.swift; sourceTree = "<group>"; };
-		6739D8532D83A5A4009CAEE4 /* Deadend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadend.swift; sourceTree = "<group>"; };
-		6739D8542D83A5A4009CAEE4 /* Junction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Junction.swift; sourceTree = "<group>"; };
-		6739D8552D83A5A4009CAEE4 /* Solid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solid.swift; sourceTree = "<group>"; };
-		6739D8562D83A5A4009CAEE4 /* StraightPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraightPath.swift; sourceTree = "<group>"; };
-		6739D8582D83A5A4009CAEE4 /* EdgeBasedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBasedElement.swift; sourceTree = "<group>"; };
+		6739D8582D83A5A4009CAEE4 /* PassagesBasedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagesBasedElement.swift; sourceTree = "<group>"; };
 		6739D8592D83A5A4009CAEE4 /* LabyrinthElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabyrinthElement.swift; sourceTree = "<group>"; };
 		6739D85A2D83A5A4009CAEE4 /* UndefinedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndefinedElement.swift; sourceTree = "<group>"; };
 		6739D85C2D83A5A4009CAEE4 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
@@ -133,12 +148,16 @@
 		67E6867B2D8B330F00E30A18 /* ElementsWeightsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsWeightsContainer.swift; sourceTree = "<group>"; };
 		67E6867D2D8B357D00E30A18 /* RandomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPicker.swift; sourceTree = "<group>"; };
 		67E6867F2D8B456100E30A18 /* CategorizedSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizedSuperposition.swift; sourceTree = "<group>"; };
-		67E686812D8B8A4400E30A18 /* OneWayHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWayHolder.swift; sourceTree = "<group>"; };
 		67E686832D8B95F500E30A18 /* BinomialCoefficient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinomialCoefficient.swift; sourceTree = "<group>"; };
 		67E686892D8BA75C00E30A18 /* IdHashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdHashable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		670018DE2D977FE5009EEF8E /* Teleporter */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Teleporter;
+			sourceTree = "<group>";
+		};
 		6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SLLabyrinthIOS;
@@ -191,6 +210,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		670018C22D96FB7E009EEF8E /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				670018BD2D96FB7E009EEF8E /* CornerPath.swift */,
+				670018BE2D96FB7E009EEF8E /* Deadend.swift */,
+				670018BF2D96FB7E009EEF8E /* Junction.swift */,
+				670018C02D96FB7E009EEF8E /* Solid.swift */,
+				670018C12D96FB7E009EEF8E /* StraightPath.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		670018CA2D96FB9E009EEF8E /* OneWay */ = {
+			isa = PBXGroup;
+			children = (
+				670018CE2D96FBD1009EEF8E /* OneWayRestrictions.swift */,
+				670018C92D96FB9E009EEF8E /* OneWayHolder.swift */,
+				670018CC2D96FBB1009EEF8E /* OneWayHolderSuperposition.swift */,
+			);
+			path = OneWay;
+			sourceTree = "<group>";
+		};
 		6739D84F2D83A5A4009CAEE4 /* IsolatedAreasStrategy */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,12 +257,9 @@
 		6739D8572D83A5A4009CAEE4 /* Concrete */ = {
 			isa = PBXGroup;
 			children = (
-				6739D8522D83A5A4009CAEE4 /* CornerPath.swift */,
-				6739D8532D83A5A4009CAEE4 /* Deadend.swift */,
-				6739D8542D83A5A4009CAEE4 /* Junction.swift */,
-				6739D8552D83A5A4009CAEE4 /* Solid.swift */,
-				6739D8562D83A5A4009CAEE4 /* StraightPath.swift */,
-				67E686812D8B8A4400E30A18 /* OneWayHolder.swift */,
+				670018DE2D977FE5009EEF8E /* Teleporter */,
+				670018C22D96FB7E009EEF8E /* Basic */,
+				670018CA2D96FB9E009EEF8E /* OneWay */,
 			);
 			path = Concrete;
 			sourceTree = "<group>";
@@ -230,7 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				6739D8572D83A5A4009CAEE4 /* Concrete */,
-				6739D8582D83A5A4009CAEE4 /* EdgeBasedElement.swift */,
+				670018E52D9784A9009EEF8E /* PassagesInstantiableElement.swift */,
+				6739D8582D83A5A4009CAEE4 /* PassagesBasedElement.swift */,
 				6739D8592D83A5A4009CAEE4 /* LabyrinthElement.swift */,
 				6739D85A2D83A5A4009CAEE4 /* UndefinedElement.swift */,
 			);
@@ -245,6 +284,7 @@
 				6739D85E2D83A5A4009CAEE4 /* Dictionary+Extensions.swift */,
 				6739D85F2D83A5A4009CAEE4 /* Int+Extensions.swift */,
 				6739D8602D83A5A4009CAEE4 /* Set+Extensions.swift */,
+				670018F32D9887E4009EEF8E /* Float+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -275,6 +315,8 @@
 			isa = PBXGroup;
 			children = (
 				6739D86C2D83A5A4009CAEE4 /* Restrictions */,
+				670018E12D97827A009EEF8E /* PassagesInstantiableSuperposition.swift */,
+				670018DA2D97281A009EEF8E /* PassagesBasedSuperposition.swift */,
 				6739D86D2D83A5A4009CAEE4 /* ElementSuperposition.swift */,
 				6739D86E2D83A5A4009CAEE4 /* NodeSuperposition.swift */,
 				67E686792D8AF56400E30A18 /* MinEntropyContainer.swift */,
@@ -327,6 +369,7 @@
 				67E6867D2D8B357D00E30A18 /* RandomPicker.swift */,
 				67E686832D8B95F500E30A18 /* BinomialCoefficient.swift */,
 				670018B22D9086E8009EEF8E /* GlobalMath.swift */,
+				670018B82D96412F009EEF8E /* GlobalCache.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -395,6 +438,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				670018DE2D977FE5009EEF8E /* Teleporter */,
 				6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */,
 				67E6868B2D8DBFC900E30A18 /* PathsGraph */,
 				67E6868C2D8DBFE500E30A18 /* AreasGraph */,
@@ -532,7 +576,10 @@
 				6739D8872D83A5A4009CAEE4 /* TimeLog.swift in Sources */,
 				6739D8882D83A5A4009CAEE4 /* DictionaryBasedField.swift in Sources */,
 				6739D88A2D83A5A4009CAEE4 /* TimeProfiler.swift in Sources */,
+				670018E22D97827A009EEF8E /* PassagesInstantiableSuperposition.swift in Sources */,
+				670018CB2D96FB9E009EEF8E /* OneWayHolder.swift in Sources */,
 				670018B32D9086E8009EEF8E /* GlobalMath.swift in Sources */,
+				670018CD2D96FBB1009EEF8E /* OneWayHolderSuperposition.swift in Sources */,
 				6739D88B2D83A5A4009CAEE4 /* SuperpositionRestriction.swift in Sources */,
 				6739D88D2D83A5A4009CAEE4 /* Set+Extensions.swift in Sources */,
 				6739D88E2D83A5A4009CAEE4 /* NodeRestriction.swift in Sources */,
@@ -545,19 +592,25 @@
 				6739D8942D83A5A4009CAEE4 /* Int+Extensions.swift in Sources */,
 				6739D8952D83A5A4009CAEE4 /* Dictionary+Extensions.swift in Sources */,
 				67E6867C2D8B330F00E30A18 /* ElementsWeightsContainer.swift in Sources */,
+				670018DB2D972825009EEF8E /* PassagesBasedSuperposition.swift in Sources */,
 				670018AF2D8F80A2009EEF8E /* AvailableElementsRestriction.swift in Sources */,
 				67E686842D8B95F500E30A18 /* BinomialCoefficient.swift in Sources */,
 				67E6867E2D8B357D00E30A18 /* RandomPicker.swift in Sources */,
 				6739D8972D83A5A4009CAEE4 /* NodeSuperposition.swift in Sources */,
-				6739D8982D83A5A4009CAEE4 /* Deadend.swift in Sources */,
 				67E6868A2D8BA75C00E30A18 /* IdHashable.swift in Sources */,
+				670018B92D96412F009EEF8E /* GlobalCache.swift in Sources */,
 				6739D8992D83A5A4009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift in Sources */,
 				6739D89A2D83A5A4009CAEE4 /* SquareFieldPrinter.swift in Sources */,
+				670018C32D96FB7E009EEF8E /* Deadend.swift in Sources */,
+				670018C42D96FB7E009EEF8E /* CornerPath.swift in Sources */,
+				670018C52D96FB7E009EEF8E /* StraightPath.swift in Sources */,
+				670018C62D96FB7E009EEF8E /* Solid.swift in Sources */,
+				670018C72D96FB7E009EEF8E /* Junction.swift in Sources */,
 				6739D89B2D83A5A4009CAEE4 /* ElementRestirction.swift in Sources */,
+				670018CF2D96FBDA009EEF8E /* OneWayRestrictions.swift in Sources */,
 				67E6867A2D8AF56400E30A18 /* MinEntropyContainer.swift in Sources */,
 				6739D89C2D83A5A4009CAEE4 /* FieldAnalyzer.swift in Sources */,
 				6739D89D2D83A5A4009CAEE4 /* Collection+Extensions.swift in Sources */,
-				6739D89E2D83A5A4009CAEE4 /* Junction.swift in Sources */,
 				6739D89F2D83A5A4009CAEE4 /* LabyrinthElement.swift in Sources */,
 				67E686802D8B456100E30A18 /* CategorizedSuperposition.swift in Sources */,
 				6739D8A02D83A5A4009CAEE4 /* Field.swift in Sources */,
@@ -565,20 +618,18 @@
 				6739D8A42D83A5A4009CAEE4 /* SquareField.swift in Sources */,
 				6739D8BB2D85CA20009CAEE4 /* GraphPath.swift in Sources */,
 				6739D8A52D83A5A4009CAEE4 /* SquareEdge.swift in Sources */,
-				6739D8A62D83A5A4009CAEE4 /* CornerPath.swift in Sources */,
 				6739D8A72D83A5A4009CAEE4 /* UndefinedElement.swift in Sources */,
 				6739D8A92D83A5A4009CAEE4 /* Topology.swift in Sources */,
 				6739D8AA2D83A5A4009CAEE4 /* SquarePoint.swift in Sources */,
 				6739D8AB2D83A5A4009CAEE4 /* GeneratorConfiguration.swift in Sources */,
-				6739D8AC2D83A5A4009CAEE4 /* Solid.swift in Sources */,
-				6739D8AD2D83A5A4009CAEE4 /* StraightPath.swift in Sources */,
 				6739D8AE2D83A5A4009CAEE4 /* ElementSuperposition.swift in Sources */,
-				6739D8AF2D83A5A4009CAEE4 /* EdgeBasedElement.swift in Sources */,
-				67E686822D8B8A4400E30A18 /* OneWayHolder.swift in Sources */,
+				6739D8AF2D83A5A4009CAEE4 /* PassagesBasedElement.swift in Sources */,
 				670018AB2D8F3C92009EEF8E /* SizeBasedIsolatedAreasStrategy.swift in Sources */,
 				6739D8B02D83A5A4009CAEE4 /* SLLabyrinthGenerator.swift in Sources */,
 				6739D8B12D83A5A4009CAEE4 /* Cacheable.swift in Sources */,
 				6739D8BE2D88EE2D009CAEE4 /* CycledAreasStrategy.swift in Sources */,
+				670018E62D9784A9009EEF8E /* PassagesInstantiableElement.swift in Sources */,
+				670018F42D9887E4009EEF8E /* Float+Extensions.swift in Sources */,
 				6739D8C02D88EEDE009CAEE4 /* MinLengthCycledAreasStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,19 @@ struct GenerationDebugView<T: Topology>: View {
     @State private var showAreas: Bool = true
     @State private var showPaths: Bool = false
     @State private var showFilteredPaths: Bool = false
-    @State private var showCycles: Bool = true
+    @State private var showCycles: Bool = false
+
+    private let pathsColors = EdgesColors(
+        bidirectional: .yellow,
+        oneway: .brown,
+        teleport: .red
+    )
+
+    private let filteredPathsColors = EdgesColors(
+        bidirectional: .blue,
+        oneway: .cyan,
+        teleport: .green
+    )
 
     var body: some View {
         HStack {
@@ -39,16 +51,14 @@ struct GenerationDebugView<T: Topology>: View {
                     if (showPaths) {
                         PathsGraphView(
                             graph: generator.pathsGraph,
-                            biColor: Color.yellow,
-                            oneColor: Color.brown,
+                            colors: pathsColors,
                             nodeSize: scale)
                     }
 
                     if (showFilteredPaths) {
                         PathsGraphView(
                             graph: generator.filteredGraph,
-                            biColor: Color.cyan,
-                            oneColor: Color.mint,
+                            colors: filteredPathsColors,
                             nodeSize: scale)
                     }
                 }
@@ -65,7 +75,7 @@ struct GenerationDebugView<T: Topology>: View {
         VStack {
             Button("Time x10") { profileTime(repeats: 10) }
 
-            Button("Time x50") { profileTime(repeats: 50) }
+            Button("Time x50") { profileTime(repeats: 50, mainThread: true) }
 
             Button("Regenerate") {
                 let log = generator.generateLabyrinth()
@@ -108,6 +118,16 @@ struct GenerationDebugView<T: Topology>: View {
     private func restore(_ step: GenerationStep) {
         generator.restoreSavedState(step: step)
         viewId = UUID()
+    }
+
+    private func profileTime(repeats: Int, mainThread: Bool) {
+        if mainThread {
+            profileTime(repeats: repeats)
+        } else {
+            DispatchQueue.global(qos: .userInitiated).async {
+                profileTime(repeats: repeats)
+            }
+        }
     }
 
     private func profileTime(repeats: Int) {

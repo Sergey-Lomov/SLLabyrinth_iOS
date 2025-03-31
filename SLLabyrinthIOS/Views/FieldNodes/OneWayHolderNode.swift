@@ -77,7 +77,8 @@ struct OneWayHolderNode_Previews: PreviewProvider {
                 let element = OneWayHolder<SquareTopology>(
                     passages: [.top],
                     incomes: [],
-                    outgoings: [.left, .bottom]
+                    outgoings: [.left, .bottom],
+                    walls: [.right]
                 )
                 OneWayHolderNode(element: element)
                     .frame(width: 75, height: 75)

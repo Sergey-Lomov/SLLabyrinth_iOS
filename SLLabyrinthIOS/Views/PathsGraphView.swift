@@ -8,10 +8,17 @@
 import Foundation
 import SwiftUI
 
+struct EdgesColors {
+    let bidirectional: Color
+    let oneway: Color
+    let teleport: Color
+}
+
 struct PathsGraphView<T: Topology>: View {
+    private let strokeStyle = StrokeStyle(lineWidth: 4, lineCap: .round, lineJoin: .round)
+
     let graph: PathsGraph<T>
-    let biColor: Color
-    let oneColor: Color
+    let colors: EdgesColors
     let nodeSize: CGFloat
 
     var vertexSize: CGFloat { nodeSize * 0.3 }
@@ -20,14 +27,12 @@ struct PathsGraphView<T: Topology>: View {
         ZStack {
             GeometryReader { geometry in
                 ForEach(Array(graph.edges), id: \.self) { edge in
-                    let color = graph.isBidirectional(edge) ? biColor : oneColor
-                    var transform = CGAffineTransform.identity
-                        .translatedBy(x: 0, y: geometry.size.height)
-                        .scaledBy(x: nodeSize, y: -nodeSize)
+                    var transform = edgeTransform(edge, geometry: geometry)
                     let path = edgePath(edge).copy(using: &transform)
+
                     if let path = path {
                         Path(path)
-                            .stroke(color, lineWidth: 4)
+                            .stroke(edgeColor(edge), style: strokeStyle)
                             .frame(width: 10, height: 10)
                     }
                 }
@@ -41,6 +46,22 @@ struct PathsGraphView<T: Topology>: View {
                 }
             }
         }
+    }
+
+    private func edgeColor(_ edge: PathsGraphEdge<T>) -> Color {
+        switch edge.type {
+        case .common:
+            return graph.isBidirectional(edge) ? colors.bidirectional : colors.oneway
+        case .teleport:
+            return colors.teleport
+        }
+    }
+
+    private func edgeTransform(_ edge: PathsGraphEdge<T>, geometry: GeometryProxy) -> CGAffineTransform {
+        let delta = edge.type == .teleport ? CGFloat(nodeSize * 0.05) : CGFloat(0)
+        return CGAffineTransform.identity
+            .translatedBy(x: delta, y: geometry.size.height + delta)
+            .scaledBy(x: nodeSize, y: -nodeSize)
     }
 
     private func offset(_ point: T.Point, geometry: GeometryProxy) -> CGPoint {
