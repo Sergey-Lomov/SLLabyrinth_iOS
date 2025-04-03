@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     static let config = {
-        var config = GeneratorConfiguration<SquareTopology>.basic(size: (10, 10))
+        var config = GeneratorConfiguration<SquareTopology>.basic(size: (40, 40))
 
         config.setWeigth(StraightPathSuperposition<SquareTopology>.self, weight: 5.0)
         config.setWeigth(CornerPathSuperposition<SquareTopology>.self, weight: 2.0)
@@ -21,8 +21,10 @@ struct ContentView: View {
         let isolatedStrategy = SizeBasedIsolatedAreasStrategy<SquareTopology>()
         let randomMerge = RandomMergeIsolatedAreasStrategy<SquareTopology>()
         let onewayMerge = OnewaysMergeIsolatedAreasStrategy<SquareTopology>()
+        let teleportMerge = TeleporterIsolatedAreasStrategy<SquareTopology>(allowOneway: true)
         isolatedStrategy.add(from: 0, to: 1, weight: 1, strategy: randomMerge)
         isolatedStrategy.add(from: 0.075, to: 1, weight: 1, strategy: onewayMerge)
+        isolatedStrategy.add(from: 0.1, to: 1, weight: 0.5, strategy: teleportMerge)
         config.isolatedAreasStrategy = isolatedStrategy
 
         return config

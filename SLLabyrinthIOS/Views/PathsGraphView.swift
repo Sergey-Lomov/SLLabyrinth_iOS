@@ -50,15 +50,18 @@ struct PathsGraphView<T: Topology>: View {
 
     private func edgeColor(_ edge: PathsGraphEdge<T>) -> Color {
         switch edge.type {
-        case .common:
-            return graph.isBidirectional(edge) ? colors.bidirectional : colors.oneway
-        case .teleport:
+        case PathsEdgeType.onewayPasssage:
+            return colors.oneway
+        case PathsEdgeType.teleporter:
             return colors.teleport
+        default:
+            return colors.bidirectional
         }
     }
 
     private func edgeTransform(_ edge: PathsGraphEdge<T>, geometry: GeometryProxy) -> CGAffineTransform {
-        let delta = edge.type == .teleport ? CGFloat(nodeSize * 0.05) : CGFloat(0)
+        let isTeleportEdge = edge.type == PathsEdgeType.teleporter
+        let delta = isTeleportEdge ? CGFloat(nodeSize * 0.05) : CGFloat(0)
         return CGAffineTransform.identity
             .translatedBy(x: delta, y: geometry.size.height + delta)
             .scaledBy(x: nodeSize, y: -nodeSize)
