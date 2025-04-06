@@ -9,9 +9,8 @@ import Foundation
 import SwiftUI
 
 struct EdgesColors {
-    let bidirectional: Color
-    let oneway: Color
-    let teleport: Color
+    let map: Dictionary<PathsEdgeType, Color>
+    let undefined: Color
 }
 
 struct PathsGraphView<T: Topology>: View {
@@ -30,9 +29,10 @@ struct PathsGraphView<T: Topology>: View {
                     var transform = edgeTransform(edge, geometry: geometry)
                     let path = edgePath(edge).copy(using: &transform)
 
+                    let color = colors.map[edge.type] ?? colors.undefined
                     if let path = path {
                         Path(path)
-                            .stroke(edgeColor(edge), style: strokeStyle)
+                            .stroke(color, style: strokeStyle)
                             .frame(width: 10, height: 10)
                     }
                 }
@@ -48,19 +48,8 @@ struct PathsGraphView<T: Topology>: View {
         }
     }
 
-    private func edgeColor(_ edge: PathsGraphEdge<T>) -> Color {
-        switch edge.type {
-        case PathsEdgeType.onewayPasssage:
-            return colors.oneway
-        case PathsEdgeType.teleporter:
-            return colors.teleport
-        default:
-            return colors.bidirectional
-        }
-    }
-
     private func edgeTransform(_ edge: PathsGraphEdge<T>, geometry: GeometryProxy) -> CGAffineTransform {
-        let isTeleportEdge = edge.type == PathsEdgeType.teleporter
+        let isTeleportEdge = edge.type == .onewayTeleporter || edge.type == .bidirectionalTeleporter
         let delta = isTeleportEdge ? CGFloat(nodeSize * 0.05) : CGFloat(0)
         return CGAffineTransform.identity
             .translatedBy(x: delta, y: geometry.size.height + delta)

@@ -11,11 +11,15 @@ struct ContentView: View {
     static let config = {
         var config = GeneratorConfiguration<SquareTopology>.basic(size: (40, 40))
 
+        var provider = config.superpositionsProvider
+        provider.reqisterSuperposition(OneWayHolderSuperposition<SquareTopology>.self)
+        provider.reqisterSuperposition(TeleporterSuperposition<SquareTopology>.self)
+
         config.setWeigth(StraightPathSuperposition<SquareTopology>.self, weight: 5.0)
         config.setWeigth(CornerPathSuperposition<SquareTopology>.self, weight: 2.0)
         config.setWeigth(JunctionSuperposition<SquareTopology>.self, weight: 1.0)
         config.setWeigth(DeadendSuperposition<SquareTopology>.self, weight: 0.5)
-        config.setWeigth(TeleporterSuperposition<SquareTopology>.self, weight: 0.03)
+        config.setWeigth(TeleporterSuperposition<SquareTopology>.self, weight: 0.01)
         config.setWeigth(OneWayHolderSuperposition<SquareTopology>.self, weight: 0.04)
 
         let isolatedStrategy = SizeBasedIsolatedAreasStrategy<SquareTopology>()

@@ -17,16 +17,15 @@ struct GenerationDebugView<T: Topology>: View {
     @State private var showFilteredPaths: Bool = false
     @State private var showCycles: Bool = false
 
-    private let pathsColors = EdgesColors(
-        bidirectional: .yellow,
-        oneway: .brown,
-        teleport: .red
-    )
+    private let pathsGraphColors = EdgesColors(
+        map: [
+            .passage : .yellow,
+            .onewayPasssage : .brown,
+            .bidirectionalTeleporter : .orange,
+            .onewayTeleporter : .red
 
-    private let filteredPathsColors = EdgesColors(
-        bidirectional: .blue,
-        oneway: .cyan,
-        teleport: .green
+        ],
+        undefined: Color.white
     )
 
     var body: some View {
@@ -51,14 +50,14 @@ struct GenerationDebugView<T: Topology>: View {
                     if (showPaths) {
                         PathsGraphView(
                             graph: generator.pathsGraph,
-                            colors: pathsColors,
+                            colors: pathsGraphColors,
                             nodeSize: scale)
                     }
 
                     if (showFilteredPaths) {
                         PathsGraphView(
                             graph: generator.filteredGraph,
-                            colors: filteredPathsColors,
+                            colors: pathsGraphColors,
                             nodeSize: scale)
                     }
                 }
@@ -75,7 +74,9 @@ struct GenerationDebugView<T: Topology>: View {
         VStack {
             Button("Time x10") { profileTime(repeats: 10) }
 
-            Button("Time x50") { profileTime(repeats: 50, mainThread: true) }
+            Button("Time x50 (main)") { profileTime(repeats: 50, mainThread: true) }
+
+            Button("Time x50 (back)") { profileTime(repeats: 50, mainThread: false) }
 
             Button("Regenerate") {
                 let log = generator.generateLabyrinth()
@@ -155,12 +156,18 @@ struct GenerationDebugView<T: Topology>: View {
         profiler.averageLog.printReport()
     }
 
-    // TODO: Remove testing code
     private func searchIssue() {
         var index = 1
-        while generator.isolatedAreas.vertices.count == 1 {
+        var issue = false
+        while !issue {
             generator.generateLabyrinth(saveStates: true)
             print("Generation finished: \(index)")
+            issue = generator.field.allPoints().contains() { point in
+                guard let element = generator.field.element(at: point) else {
+                    return true
+                }
+                return T.Field.Element.isUndefined(element)
+            }
             index += 1
         }
 

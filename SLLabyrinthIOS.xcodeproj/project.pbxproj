@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		670018AB2D8F3C92009EEF8E /* SizeBasedIsolatedAreasStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018AA2D8F3C92009EEF8E /* SizeBasedIsolatedAreasStrategy.swift */; };
 		670018AD2D8F4A6F009EEF8E /* OnewaysMergeIsolatedAreasStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018AC2D8F4A6F009EEF8E /* OnewaysMergeIsolatedAreasStrategy.swift */; };
-		670018AF2D8F80A2009EEF8E /* AvailableElementsRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018AE2D8F80A2009EEF8E /* AvailableElementsRestriction.swift */; };
 		670018B32D9086E8009EEF8E /* GlobalMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018B22D9086E8009EEF8E /* GlobalMath.swift */; };
 		670018B92D96412F009EEF8E /* GlobalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018B82D96412F009EEF8E /* GlobalCache.swift */; };
 		670018C32D96FB7E009EEF8E /* Deadend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018BE2D96FB7E009EEF8E /* Deadend.swift */; };
@@ -25,6 +24,9 @@
 		670018E62D9784A9009EEF8E /* PassagesInstantiableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018E52D9784A9009EEF8E /* PassagesInstantiableElement.swift */; };
 		670018F42D9887E4009EEF8E /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018F32D9887E4009EEF8E /* Float+Extensions.swift */; };
 		670018F62D9AC643009EEF8E /* TeleporterIsolatedAreasStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670018F52D9AC643009EEF8E /* TeleporterIsolatedAreasStrategy.swift */; };
+		670019012DA18F45009EEF8E /* ElementsAvailabilityRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670019002DA18F45009EEF8E /* ElementsAvailabilityRestriction.swift */; };
+		670019032DA1909C009EEF8E /* PassagesElementRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670019022DA1909C009EEF8E /* PassagesElementRestriction.swift */; };
+		670019052DA1973E009EEF8E /* ConnectionPreventRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670019042DA1973E009EEF8E /* ConnectionPreventRestriction.swift */; };
 		6739D8862D83A5A4009CAEE4 /* IdEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D87E2D83A5A4009CAEE4 /* IdEquatable.swift */; };
 		6739D8872D83A5A4009CAEE4 /* TimeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8792D83A5A4009CAEE4 /* TimeLog.swift */; };
 		6739D8882D83A5A4009CAEE4 /* DictionaryBasedField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8752D83A5A4009CAEE4 /* DictionaryBasedField.swift */; };
@@ -90,7 +92,6 @@
 /* Begin PBXFileReference section */
 		670018AA2D8F3C92009EEF8E /* SizeBasedIsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeBasedIsolatedAreasStrategy.swift; sourceTree = "<group>"; };
 		670018AC2D8F4A6F009EEF8E /* OnewaysMergeIsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnewaysMergeIsolatedAreasStrategy.swift; sourceTree = "<group>"; };
-		670018AE2D8F80A2009EEF8E /* AvailableElementsRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableElementsRestriction.swift; sourceTree = "<group>"; };
 		670018B22D9086E8009EEF8E /* GlobalMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalMath.swift; sourceTree = "<group>"; };
 		670018B82D96412F009EEF8E /* GlobalCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalCache.swift; sourceTree = "<group>"; };
 		670018BD2D96FB7E009EEF8E /* CornerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerPath.swift; sourceTree = "<group>"; };
@@ -106,6 +107,9 @@
 		670018E52D9784A9009EEF8E /* PassagesInstantiableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PassagesInstantiableElement.swift; path = ../Generator/Sources/SLLabyrinthGenerator/Elements/PassagesInstantiableElement.swift; sourceTree = SOURCE_ROOT; };
 		670018F32D9887E4009EEF8E /* Float+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
 		670018F52D9AC643009EEF8E /* TeleporterIsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleporterIsolatedAreasStrategy.swift; sourceTree = "<group>"; };
+		670019002DA18F45009EEF8E /* ElementsAvailabilityRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsAvailabilityRestriction.swift; sourceTree = "<group>"; };
+		670019022DA1909C009EEF8E /* PassagesElementRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagesElementRestriction.swift; sourceTree = "<group>"; };
+		670019042DA1973E009EEF8E /* ConnectionPreventRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionPreventRestriction.swift; sourceTree = "<group>"; };
 		6739D84D2D83A5A4009CAEE4 /* IsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsolatedAreasStrategy.swift; sourceTree = "<group>"; };
 		6739D84E2D83A5A4009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMergeIsolatedAreasStrategy.swift; sourceTree = "<group>"; };
 		6739D8502D83A5A4009CAEE4 /* GeneratorConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorConfiguration.swift; sourceTree = "<group>"; };
@@ -158,6 +162,11 @@
 		670018DE2D977FE5009EEF8E /* Teleporter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Teleporter;
+			sourceTree = "<group>";
+		};
+		670018F92D9ED859009EEF8E /* EdgeCuttingStrategy */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EdgeCuttingStrategy;
 			sourceTree = "<group>";
 		};
 		6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */ = {
@@ -234,6 +243,16 @@
 			path = OneWay;
 			sourceTree = "<group>";
 		};
+		670018FF2DA18F17009EEF8E /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				670019002DA18F45009EEF8E /* ElementsAvailabilityRestriction.swift */,
+				670019022DA1909C009EEF8E /* PassagesElementRestriction.swift */,
+				670019042DA1973E009EEF8E /* ConnectionPreventRestriction.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
 		6739D84F2D83A5A4009CAEE4 /* IsolatedAreasStrategy */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +268,7 @@
 		6739D8512D83A5A4009CAEE4 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				670018F92D9ED859009EEF8E /* EdgeCuttingStrategy */,
 				6739D8BC2D88EE17009CAEE4 /* CycledAreasStrategy */,
 				6739D84F2D83A5A4009CAEE4 /* IsolatedAreasStrategy */,
 				6739D8502D83A5A4009CAEE4 /* GeneratorConfiguration.swift */,
@@ -306,10 +326,10 @@
 		6739D86C2D83A5A4009CAEE4 /* Restrictions */ = {
 			isa = PBXGroup;
 			children = (
+				670018FF2DA18F17009EEF8E /* Concrete */,
 				6739D8692D83A5A4009CAEE4 /* ElementRestirction.swift */,
 				6739D86A2D83A5A4009CAEE4 /* NodeRestriction.swift */,
 				6739D86B2D83A5A4009CAEE4 /* SuperpositionRestriction.swift */,
-				670018AE2D8F80A2009EEF8E /* AvailableElementsRestriction.swift */,
 			);
 			path = Restrictions;
 			sourceTree = "<group>";
@@ -442,6 +462,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				670018DE2D977FE5009EEF8E /* Teleporter */,
+				670018F92D9ED859009EEF8E /* EdgeCuttingStrategy */,
 				6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */,
 				67E6868B2D8DBFC900E30A18 /* PathsGraph */,
 				67E6868C2D8DBFE500E30A18 /* AreasGraph */,
@@ -583,6 +604,7 @@
 				670018CB2D96FB9E009EEF8E /* OneWayHolder.swift in Sources */,
 				670018B32D9086E8009EEF8E /* GlobalMath.swift in Sources */,
 				670018CD2D96FBB1009EEF8E /* OneWayHolderSuperposition.swift in Sources */,
+				670019032DA1909C009EEF8E /* PassagesElementRestriction.swift in Sources */,
 				6739D88B2D83A5A4009CAEE4 /* SuperpositionRestriction.swift in Sources */,
 				6739D88D2D83A5A4009CAEE4 /* Set+Extensions.swift in Sources */,
 				6739D88E2D83A5A4009CAEE4 /* NodeRestriction.swift in Sources */,
@@ -591,15 +613,16 @@
 				670018F62D9AC643009EEF8E /* TeleporterIsolatedAreasStrategy.swift in Sources */,
 				670018AD2D8F4A6F009EEF8E /* OnewaysMergeIsolatedAreasStrategy.swift in Sources */,
 				6739D8912D83A5A4009CAEE4 /* SuperpositionsProvider.swift in Sources */,
+				670019012DA18F45009EEF8E /* ElementsAvailabilityRestriction.swift in Sources */,
 				6739D8922D83A5A4009CAEE4 /* SquareTopology.swift in Sources */,
 				6739D8932D83A5A4009CAEE4 /* IsolatedAreasStrategy.swift in Sources */,
 				6739D8942D83A5A4009CAEE4 /* Int+Extensions.swift in Sources */,
 				6739D8952D83A5A4009CAEE4 /* Dictionary+Extensions.swift in Sources */,
 				67E6867C2D8B330F00E30A18 /* ElementsWeightsContainer.swift in Sources */,
 				670018DB2D972825009EEF8E /* PassagesBasedSuperposition.swift in Sources */,
-				670018AF2D8F80A2009EEF8E /* AvailableElementsRestriction.swift in Sources */,
 				67E686842D8B95F500E30A18 /* BinomialCoefficient.swift in Sources */,
 				67E6867E2D8B357D00E30A18 /* RandomPicker.swift in Sources */,
+				670019052DA1973E009EEF8E /* ConnectionPreventRestriction.swift in Sources */,
 				6739D8972D83A5A4009CAEE4 /* NodeSuperposition.swift in Sources */,
 				67E6868A2D8BA75C00E30A18 /* IdHashable.swift in Sources */,
 				670018B92D96412F009EEF8E /* GlobalCache.swift in Sources */,
