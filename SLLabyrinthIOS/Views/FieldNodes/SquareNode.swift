@@ -21,6 +21,8 @@ struct SquareNode: View {
             TeleporterNode(element: element)
         case let element as PassagesBasedElement<SquareTopology>:
             SquarePassagesBasedNode(element: element)
+        case let element as Bridge<SquareTopology>:
+            SquareBridgeNode(element: element)
         case is UndefinedElement<SquareTopology>:
             SquareUndefinedNode()
         default:

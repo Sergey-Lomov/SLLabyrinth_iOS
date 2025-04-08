@@ -64,6 +64,7 @@
 		6739D8BB2D85CA20009CAEE4 /* GraphPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8BA2D85CA20009CAEE4 /* GraphPath.swift */; };
 		6739D8BE2D88EE2D009CAEE4 /* CycledAreasStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8BD2D88EE2D009CAEE4 /* CycledAreasStrategy.swift */; };
 		6739D8C02D88EEDE009CAEE4 /* MinLengthCycledAreasStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8BF2D88EEDE009CAEE4 /* MinLengthCycledAreasStrategy.swift */; };
+		673BC7112DA481FD00674C71 /* ElementsConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BC7102DA481FD00674C71 /* ElementsConnection.swift */; };
 		67E6867A2D8AF56400E30A18 /* MinEntropyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E686792D8AF56400E30A18 /* MinEntropyContainer.swift */; };
 		67E6867C2D8B330F00E30A18 /* ElementsWeightsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6867B2D8B330F00E30A18 /* ElementsWeightsContainer.swift */; };
 		67E6867E2D8B357D00E30A18 /* RandomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6867D2D8B357D00E30A18 /* RandomPicker.swift */; };
@@ -147,6 +148,7 @@
 		6739D8BA2D85CA20009CAEE4 /* GraphPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphPath.swift; sourceTree = "<group>"; };
 		6739D8BD2D88EE2D009CAEE4 /* CycledAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycledAreasStrategy.swift; sourceTree = "<group>"; };
 		6739D8BF2D88EEDE009CAEE4 /* MinLengthCycledAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinLengthCycledAreasStrategy.swift; sourceTree = "<group>"; };
+		673BC7102DA481FD00674C71 /* ElementsConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsConnection.swift; sourceTree = "<group>"; };
 		6754B5382D7A91DA0023C62F /* SLLabyrinthIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLLabyrinthIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6754B5492D7A91DD0023C62F /* SLLabyrinthIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6754B5532D7A91DD0023C62F /* SLLabyrinthIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +169,11 @@
 		670018F92D9ED859009EEF8E /* EdgeCuttingStrategy */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = EdgeCuttingStrategy;
+			sourceTree = "<group>";
+		};
+		673BC70D2DA315B200674C71 /* Bridge */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 		6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */ = {
@@ -280,8 +287,9 @@
 		6739D8572D83A5A4009CAEE4 /* Concrete */ = {
 			isa = PBXGroup;
 			children = (
-				670018DE2D977FE5009EEF8E /* Teleporter */,
+				673BC70D2DA315B200674C71 /* Bridge */,
 				670018C22D96FB7E009EEF8E /* Basic */,
+				670018DE2D977FE5009EEF8E /* Teleporter */,
 				670018CA2D96FB9E009EEF8E /* OneWay */,
 			);
 			path = Concrete;
@@ -295,6 +303,7 @@
 				6739D8582D83A5A4009CAEE4 /* PassagesBasedElement.swift */,
 				6739D8592D83A5A4009CAEE4 /* LabyrinthElement.swift */,
 				6739D85A2D83A5A4009CAEE4 /* UndefinedElement.swift */,
+				673BC7102DA481FD00674C71 /* ElementsConnection.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -463,6 +472,7 @@
 			fileSystemSynchronizedGroups = (
 				670018DE2D977FE5009EEF8E /* Teleporter */,
 				670018F92D9ED859009EEF8E /* EdgeCuttingStrategy */,
+				673BC70D2DA315B200674C71 /* Bridge */,
 				6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */,
 				67E6868B2D8DBFC900E30A18 /* PathsGraph */,
 				67E6868C2D8DBFE500E30A18 /* AreasGraph */,
@@ -652,6 +662,7 @@
 				6739D8AE2D83A5A4009CAEE4 /* ElementSuperposition.swift in Sources */,
 				6739D8AF2D83A5A4009CAEE4 /* PassagesBasedElement.swift in Sources */,
 				670018AB2D8F3C92009EEF8E /* SizeBasedIsolatedAreasStrategy.swift in Sources */,
+				673BC7112DA481FD00674C71 /* ElementsConnection.swift in Sources */,
 				6739D8B02D83A5A4009CAEE4 /* SLLabyrinthGenerator.swift in Sources */,
 				6739D8B12D83A5A4009CAEE4 /* Cacheable.swift in Sources */,
 				6739D8BE2D88EE2D009CAEE4 /* CycledAreasStrategy.swift in Sources */,
