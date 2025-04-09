@@ -16,7 +16,7 @@ struct ContentView: View {
         var provider = config.superpositionsProvider
         provider.reqisterSuperposition(OneWayHolderSuperposition<ST>.self)
         provider.reqisterSuperposition(TeleporterSuperposition<ST>.self)
-        provider.reqisterSuperposition(BridgeSuperposition<ST>.self)
+//        provider.reqisterSuperposition(BridgeSuperposition<ST>.self)
 
         config.setWeigth(StraightPathSuperposition<ST>.self, weight: 5.0)
         config.setWeigth(CornerPathSuperposition<ST>.self, weight: 2.0)
