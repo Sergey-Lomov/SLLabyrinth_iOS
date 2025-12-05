@@ -6,13 +6,12 @@
 //
 
 import Foundation
-import SwiftUI
 
 extension Topology {
-    static func visualScale(field: Field, geometry: GeometryProxy) -> Float {
+    static func visualScale(field: Field, size: CGSize) -> Float {
         visualScale(field: field,
-              width: Float(geometry.size.width),
-              height: Float(geometry.size.height)
+              width: Float(size.width),
+              height: Float(size.height)
         )
     }
 }

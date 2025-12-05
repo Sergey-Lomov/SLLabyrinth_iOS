@@ -46,6 +46,7 @@ struct GenerationDebugView<T: Topology>: View {
                     }
 
                     FieldView<T>(field: generator.field, nodeSize: scale)
+                        .fieldStyle(.defaultCurves)
 
                     if (showPaths) {
                         PathsGraphView(
@@ -79,13 +80,27 @@ struct GenerationDebugView<T: Topology>: View {
             Button("Time x50 (back)") { profileTime(repeats: 50, mainThread: false) }
 
             Button("Regenerate") {
-                let log = generator.generateLabyrinth()
+                let log = generator.generateLabyrinth(debugMode: true)
                 log.printReport()
                 viewId = UUID()
             }
 
             Button("Search issue") {
                 searchIssue()
+            }
+
+            Spacer()
+
+            Button("Export image") {
+                exportImage()
+            }
+
+            Button("Save field") {
+                saveField()
+            }
+
+            Button("Load field") {
+                loadField()
             }
 
             Spacer()
@@ -135,7 +150,7 @@ struct GenerationDebugView<T: Topology>: View {
         let profiler = TimeProfiler()
         var current = 1
         profiler.execute(times: repeats) {
-            let log = generator.generateLabyrinth(saveStates: false)
+            let log = generator.generateLabyrinth(debugMode: false)
             let time = String(format: "%.3f sec", log.time)
             print("Repeated \(current) / \(repeats). \(time)")
             current += 1
@@ -160,12 +175,13 @@ struct GenerationDebugView<T: Topology>: View {
         var index = 1
         var issue = false
         while !issue {
-            generator.generateLabyrinth(saveStates: true)
+            generator.generateLabyrinth(debugMode: true)
             print("Generation finished: \(index)")
             issue = generator.field.allPoints().contains() { point in
                 guard let element = generator.field.element(at: point) else {
                     return true
                 }
+                if element is Solid<T> { return true }
                 return T.Field.Element.isUndefined(element)
             }
             index += 1
@@ -174,8 +190,83 @@ struct GenerationDebugView<T: Topology>: View {
         viewId = UUID()
     }
 
+    private func exportImage() {
+        let panel = NSSavePanel()
+        panel.allowedContentTypes = [.png]
+        panel.nameFieldStringValue = "maze.png"
+
+        panel.begin() { response in
+            if response == .OK, let url = panel.url {
+                exportImage(to: url)
+            }
+        }
+    }
+
+    private func exportImage(to url: URL) {
+        let size = CGSize(width: 1000, height: 1000)
+        let scale = CGFloat(T.visualScale(field: generator.field, size: size))
+
+        let view = FieldView<T>(field: generator.field, nodeSize: scale)
+            .fieldStyle(.defaultCurves)
+
+        let renderer = ImageRenderer(content: view)
+        renderer.proposedSize = .init(size)
+
+        guard let image = renderer.nsImage else { return }
+        do {
+            try image.writePNG(to: url)
+        } catch {
+            print("Export error: \(error)")
+        }
+    }
+
+    private func saveField() {
+        let panel = NSSavePanel()
+        panel.allowedContentTypes = [.json]
+        panel.nameFieldStringValue = "maze.json"
+
+        panel.begin() { response in
+            if response == .OK, let url = panel.url {
+                saveField(to: url)
+            }
+        }
+    }
+
+    private func saveField(to url: URL) {
+        do {
+            if let data = generator.encodeJsonField() {
+                try data.write(to: url)
+            }
+        } catch {
+            print("Field saving error: \(error)")
+        }
+    }
+
+    private func loadField() {
+        let panel = NSOpenPanel()
+        panel.allowedContentTypes = [.json]
+        panel.canChooseDirectories = false
+        panel.allowsMultipleSelection = false
+
+        panel.begin() { response in
+            if response == .OK, let url = panel.url {
+                loadField(from: url)
+            }
+        }
+    }
+
+    private func loadField(from url: URL) {
+        do {
+            let data = try Data(contentsOf: url)
+            generator.decodeJsonField(data: data)
+            viewId = UUID()
+        } catch {
+            print("Field loading error: \(error)")
+        }
+    }
+
     private func scale(geometry: GeometryProxy) -> CGFloat {
-        CGFloat(T.visualScale(field: generator.field, geometry: geometry))
+        CGFloat(T.visualScale(field: generator.field, size: geometry.size))
     }
 
     private func offset(_ point: T.Point, geometry: GeometryProxy, nodeScale: CGFloat) -> CGPoint {

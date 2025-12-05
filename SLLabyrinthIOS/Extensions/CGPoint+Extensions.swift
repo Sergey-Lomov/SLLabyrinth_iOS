@@ -8,6 +8,8 @@
 import Foundation
 
 extension CGPoint {
+    static let unitCenter = CGPoint(x: 0.5, y: 0.5)
+
     init(_ value: Float) {
         self.init(CGFloat(value))
     }

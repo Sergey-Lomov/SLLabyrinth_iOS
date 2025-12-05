@@ -9,7 +9,19 @@ import Foundation
 import SwiftUI
 
 struct SquareSolidNode: View {
+    @Environment(\.fieldStyle) var style
+
     var body: some View {
+        switch style {
+        case .debug:
+            debugView()
+        case .curves:
+            EmptyView()
+        }
+    }
+
+    @ViewBuilder
+    private func debugView() -> some View {
         GeometryReader { geometry in
             ZStack {
                 Color.black

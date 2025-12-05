@@ -11,25 +11,28 @@ struct ContentView: View {
     typealias ST = SquareTopology
 
     static let config = {
-        var config = GeneratorConfiguration<SquareTopology>.basic(size: (40, 40))
+        let size = SquareSize(width: 40, height: 40)
+        var config = GeneratorConfiguration<SquareTopology>.basic(size: size)
 
         var provider = config.superpositionsProvider
-        provider.reqisterSuperposition(OneWayHolderSuperposition<ST>.self)
-        provider.reqisterSuperposition(TeleporterSuperposition<ST>.self)
-//        provider.reqisterSuperposition(BridgeSuperposition<ST>.self)
+        provider.register(OneWayHolderSuperposition<ST>.self)
+        provider.register(TeleporterSuperposition<ST>.self)
+        provider.register(BridgeSuperposition<ST>.self)
 
         config.setWeigth(StraightPathSuperposition<ST>.self, weight: 5.0)
         config.setWeigth(CornerPathSuperposition<ST>.self, weight: 2.0)
         config.setWeigth(JunctionSuperposition<ST>.self, weight: 1.0)
         config.setWeigth(DeadendSuperposition<ST>.self, weight: 0.5)
-        config.setWeigth(TeleporterSuperposition<ST>.self, weight: 0.01)
-        config.setWeigth(OneWayHolderSuperposition<ST>.self, weight: 0.04)
-        config.setWeigth(BridgeSuperposition<ST>.self, weight: 0.04)
+        config.setWeigth(IsolatedRoomSuperposition<ST>.self, weight: .leastNonzeroMagnitude)
+        config.setWeigth(TeleporterSuperposition<ST>.self, weight: 0.025)
+        config.setWeigth(OneWayHolderSuperposition<ST>.self, weight: 0.05)
+        config.setWeigth(BridgeSuperposition<ST>.self, weight: 0.5)
 
         let isolatedStrategy = SizeBasedIsolatedAreasStrategy<ST>()
         let randomMerge = RandomMergeIsolatedAreasStrategy<ST>()
         let onewayMerge = OnewaysMergeIsolatedAreasStrategy<ST>()
         let teleportMerge = TeleporterIsolatedAreasStrategy<ST>(allowOneway: true)
+        isolatedStrategy.add(from: 0.05, to: 1, weight: 1, strategy: teleportMerge)
         isolatedStrategy.add(from: 0, to: 1, weight: 1, strategy: randomMerge)
         isolatedStrategy.add(from: 0.075, to: 1, weight: 1, strategy: onewayMerge)
         isolatedStrategy.add(from: 0.1, to: 1, weight: 0.25, strategy: teleportMerge)
@@ -43,9 +46,6 @@ struct ContentView: View {
     var body: some View {
         HStack {
             GenerationDebugView<SquareTopology>(generator: generator)
-        }.onAppear() {
-            let log = generator.generateLabyrinth()
-            log.printReport()
         }
     }
 }

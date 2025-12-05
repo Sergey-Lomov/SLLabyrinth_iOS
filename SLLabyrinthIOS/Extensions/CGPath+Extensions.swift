@@ -9,6 +9,14 @@ import Foundation
 import CoreGraphics
 
 extension CGPath {
+    static func chevronPath() -> CGPath {
+        let path = CGMutablePath()
+        path.move(to: CGPoint(x: -0.5, y: 0.25))
+        path.addLine(to: CGPoint(x: 0.0, y: -0.25))
+        path.addLine(to: CGPoint(x: 0.5, y: 0.25))
+        return path
+    }
+
     static func arrowPath() -> CGPath {
         let path = CGMutablePath()
         path.move(to: CGPoint(x: 0.0, y: -0.5))
@@ -16,6 +24,25 @@ extension CGPath {
         path.move(to: CGPoint(x: 0.33, y: 0.16))
         path.addLine(to: CGPoint(x: 0.0, y: 0.5))
         path.addLine(to: CGPoint(x: -0.33, y: 0.16))
+        return path
+    }
+
+    private static var squareEdgesCenters: [SquareEdge:CGPoint] = [
+        .left : CGPoint(x: 0, y: 0.5),
+        .right : CGPoint(x: 1, y: 0.5),
+        .top : CGPoint(x: 0.5, y: 0),
+        .bottom : CGPoint(x: 0.5, y: 1)
+    ]
+
+    static func centerToEdgesPath(_ edges: [SquareEdge]) -> CGPath {
+        let path = CGMutablePath()
+
+        for edge in edges {
+            guard let edgeCenter = squareEdgesCenters[edge] else { continue }
+            path.move(to: CGPoint(x: 0.5, y: 0.5))
+            path.addLine(to: edgeCenter)
+        }
+
         return path
     }
 

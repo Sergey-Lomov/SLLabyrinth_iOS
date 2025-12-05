@@ -27,6 +27,40 @@
 		670019012DA18F45009EEF8E /* ElementsAvailabilityRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670019002DA18F45009EEF8E /* ElementsAvailabilityRestriction.swift */; };
 		670019032DA1909C009EEF8E /* PassagesElementRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670019022DA1909C009EEF8E /* PassagesElementRestriction.swift */; };
 		670019052DA1973E009EEF8E /* ConnectionPreventRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670019042DA1973E009EEF8E /* ConnectionPreventRestriction.swift */; };
+		67099E0D2EDFBBC500346A5C /* NSImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E0C2EDFBBC500346A5C /* NSImage+Extensions.swift */; };
+		67099E2F2EDFC24B00346A5C /* CGAffineTransform+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E0E2EDFC24B00346A5C /* CGAffineTransform+Extensions.swift */; };
+		67099E302EDFC24B00346A5C /* CGPath+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E0F2EDFC24B00346A5C /* CGPath+Extensions.swift */; };
+		67099E312EDFC24B00346A5C /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E102EDFC24B00346A5C /* CGPoint+Extensions.swift */; };
+		67099E322EDFC24B00346A5C /* CGSize+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E112EDFC24B00346A5C /* CGSize+Extensions.swift */; };
+		67099E332EDFC24B00346A5C /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E122EDFC24B00346A5C /* Color+Extensions.swift */; };
+		67099E342EDFC24B00346A5C /* TopologyVisualizer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E132EDFC24B00346A5C /* TopologyVisualizer+Extensions.swift */; };
+		67099E352EDFC24B00346A5C /* UUID+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E142EDFC24B00346A5C /* UUID+Extensions.swift */; };
+		67099E362EDFC24B00346A5C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E152EDFC24B00346A5C /* View+Extensions.swift */; };
+		67099E372EDFC24B00346A5C /* SeededGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E192EDFC24B00346A5C /* SeededGenerator.swift */; };
+		67099E382EDFC24B00346A5C /* FieldNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E1C2EDFC24B00346A5C /* FieldNodeView.swift */; };
+		67099E392EDFC24B00346A5C /* OneWayHolderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E1D2EDFC24B00346A5C /* OneWayHolderNode.swift */; };
+		67099E3A2EDFC24B00346A5C /* SquareBridgeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E1E2EDFC24B00346A5C /* SquareBridgeNode.swift */; };
+		67099E3B2EDFC24B00346A5C /* SquareNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E1F2EDFC24B00346A5C /* SquareNode.swift */; };
+		67099E3C2EDFC24B00346A5C /* SquarePassagesBasedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E202EDFC24B00346A5C /* SquarePassagesBasedNode.swift */; };
+		67099E3D2EDFC24B00346A5C /* SquareSolidNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E212EDFC24B00346A5C /* SquareSolidNode.swift */; };
+		67099E3E2EDFC24B00346A5C /* SquareUndefinedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E222EDFC24B00346A5C /* SquareUndefinedNode.swift */; };
+		67099E3F2EDFC24B00346A5C /* TeleporterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E232EDFC24B00346A5C /* TeleporterNode.swift */; };
+		67099E402EDFC24B00346A5C /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E252EDFC24B00346A5C /* FieldView.swift */; };
+		67099E412EDFC24B00346A5C /* GenerationDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E262EDFC24B00346A5C /* GenerationDebugView.swift */; };
+		67099E422EDFC24B00346A5C /* PathsGraphAreasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E272EDFC24B00346A5C /* PathsGraphAreasView.swift */; };
+		67099E432EDFC24B00346A5C /* PathsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E282EDFC24B00346A5C /* PathsGraphView.swift */; };
+		67099E442EDFC24B00346A5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E2B2EDFC24B00346A5C /* ContentView.swift */; };
+		67099E452EDFC24B00346A5C /* SLLabyrinthIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E2D2EDFC24B00346A5C /* SLLabyrinthIOSApp.swift */; };
+		67099E462EDFC24B00346A5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67099E172EDFC24B00346A5C /* Preview Assets.xcassets */; };
+		67099E472EDFC24B00346A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67099E2A2EDFC24B00346A5C /* Assets.xcassets */; };
+		67099E502EDFC4D500346A5C /* FieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099E4F2EDFC4D500346A5C /* FieldStyle.swift */; };
+		6710184E2ECCD6C000F3062E /* IsolatedRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710184D2ECCD6C000F3062E /* IsolatedRoom.swift */; };
+		671018502ECCEEC100F3062E /* IsolatedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710184F2ECCEEC100F3062E /* IsolatedElement.swift */; };
+		672367742EDBC64000F4985C /* SquareFieldSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672367732EDBC64000F4985C /* SquareFieldSize.swift */; };
+		6723677E2EDBF92100F4985C /* TypesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723677D2EDBF92100F4985C /* TypesProvider.swift */; };
+		672367802EDBF93800F4985C /* SuperpositionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723677F2EDBF93800F4985C /* SuperpositionsProvider.swift */; };
+		672367822EDBF96200F4985C /* ElementsTypesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672367812EDBF96200F4985C /* ElementsTypesProvider.swift */; };
+		672367862EDCB5B900F4985C /* SerializationIdMappedTypesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672367852EDCB5B900F4985C /* SerializationIdMappedTypesProvider.swift */; };
 		6739D8862D83A5A4009CAEE4 /* IdEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D87E2D83A5A4009CAEE4 /* IdEquatable.swift */; };
 		6739D8872D83A5A4009CAEE4 /* TimeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8792D83A5A4009CAEE4 /* TimeLog.swift */; };
 		6739D8882D83A5A4009CAEE4 /* DictionaryBasedField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8752D83A5A4009CAEE4 /* DictionaryBasedField.swift */; };
@@ -36,7 +70,6 @@
 		6739D88E2D83A5A4009CAEE4 /* NodeRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D86A2D83A5A4009CAEE4 /* NodeRestriction.swift */; };
 		6739D88F2D83A5A4009CAEE4 /* TimeLogNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D87A2D83A5A4009CAEE4 /* TimeLogNode.swift */; };
 		6739D8902D83A5A4009CAEE4 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D85C2D83A5A4009CAEE4 /* Array+Extensions.swift */; };
-		6739D8912D83A5A4009CAEE4 /* SuperpositionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8842D83A5A4009CAEE4 /* SuperpositionsProvider.swift */; };
 		6739D8922D83A5A4009CAEE4 /* SquareTopology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8732D83A5A4009CAEE4 /* SquareTopology.swift */; };
 		6739D8932D83A5A4009CAEE4 /* IsolatedAreasStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D84D2D83A5A4009CAEE4 /* IsolatedAreasStrategy.swift */; };
 		6739D8942D83A5A4009CAEE4 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D85F2D83A5A4009CAEE4 /* Int+Extensions.swift */; };
@@ -58,7 +91,7 @@
 		6739D8AB2D83A5A4009CAEE4 /* GeneratorConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8502D83A5A4009CAEE4 /* GeneratorConfiguration.swift */; };
 		6739D8AE2D83A5A4009CAEE4 /* ElementSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D86D2D83A5A4009CAEE4 /* ElementSuperposition.swift */; };
 		6739D8AF2D83A5A4009CAEE4 /* PassagesBasedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8582D83A5A4009CAEE4 /* PassagesBasedElement.swift */; };
-		6739D8B02D83A5A4009CAEE4 /* SLLabyrinthGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8832D83A5A4009CAEE4 /* SLLabyrinthGenerator.swift */; };
+		6739D8B02D83A5A4009CAEE4 /* LabyrinthGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8832D83A5A4009CAEE4 /* LabyrinthGenerator.swift */; };
 		6739D8B12D83A5A4009CAEE4 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D87D2D83A5A4009CAEE4 /* Cacheable.swift */; };
 		6739D8B72D85BA96009CAEE4 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8B62D85BA96009CAEE4 /* Graph.swift */; };
 		6739D8BB2D85CA20009CAEE4 /* GraphPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8BA2D85CA20009CAEE4 /* GraphPath.swift */; };
@@ -66,12 +99,14 @@
 		6739D8C02D88EEDE009CAEE4 /* MinLengthCycledAreasStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D8BF2D88EEDE009CAEE4 /* MinLengthCycledAreasStrategy.swift */; };
 		673BC7112DA481FD00674C71 /* ElementsConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BC7102DA481FD00674C71 /* ElementsConnection.swift */; };
 		673BC7192DA57CA100674C71 /* UIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BC7182DA57CA100674C71 /* UIDProvider.swift */; };
+		67904CF92ED26D4500076304 /* Combinatorics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67904CF82ED26D4500076304 /* Combinatorics.swift */; };
 		67E6867A2D8AF56400E30A18 /* MinEntropyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E686792D8AF56400E30A18 /* MinEntropyContainer.swift */; };
 		67E6867C2D8B330F00E30A18 /* ElementsWeightsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6867B2D8B330F00E30A18 /* ElementsWeightsContainer.swift */; };
 		67E6867E2D8B357D00E30A18 /* RandomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6867D2D8B357D00E30A18 /* RandomPicker.swift */; };
 		67E686802D8B456100E30A18 /* CategorizedSuperposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6867F2D8B456100E30A18 /* CategorizedSuperposition.swift */; };
 		67E686842D8B95F500E30A18 /* BinomialCoefficient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E686832D8B95F500E30A18 /* BinomialCoefficient.swift */; };
 		67E6868A2D8BA75C00E30A18 /* IdHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E686892D8BA75C00E30A18 /* IdHashable.swift */; };
+		67EADA732EE2672200111688 /* CGMutablePath+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EADA722EE2672200111688 /* CGMutablePath+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +147,41 @@
 		670019002DA18F45009EEF8E /* ElementsAvailabilityRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsAvailabilityRestriction.swift; sourceTree = "<group>"; };
 		670019022DA1909C009EEF8E /* PassagesElementRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagesElementRestriction.swift; sourceTree = "<group>"; };
 		670019042DA1973E009EEF8E /* ConnectionPreventRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionPreventRestriction.swift; sourceTree = "<group>"; };
+		67099E0C2EDFBBC500346A5C /* NSImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Extensions.swift"; sourceTree = "<group>"; };
+		67099E0E2EDFC24B00346A5C /* CGAffineTransform+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+Extensions.swift"; sourceTree = "<group>"; };
+		67099E0F2EDFC24B00346A5C /* CGPath+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPath+Extensions.swift"; sourceTree = "<group>"; };
+		67099E102EDFC24B00346A5C /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		67099E112EDFC24B00346A5C /* CGSize+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extensions.swift"; sourceTree = "<group>"; };
+		67099E122EDFC24B00346A5C /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		67099E132EDFC24B00346A5C /* TopologyVisualizer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopologyVisualizer+Extensions.swift"; sourceTree = "<group>"; };
+		67099E142EDFC24B00346A5C /* UUID+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UUID+Extensions.swift"; sourceTree = "<group>"; };
+		67099E152EDFC24B00346A5C /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		67099E172EDFC24B00346A5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67099E192EDFC24B00346A5C /* SeededGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeededGenerator.swift; sourceTree = "<group>"; };
+		67099E1C2EDFC24B00346A5C /* FieldNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldNodeView.swift; sourceTree = "<group>"; };
+		67099E1D2EDFC24B00346A5C /* OneWayHolderNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWayHolderNode.swift; sourceTree = "<group>"; };
+		67099E1E2EDFC24B00346A5C /* SquareBridgeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareBridgeNode.swift; sourceTree = "<group>"; };
+		67099E1F2EDFC24B00346A5C /* SquareNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareNode.swift; sourceTree = "<group>"; };
+		67099E202EDFC24B00346A5C /* SquarePassagesBasedNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquarePassagesBasedNode.swift; sourceTree = "<group>"; };
+		67099E212EDFC24B00346A5C /* SquareSolidNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareSolidNode.swift; sourceTree = "<group>"; };
+		67099E222EDFC24B00346A5C /* SquareUndefinedNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareUndefinedNode.swift; sourceTree = "<group>"; };
+		67099E232EDFC24B00346A5C /* TeleporterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleporterNode.swift; sourceTree = "<group>"; };
+		67099E252EDFC24B00346A5C /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
+		67099E262EDFC24B00346A5C /* GenerationDebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationDebugView.swift; sourceTree = "<group>"; };
+		67099E272EDFC24B00346A5C /* PathsGraphAreasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphAreasView.swift; sourceTree = "<group>"; };
+		67099E282EDFC24B00346A5C /* PathsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsGraphView.swift; sourceTree = "<group>"; };
+		67099E2A2EDFC24B00346A5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67099E2B2EDFC24B00346A5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		67099E2C2EDFC24B00346A5C /* SLLabyrinthIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SLLabyrinthIOS.entitlements; sourceTree = "<group>"; };
+		67099E2D2EDFC24B00346A5C /* SLLabyrinthIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLLabyrinthIOSApp.swift; sourceTree = "<group>"; };
+		67099E4F2EDFC4D500346A5C /* FieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldStyle.swift; sourceTree = "<group>"; };
+		6710184D2ECCD6C000F3062E /* IsolatedRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsolatedRoom.swift; sourceTree = "<group>"; };
+		6710184F2ECCEEC100F3062E /* IsolatedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsolatedElement.swift; sourceTree = "<group>"; };
+		672367732EDBC64000F4985C /* SquareFieldSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareFieldSize.swift; sourceTree = "<group>"; };
+		6723677D2EDBF92100F4985C /* TypesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesProvider.swift; sourceTree = "<group>"; };
+		6723677F2EDBF93800F4985C /* SuperpositionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperpositionsProvider.swift; sourceTree = "<group>"; };
+		672367812EDBF96200F4985C /* ElementsTypesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsTypesProvider.swift; sourceTree = "<group>"; };
+		672367852EDCB5B900F4985C /* SerializationIdMappedTypesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializationIdMappedTypesProvider.swift; sourceTree = "<group>"; };
 		6739D84D2D83A5A4009CAEE4 /* IsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsolatedAreasStrategy.swift; sourceTree = "<group>"; };
 		6739D84E2D83A5A4009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMergeIsolatedAreasStrategy.swift; sourceTree = "<group>"; };
 		6739D8502D83A5A4009CAEE4 /* GeneratorConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorConfiguration.swift; sourceTree = "<group>"; };
@@ -143,8 +213,7 @@
 		6739D87F2D83A5A4009CAEE4 /* SquareFieldPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareFieldPrinter.swift; sourceTree = "<group>"; };
 		6739D8802D83A5A4009CAEE4 /* ZeroRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroRepresentable.swift; sourceTree = "<group>"; };
 		6739D8822D83A5A4009CAEE4 /* FieldAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldAnalyzer.swift; sourceTree = "<group>"; };
-		6739D8832D83A5A4009CAEE4 /* SLLabyrinthGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLLabyrinthGenerator.swift; sourceTree = "<group>"; };
-		6739D8842D83A5A4009CAEE4 /* SuperpositionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperpositionsProvider.swift; sourceTree = "<group>"; };
+		6739D8832D83A5A4009CAEE4 /* LabyrinthGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabyrinthGenerator.swift; sourceTree = "<group>"; };
 		6739D8B62D85BA96009CAEE4 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		6739D8BA2D85CA20009CAEE4 /* GraphPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphPath.swift; sourceTree = "<group>"; };
 		6739D8BD2D88EE2D009CAEE4 /* CycledAreasStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycledAreasStrategy.swift; sourceTree = "<group>"; };
@@ -154,12 +223,14 @@
 		6754B5382D7A91DA0023C62F /* SLLabyrinthIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLLabyrinthIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6754B5492D7A91DD0023C62F /* SLLabyrinthIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6754B5532D7A91DD0023C62F /* SLLabyrinthIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLabyrinthIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67904CF82ED26D4500076304 /* Combinatorics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combinatorics.swift; sourceTree = "<group>"; };
 		67E686792D8AF56400E30A18 /* MinEntropyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinEntropyContainer.swift; sourceTree = "<group>"; };
 		67E6867B2D8B330F00E30A18 /* ElementsWeightsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsWeightsContainer.swift; sourceTree = "<group>"; };
 		67E6867D2D8B357D00E30A18 /* RandomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPicker.swift; sourceTree = "<group>"; };
 		67E6867F2D8B456100E30A18 /* CategorizedSuperposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizedSuperposition.swift; sourceTree = "<group>"; };
 		67E686832D8B95F500E30A18 /* BinomialCoefficient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinomialCoefficient.swift; sourceTree = "<group>"; };
 		67E686892D8BA75C00E30A18 /* IdHashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdHashable.swift; sourceTree = "<group>"; };
+		67EADA722EE2672200111688 /* CGMutablePath+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGMutablePath+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -176,11 +247,6 @@
 		673BC70D2DA315B200674C71 /* Bridge */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Bridge;
-			sourceTree = "<group>";
-		};
-		6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SLLabyrinthIOS;
 			sourceTree = "<group>";
 		};
 		6754B54C2D7A91DD0023C62F /* SLLabyrinthIOSTests */ = {
@@ -238,6 +304,7 @@
 				670018BF2D96FB7E009EEF8E /* Junction.swift */,
 				670018C02D96FB7E009EEF8E /* Solid.swift */,
 				670018C12D96FB7E009EEF8E /* StraightPath.swift */,
+				6710184D2ECCD6C000F3062E /* IsolatedRoom.swift */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -260,6 +327,108 @@
 				670019042DA1973E009EEF8E /* ConnectionPreventRestriction.swift */,
 			);
 			path = Concrete;
+			sourceTree = "<group>";
+		};
+		67099E162EDFC24B00346A5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67099E0E2EDFC24B00346A5C /* CGAffineTransform+Extensions.swift */,
+				67099E0F2EDFC24B00346A5C /* CGPath+Extensions.swift */,
+				67EADA722EE2672200111688 /* CGMutablePath+Extensions.swift */,
+				67099E102EDFC24B00346A5C /* CGPoint+Extensions.swift */,
+				67099E112EDFC24B00346A5C /* CGSize+Extensions.swift */,
+				67099E122EDFC24B00346A5C /* Color+Extensions.swift */,
+				67099E132EDFC24B00346A5C /* TopologyVisualizer+Extensions.swift */,
+				67099E142EDFC24B00346A5C /* UUID+Extensions.swift */,
+				67099E152EDFC24B00346A5C /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		67099E182EDFC24B00346A5C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				67099E172EDFC24B00346A5C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67099E1A2EDFC24B00346A5C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				67099E192EDFC24B00346A5C /* SeededGenerator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		67099E1B2EDFC24B00346A5C /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		67099E242EDFC24B00346A5C /* FieldNodes */ = {
+			isa = PBXGroup;
+			children = (
+				67099E4C2EDFC3C800346A5C /* Square */,
+				67099E1C2EDFC24B00346A5C /* FieldNodeView.swift */,
+			);
+			path = FieldNodes;
+			sourceTree = "<group>";
+		};
+		67099E292EDFC24B00346A5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67099E242EDFC24B00346A5C /* FieldNodes */,
+				67099E252EDFC24B00346A5C /* FieldView.swift */,
+				67099E262EDFC24B00346A5C /* GenerationDebugView.swift */,
+				67099E272EDFC24B00346A5C /* PathsGraphAreasView.swift */,
+				67099E282EDFC24B00346A5C /* PathsGraphView.swift */,
+				67099E4F2EDFC4D500346A5C /* FieldStyle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67099E2E2EDFC24B00346A5C /* SLLabyrinthIOS */ = {
+			isa = PBXGroup;
+			children = (
+				67099E162EDFC24B00346A5C /* Extensions */,
+				67099E182EDFC24B00346A5C /* Preview Content */,
+				67099E1A2EDFC24B00346A5C /* Utils */,
+				67099E1B2EDFC24B00346A5C /* ViewModifiers */,
+				67099E292EDFC24B00346A5C /* Views */,
+				67099E2A2EDFC24B00346A5C /* Assets.xcassets */,
+				67099E2B2EDFC24B00346A5C /* ContentView.swift */,
+				67099E2C2EDFC24B00346A5C /* SLLabyrinthIOS.entitlements */,
+				67099E2D2EDFC24B00346A5C /* SLLabyrinthIOSApp.swift */,
+			);
+			path = SLLabyrinthIOS;
+			sourceTree = "<group>";
+		};
+		67099E4C2EDFC3C800346A5C /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				67099E1D2EDFC24B00346A5C /* OneWayHolderNode.swift */,
+				67099E1E2EDFC24B00346A5C /* SquareBridgeNode.swift */,
+				67099E1F2EDFC24B00346A5C /* SquareNode.swift */,
+				67099E202EDFC24B00346A5C /* SquarePassagesBasedNode.swift */,
+				67099E212EDFC24B00346A5C /* SquareSolidNode.swift */,
+				67099E222EDFC24B00346A5C /* SquareUndefinedNode.swift */,
+				67099E232EDFC24B00346A5C /* TeleporterNode.swift */,
+			);
+			path = Square;
+			sourceTree = "<group>";
+		};
+		6723677A2EDBF8CF00F4985C /* TypesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				6723677D2EDBF92100F4985C /* TypesProvider.swift */,
+				672367852EDCB5B900F4985C /* SerializationIdMappedTypesProvider.swift */,
+				6723677F2EDBF93800F4985C /* SuperpositionsProvider.swift */,
+				672367812EDBF96200F4985C /* ElementsTypesProvider.swift */,
+			);
+			path = TypesProviders;
 			sourceTree = "<group>";
 		};
 		6739D84F2D83A5A4009CAEE4 /* IsolatedAreasStrategy */ = {
@@ -306,6 +475,7 @@
 				6739D8592D83A5A4009CAEE4 /* LabyrinthElement.swift */,
 				6739D85A2D83A5A4009CAEE4 /* UndefinedElement.swift */,
 				673BC7102DA481FD00674C71 /* ElementsConnection.swift */,
+				6710184F2ECCEEC100F3062E /* IsolatedElement.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -319,6 +489,7 @@
 				6739D85F2D83A5A4009CAEE4 /* Int+Extensions.swift */,
 				6739D8602D83A5A4009CAEE4 /* Set+Extensions.swift */,
 				670018F32D9887E4009EEF8E /* Float+Extensions.swift */,
+				67099E0C2EDFBBC500346A5C /* NSImage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -364,6 +535,7 @@
 			children = (
 				6739D8702D83A5A4009CAEE4 /* SquareEdge.swift */,
 				6739D8712D83A5A4009CAEE4 /* SquareField.swift */,
+				672367732EDBC64000F4985C /* SquareFieldSize.swift */,
 				6739D8722D83A5A4009CAEE4 /* SquarePoint.swift */,
 				6739D8732D83A5A4009CAEE4 /* SquareTopology.swift */,
 			);
@@ -394,6 +566,7 @@
 		6739D8812D83A5A4009CAEE4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6723677A2EDBF8CF00F4985C /* TypesProviders */,
 				6739D87C2D83A5A4009CAEE4 /* TimeProfiler */,
 				6739D87D2D83A5A4009CAEE4 /* Cacheable.swift */,
 				6739D87E2D83A5A4009CAEE4 /* IdEquatable.swift */,
@@ -405,6 +578,7 @@
 				670018B22D9086E8009EEF8E /* GlobalMath.swift */,
 				670018B82D96412F009EEF8E /* GlobalCache.swift */,
 				673BC7182DA57CA100674C71 /* UIDProvider.swift */,
+				67904CF82ED26D4500076304 /* Combinatorics.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -420,8 +594,7 @@
 				6739D8782D83A5A4009CAEE4 /* Topology */,
 				6739D8812D83A5A4009CAEE4 /* Utils */,
 				6739D8822D83A5A4009CAEE4 /* FieldAnalyzer.swift */,
-				6739D8832D83A5A4009CAEE4 /* SLLabyrinthGenerator.swift */,
-				6739D8842D83A5A4009CAEE4 /* SuperpositionsProvider.swift */,
+				6739D8832D83A5A4009CAEE4 /* LabyrinthGenerator.swift */,
 			);
 			name = SLLabyrinthGenerator;
 			path = ../Generator/Sources/SLLabyrinthGenerator;
@@ -440,7 +613,7 @@
 			isa = PBXGroup;
 			children = (
 				6739D8852D83A5A4009CAEE4 /* SLLabyrinthGenerator */,
-				6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */,
+				67099E2E2EDFC24B00346A5C /* SLLabyrinthIOS */,
 				6754B54C2D7A91DD0023C62F /* SLLabyrinthIOSTests */,
 				6754B5562D7A91DD0023C62F /* SLLabyrinthIOSUITests */,
 				6754B5392D7A91DA0023C62F /* Products */,
@@ -476,7 +649,6 @@
 				670018DE2D977FE5009EEF8E /* Teleporter */,
 				670018F92D9ED859009EEF8E /* EdgeCuttingStrategy */,
 				673BC70D2DA315B200674C71 /* Bridge */,
-				6754B53A2D7A91DA0023C62F /* SLLabyrinthIOS */,
 				67E6868B2D8DBFC900E30A18 /* PathsGraph */,
 				67E6868C2D8DBFE500E30A18 /* AreasGraph */,
 			);
@@ -584,6 +756,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67099E462EDFC24B00346A5C /* Preview Assets.xcassets in Resources */,
+				67099E472EDFC24B00346A5C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,8 +784,11 @@
 			files = (
 				6739D8B72D85BA96009CAEE4 /* Graph.swift in Sources */,
 				6739D8862D83A5A4009CAEE4 /* IdEquatable.swift in Sources */,
+				67099E0D2EDFBBC500346A5C /* NSImage+Extensions.swift in Sources */,
 				6739D8872D83A5A4009CAEE4 /* TimeLog.swift in Sources */,
 				6739D8882D83A5A4009CAEE4 /* DictionaryBasedField.swift in Sources */,
+				672367802EDBF93800F4985C /* SuperpositionsProvider.swift in Sources */,
+				67099E502EDFC4D500346A5C /* FieldStyle.swift in Sources */,
 				6739D88A2D83A5A4009CAEE4 /* TimeProfiler.swift in Sources */,
 				670018E22D97827A009EEF8E /* PassagesInstantiableSuperposition.swift in Sources */,
 				670018CB2D96FB9E009EEF8E /* OneWayHolder.swift in Sources */,
@@ -625,7 +802,6 @@
 				6739D8902D83A5A4009CAEE4 /* Array+Extensions.swift in Sources */,
 				670018F62D9AC643009EEF8E /* TeleporterIsolatedAreasStrategy.swift in Sources */,
 				670018AD2D8F4A6F009EEF8E /* OnewaysMergeIsolatedAreasStrategy.swift in Sources */,
-				6739D8912D83A5A4009CAEE4 /* SuperpositionsProvider.swift in Sources */,
 				670019012DA18F45009EEF8E /* ElementsAvailabilityRestriction.swift in Sources */,
 				6739D8922D83A5A4009CAEE4 /* SquareTopology.swift in Sources */,
 				6739D8932D83A5A4009CAEE4 /* IsolatedAreasStrategy.swift in Sources */,
@@ -633,20 +809,27 @@
 				6739D8952D83A5A4009CAEE4 /* Dictionary+Extensions.swift in Sources */,
 				67E6867C2D8B330F00E30A18 /* ElementsWeightsContainer.swift in Sources */,
 				673BC7192DA57CA100674C71 /* UIDProvider.swift in Sources */,
+				6723677E2EDBF92100F4985C /* TypesProvider.swift in Sources */,
 				670018DB2D972825009EEF8E /* PassagesBasedSuperposition.swift in Sources */,
 				67E686842D8B95F500E30A18 /* BinomialCoefficient.swift in Sources */,
+				6710184E2ECCD6C000F3062E /* IsolatedRoom.swift in Sources */,
 				67E6867E2D8B357D00E30A18 /* RandomPicker.swift in Sources */,
+				672367862EDCB5B900F4985C /* SerializationIdMappedTypesProvider.swift in Sources */,
 				670019052DA1973E009EEF8E /* ConnectionPreventRestriction.swift in Sources */,
 				6739D8972D83A5A4009CAEE4 /* NodeSuperposition.swift in Sources */,
+				672367822EDBF96200F4985C /* ElementsTypesProvider.swift in Sources */,
 				67E6868A2D8BA75C00E30A18 /* IdHashable.swift in Sources */,
 				670018B92D96412F009EEF8E /* GlobalCache.swift in Sources */,
 				6739D8992D83A5A4009CAEE4 /* RandomMergeIsolatedAreasStrategy.swift in Sources */,
 				6739D89A2D83A5A4009CAEE4 /* SquareFieldPrinter.swift in Sources */,
+				671018502ECCEEC100F3062E /* IsolatedElement.swift in Sources */,
+				672367742EDBC64000F4985C /* SquareFieldSize.swift in Sources */,
 				670018C32D96FB7E009EEF8E /* Deadend.swift in Sources */,
 				670018C42D96FB7E009EEF8E /* CornerPath.swift in Sources */,
 				670018C52D96FB7E009EEF8E /* StraightPath.swift in Sources */,
 				670018C62D96FB7E009EEF8E /* Solid.swift in Sources */,
 				670018C72D96FB7E009EEF8E /* Junction.swift in Sources */,
+				67EADA732EE2672200111688 /* CGMutablePath+Extensions.swift in Sources */,
 				6739D89B2D83A5A4009CAEE4 /* ElementRestirction.swift in Sources */,
 				670018CF2D96FBDA009EEF8E /* OneWayRestrictions.swift in Sources */,
 				67E6867A2D8AF56400E30A18 /* MinEntropyContainer.swift in Sources */,
@@ -665,9 +848,33 @@
 				6739D8AB2D83A5A4009CAEE4 /* GeneratorConfiguration.swift in Sources */,
 				6739D8AE2D83A5A4009CAEE4 /* ElementSuperposition.swift in Sources */,
 				6739D8AF2D83A5A4009CAEE4 /* PassagesBasedElement.swift in Sources */,
+				67099E2F2EDFC24B00346A5C /* CGAffineTransform+Extensions.swift in Sources */,
+				67099E302EDFC24B00346A5C /* CGPath+Extensions.swift in Sources */,
+				67099E312EDFC24B00346A5C /* CGPoint+Extensions.swift in Sources */,
+				67099E322EDFC24B00346A5C /* CGSize+Extensions.swift in Sources */,
+				67099E332EDFC24B00346A5C /* Color+Extensions.swift in Sources */,
+				67099E342EDFC24B00346A5C /* TopologyVisualizer+Extensions.swift in Sources */,
+				67099E352EDFC24B00346A5C /* UUID+Extensions.swift in Sources */,
+				67099E362EDFC24B00346A5C /* View+Extensions.swift in Sources */,
+				67099E372EDFC24B00346A5C /* SeededGenerator.swift in Sources */,
+				67099E382EDFC24B00346A5C /* FieldNodeView.swift in Sources */,
+				67099E392EDFC24B00346A5C /* OneWayHolderNode.swift in Sources */,
+				67099E3A2EDFC24B00346A5C /* SquareBridgeNode.swift in Sources */,
+				67099E3B2EDFC24B00346A5C /* SquareNode.swift in Sources */,
+				67099E3C2EDFC24B00346A5C /* SquarePassagesBasedNode.swift in Sources */,
+				67099E3D2EDFC24B00346A5C /* SquareSolidNode.swift in Sources */,
+				67099E3E2EDFC24B00346A5C /* SquareUndefinedNode.swift in Sources */,
+				67099E3F2EDFC24B00346A5C /* TeleporterNode.swift in Sources */,
+				67099E402EDFC24B00346A5C /* FieldView.swift in Sources */,
+				67099E412EDFC24B00346A5C /* GenerationDebugView.swift in Sources */,
+				67099E422EDFC24B00346A5C /* PathsGraphAreasView.swift in Sources */,
+				67099E432EDFC24B00346A5C /* PathsGraphView.swift in Sources */,
+				67099E442EDFC24B00346A5C /* ContentView.swift in Sources */,
+				67099E452EDFC24B00346A5C /* SLLabyrinthIOSApp.swift in Sources */,
 				670018AB2D8F3C92009EEF8E /* SizeBasedIsolatedAreasStrategy.swift in Sources */,
 				673BC7112DA481FD00674C71 /* ElementsConnection.swift in Sources */,
-				6739D8B02D83A5A4009CAEE4 /* SLLabyrinthGenerator.swift in Sources */,
+				67904CF92ED26D4500076304 /* Combinatorics.swift in Sources */,
+				6739D8B02D83A5A4009CAEE4 /* LabyrinthGenerator.swift in Sources */,
 				6739D8B12D83A5A4009CAEE4 /* Cacheable.swift in Sources */,
 				6739D8BE2D88EE2D009CAEE4 /* CycledAreasStrategy.swift in Sources */,
 				670018E62D9784A9009EEF8E /* PassagesInstantiableElement.swift in Sources */,
